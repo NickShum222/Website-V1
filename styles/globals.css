@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap');
+
+#nick{
+  stroke-dasharray: 5051;
+  stroke-dashoffset: 5051;
+  animation: sign 4s linear forwards;
+}
+#shum{
+  stroke-dasharray: 4596;
+  stroke-dashoffset: 4596;
+  animation: sign 4s ease forwards 2s;
+}
+
+@keyframes sign {
+  to{
+    stroke-dashoffset: 0;
+  }
+}
+
+.top_hamburger{
+  transform-origin: center center;
+  animation: top 1s ease-out forwards;
+}
+
+@keyframes top {
+  50% {
+    transform: translateY(3px);
+  }
+
+  100% {
+    transform: translateY(3px);
+    transform: rotate(-45deg);
+  }
+}
+
+.bottom_hamburger{
+  transform-origin: center center;
+  animation: bottom 1s ease-out forwards;
+}
+
+.list{
+  animation: list_hover 0.5s ease-out;
+}
+
+@keyframes bottom {
+  50% {
+    transform: translateY(-3px);
+  }
+  100% {
+    transform: translateY(-3px);
+    transform: rotate(45deg);
+  }
+}
+
+
+
