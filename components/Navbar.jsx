@@ -100,7 +100,7 @@ const Navbar = () => {
                     onClick={
                       () => {setActive(nav.title); 
                             toggleNav();}}
-                  >
+                        >
                     <a href={`#${nav.id}`}>{nav.title}</a>
                   </li>
                 ))}

@@ -21,7 +21,7 @@ export const slideUp = (delay) => ({
   },
 });
 
-export const slideIn = (delay) => ({
+export const slideRight = (delay) => ({
   hidden: { x: -50, opacity: 0 },
   visible: {
     x: 0,

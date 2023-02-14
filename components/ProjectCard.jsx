@@ -1,33 +1,109 @@
-'use client';
-import {motion} from 'framer-motion';
-import {slideIn} from '../utils/motion';
-import { FiGithub} from 'react-icons/fi';
-import { BsGlobe } from 'react-icons/bs';
+"use client";
+import { motion } from "framer-motion";
+import { slideRight } from "../utils/motion";
+import { FiGithub } from "react-icons/fi";
+import { BsGlobe } from "react-icons/bs";
+import { IconContext } from "react-icons";
 
-const ProjectCard = ({id, title, description, tools, git, url, index, active, setActive}) => {
+const ProjectCard = ({
+  id,
+  title,
+  description,
+  tools,
+  git,
+  url,
+  index,
+  active,
+  setActive,
+}) => {
   return (
-    <motion.div
-    variants={slideIn(index * 0.25)}
-    onClick={() => setActive(id)}
-    className= {`${active === id ? 'flex-[4]':'flex-[2]'} flex flex-col justify-center items-center bg-[#1E1E1E] rounded-lg cursor-pointer min-w-[40%] h-[200px]`}
-    >
-      {active === id ? (
-        <div className='min-w-[1000px] flex flex-row justify-between items-center'>
-          <h3 className='text-[30px] text-white font-mono font-normal py-6 px-9'>{title}</h3>
-          <div className='flex flex-row justify-end items-center gap-3'>
+    <IconContext.Provider value={{ color: "#BFBFBF", size: "1.5em" }}>
+      <motion.div
+        variants={slideRight(index * 0.25)}
+        onClick={() => {
+          setActive(id);
+        }}
+        className={`${active === id ? "flex-[4]" : "flex-[2]"}  relative 
+        lg:w-[50%] transition-[height] duration-500 w-[100%] flex flex-col justify-center items-center bg-[#1E1E1E] rounded-lg cursor-pointer min-w-[400px] `}
+      >
+        <div
+          className={`w-[85%] flex flex-row justify-between items-center ${
+            active === id ? "border-b-[1px] " : ""
+          }`}
+        >
+          <h3 className={`text-[25px] py-6 text-white font-mono font-normal  `}>
+            {title}
+          </h3>
+          <div className="flex flex-row justify-end items-center gap-3 py-6  ">
             <a href={git} target="_blank">
-              <FiGithub className='text-[#F5F5F5]'/>
+              <FiGithub className="text-[#F5F5F5] " />
             </a>
             <a href={url} target="_blank">
-              <BsGlobe className='text-[#F5F5F5] '/>
+              <BsGlobe className="text-[#F5F5F5] " />
             </a>
           </div>
         </div>
-      ): (
-        <div></div>
-      )}
-    </motion.div>
-  )
-}
 
-export default ProjectCard
+        <div
+          className={`overflow-hidden  transition-all duration-300  flex flex-col justify-between ${
+            active === id ? "h-[250px]" : "h-0"
+          } `}
+        >
+          <div className="flex flex-col justify-center items-center">
+            <p className=" text-[#BFBFBF] w-[85%] font-normal font-mono text-[16px] leading-6 pt-2 ">
+              {description}
+            </p>
+          </div>
+          <ul className="mx-8 flex flex-row justify-start gap-7 pb-5">
+            {tools.map((tool) => (
+              <li className="text-white text-mono">{tool}</li>
+            ))}
+          </ul>
+        </div>
+
+        {/* {active === id ? (
+          <div className="">
+            <div className="border-b-[1px] mx-8 flex flex-row justify-between items-center">
+              <h3 className="text-[25px]  text-white font-mono font-normal pt-6 pb-2">
+                {title}
+              </h3>
+              <div className="flex flex-row justify-end items-center gap-3 pt-6 pb-2">
+                <a href={git} target="_blank">
+                  <FiGithub className="text-[#F5F5F5] " />
+                </a>
+                <a href={url} target="_blank">
+                  <BsGlobe className="text-[#F5F5F5] " />
+                </a>
+              </div>
+            </div>
+
+            <p className=" text-[#BFBFBF] mx-8 font-normal font-mono text-[16px] leading-6 pt-2 ">
+              {description}
+            </p>
+            <ul className="mx-8 flex flex-row justify-start gap-7">
+              {tools.map((tool) => (
+                <li className="text-white text-mono">{tool}</li>
+              ))}
+            </ul>
+          </div>
+        ) : (
+          <div className="w-full flex flex-row justify-between items-center">
+            <h3 className="text-[25px]  text-white font-mono font-normal py-6 mx-8">
+              {title}
+            </h3>
+            <div className="flex flex-row justify-end items-center gap-3 py-6 mx-8 ">
+              <a href={git} target="_blank">
+                <FiGithub className="text-[#F5F5F5] " />
+              </a>
+              <a href={url} target="_blank">
+                <BsGlobe className="text-[#F5F5F5] " />
+              </a>
+            </div>
+          </div>
+        )} */}
+      </motion.div>
+    </IconContext.Provider>
+  );
+};
+
+export default ProjectCard;

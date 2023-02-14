@@ -4,15 +4,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap');
 
 #nick{
-  stroke-dasharray: 5051;
-  stroke-dashoffset: 5051;
-  animation: sign 4s linear forwards;
+
+  stroke-dasharray: 7144;
+  stroke-dashoffset: 7144;
+  animation-name: sign;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+
 }
 #shum{
   stroke-dasharray: 4596;
   stroke-dashoffset: 4596;
   animation: sign 4s ease forwards 2s;
 }
+
 
 @keyframes sign {
   to{
@@ -54,6 +61,7 @@
     transform: rotate(45deg);
   }
 }
+
 
 
 
