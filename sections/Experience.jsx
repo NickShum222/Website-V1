@@ -15,7 +15,7 @@ const Experience = () => {
       viewport={{once: false, amount: 0.25 }}
       className='flex flex-col w-full mx-auto'>
         <h1 className={styles.heading_2}>Experience</h1>
-        <div className='flex overflow-x-scroll flex-row items-center gap-5 '>
+        <div className='flex flex-row items-center gap-5 '>
           {experienceCards.map((experience, index) => (
             <ExperienceCard key={experience.id}{...experience}
             index={index}

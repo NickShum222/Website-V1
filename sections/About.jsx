@@ -22,7 +22,7 @@ const About = () => {
             <p className='text-white font-poppins'>Hi there! My name is Nick Shum and I’m a first year computer engineering student at the University of Waterloo.</p>
             <p className='text-white font-poppins'>Currently, I’m a quality assurance analyst at EllisDon, testing software to ensure it meets desired levels of quality and functions as intended.</p>
             <p className='text-white font-poppins'>
-            I am deeply passionate about computer science and am always seeking opportunities to learn and grow which is why I constantly find myself learning new tools and technologies to hone my software development skills. When I’m not programming, I enjoy curating spotify playlists, going out with friends, or skateboarding when the weather is nice! 
+              I am deeply passionate about computer science and am always seeking opportunities to learn and grow which is why I constantly find myself learning new tools and technologies to hone my software development skills. When I’m not programming, I enjoy curating spotify playlists, going out with friends, or skateboarding when the weather is nice! 
             </p>
           </motion.div>
           <div className='flex flex-col justify-center items-center'>
