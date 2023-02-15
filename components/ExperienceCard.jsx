@@ -5,8 +5,11 @@ import { staggerContainer } from "@/utils/motion";
 const ExperienceCard = ({ id, title, description, date, img, index }) => {
   return (
     <div>
-      <div className="flex flex-col bg-secondary rounded-lg">
-        
+      <div className="flex flex-col w-[400px] bg-secondary rounded-lg pr-8 py-4">
+          <p className='text-[#BFBFBF] italic lg:text-[18px] text-right'>{date}</p>
+          <h3 className='text-white lg:text-[24px] font-poppins text-right'>{description}</h3>
+          <p className="text-white lg:text-[24px] font-poppins text-right">{title}</p>
+
         {/* <div className='absolute rounded-full '>
         <img src={img} alt={title} className=" object-cover h-[40px] rounded-full" />
       </div>

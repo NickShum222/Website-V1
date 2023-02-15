@@ -44,7 +44,7 @@ export const experienceCards = [
   },
   {
     id: "isci",
-    title: "iSCI Tutoring",
+    title: "iSci Peer Tutoring",
     description: "Volunteer Tutor",
     date: "Sept 2021 - June 2021",
     img: "/isci.svg",
