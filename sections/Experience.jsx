@@ -7,7 +7,7 @@ import { ExperienceCard } from '@/components';
 
 const Experience = () => {
   return (
-    <section className=' py-16' id='experiences'>
+    <section className=' sm:px-36 px-24 py-16' id='experiences'>
       <motion.div 
       variants={staggerContainer}
       initial='hidden'
@@ -15,7 +15,7 @@ const Experience = () => {
       viewport={{once: false, amount: 0.25 }}
       className='flex flex-col  w-full mx-auto justify-center items-center'>
         <h1 className={styles.heading_2}>Experience</h1>
-        <div className='flex flex-row items-center overflow-x-scroll gap-5 '>
+        <div className='flex flex-row items-center gap-20 '>
           {experienceCards.map((experience, index) => (
             <ExperienceCard key={experience.id}{...experience}
             index={index}

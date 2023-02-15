@@ -8,7 +8,7 @@ const ESTIMATED_ITEM_HEIGHT = 200;
 const About = () => {
   return (
 
-    <section className='sm:px-36 px-24 py-16'>
+    <section className='sm:px-36 px-24 py-16' id="about" >
       <motion.div 
       variants={staggerContainer}
       initial='hidden'
