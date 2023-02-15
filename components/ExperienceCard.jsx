@@ -6,6 +6,7 @@ const ExperienceCard = ({ id, title, description, date, img, index }) => {
   return (
     <div>
       <div className="flex flex-col bg-secondary rounded-lg">
+        
         {/* <div className='absolute rounded-full '>
         <img src={img} alt={title} className=" object-cover h-[40px] rounded-full" />
       </div>
