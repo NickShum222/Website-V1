@@ -17,17 +17,17 @@ const ProjectCard = ({
   setActive,
 }) => {
   return (
-    <IconContext.Provider value={{ color: "#BFBFBF", size: "1.5em" }}>
+    // <IconContext.Provider value={{ color: "#BFBFBF", size: "1.5em" }}>
       <motion.div
         variants={slideRight(index * 0.25)}
         onClick={() => {
           setActive(id);
         }}
         className={`${active === id ? "flex-[4]" : "flex-[2]"}  relative 
-        lg:w-[50%] transition-[height] duration-500 w-[100%] flex flex-col justify-center items-center bg-[#1E1E1E] rounded-lg cursor-pointer min-w-[400px] `}
+        lg:w-[50%]  w-[100%] flex flex-col px-8 justify-center items-center bg-[#1E1E1E] rounded-lg cursor-pointer min-w-[400px] `}
       >
         <div
-          className={`w-[85%] flex flex-row justify-between items-center ${
+          className={`w-[100%] flex flex-row justify-between items-center ${
             active === id ? "border-b-[1px] " : ""
           }`}
         >
@@ -35,11 +35,11 @@ const ProjectCard = ({
             {title}
           </h3>
           <div className="flex flex-row justify-end items-center gap-3 py-6  ">
-            <a href={git} target="_blank">
-              <FiGithub className="text-[#F5F5F5] " />
+            <a href={git} target="_blank" className="text-[#F5F5F5] duration-100 hover:text-blue-800 hover:-translate-y-1 ">
+              <FiGithub size={"1.5em"} />
             </a>
-            <a href={url} target="_blank">
-              <BsGlobe className="text-[#F5F5F5] " />
+            <a href={url} target="_blank" className="text-[#F5F5F5] duration-100 hover:text-blue-800 hover:-translate-y-1">
+              <BsGlobe size={"1.5em"} />
             </a>
           </div>
         </div>
@@ -50,13 +50,13 @@ const ProjectCard = ({
           } `}
         >
           <div className="flex flex-col justify-center items-center">
-            <p className=" text-[#BFBFBF] w-[85%] font-normal font-mono text-[16px] leading-6 pt-2 ">
+            <p className=" text-[#BFBFBF] w-[100%] font-normal font-mono text-[16px] leading-6 pt-2 ">
               {description}
             </p>
           </div>
-          <ul className="mx-8 flex flex-row justify-start gap-7 pb-5">
+          <ul className=" flex flex-row justify-start items-center gap-7 pb-5 ">
             {tools.map((tool) => (
-              <li className="text-white text-mono">{tool}</li>
+              <li className="text-[#B0B0B0] font-mono">{tool}</li>
             ))}
           </ul>
         </div>
@@ -102,7 +102,7 @@ const ProjectCard = ({
           </div>
         )} */}
       </motion.div>
-    </IconContext.Provider>
+    // </IconContext.Provider>
   );
 };
 

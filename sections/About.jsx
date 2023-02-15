@@ -1,10 +1,13 @@
-'use client';
-import { motion } from 'framer-motion';
-import { staggerContainer, slideRight} from '@/utils/motion';
-import { styles } from '@/styles';
-import { Nick } from '@/components';
+"use client";
+import { motion } from "framer-motion";
+import { staggerContainer, slideRight } from "@/utils/motion";
+import { styles } from "@/styles";
+import { Nick } from "@/components";
+import RenderIfVisible from "react-render-if-visible";
+const ESTIMATED_ITEM_HEIGHT = 200;
 const About = () => {
   return (
+
     <section className='sm:px-36 px-24 py-16'>
       <motion.div 
       variants={staggerContainer}
@@ -25,21 +28,26 @@ const About = () => {
               I am deeply passionate about computer science and am always seeking opportunities to learn and grow which is why I constantly find myself learning new tools and technologies to hone my software development skills. When I’m not programming, I enjoy curating spotify playlists, going out with friends, or skateboarding when the weather is nice! 
             </p>
           </motion.div>
-          <div className='flex flex-col justify-center items-center'>
-            <motion.img variants={slideRight(0.5)}
-            src='/profile.jpg' alt='profile' className='shadow-lg rounded-full h-[300px] w-[300px] flex flex-1' />
-            <motion.div
-            variants={slideRight(0.75)}
-            >
-            <Nick className="h-[100px]"/>
+          <div className="flex flex-col justify-center items-center">
+            <motion.img
+              variants={slideRight(0.5)}
+              src="/profile.jpg"
+              alt="profile"
+              className="shadow-lg rounded-full h-[300px] w-[300px] flex flex-1"
+            />
+            <motion.div variants={slideRight(0.75)}>
+              <RenderIfVisible
+                defaultHeight={ESTIMATED_ITEM_HEIGHT}
+                stayRendered="true"
+              >
+                <Nick className="h-[100px]" />
+              </RenderIfVisible>
             </motion.div>
-
           </div>
-
         </div>
       </motion.div>
     </section>
-  )
-}
+  );
+};
 
-export default About
+export default About;
