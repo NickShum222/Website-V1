@@ -2,6 +2,7 @@
 import { motion, LazyMotion, easeInOut, domAnimation, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import { navLinks } from "../constants";
+import { styles } from "@/styles";
 
 const slideIn = {
   hidden: {
@@ -25,7 +26,7 @@ const Navbar = () => {
   const toggleNav = () => {setNav(!nav);};
 
   return (
-    <div className=" fixed z-[10] bg-primary py-8 sm:px-16 px-10 w-[100%] flex justify-between items-center shadow-xl h-[36px]">
+    <div className=" fixed z-[10] bg-primary py-8 sm:px-16 px-10 w-[100%] flex justify-between items-center shadow-xl h-[44px]">
       <img
         src="/initials.svg"
         alt="NS"
@@ -35,15 +36,14 @@ const Navbar = () => {
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
-            className={`h-full flex justify-center items-center font-poppins font-normal cursor-pointer text-[18px]  ${
-              active === nav.title ? "text-secondary" : "text-semiWhite"
+            className={`h-full flex justify-center items-center font-poppins font-normal cursor-pointer text-[18px]  
             } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
             onClick={
-              () => {setActive(nav.title); 
-                    
-              }}
+              () => {setActive(nav.title);  }}
           >
-            <a href={`#${nav.id}`}>{nav.title}</a>
+            <a className={`${styles.hoverGradient}
+             ${
+              active === nav.title ? `${styles.textGradient}` : "text-semiWhite"}`} href={`#${nav.id}`}>{nav.title}</a>
           </li>
         ))}
       </ul>

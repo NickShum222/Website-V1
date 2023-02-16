@@ -2,10 +2,10 @@
 import { motion } from "framer-motion";
 import { staggerContainer } from "@/utils/motion";
 
-const ExperienceCard = ({ id, title, description, date, img, index }) => {
+const ExperienceCard = ({ id, title, description, date, img, index, className }) => {
   return (
-    <div>
-      <div className="flex flex-col w-[470px] bg-primary shadow-2xl rounded-lg pr-8 py-4">
+    <div className={className}>
+      <div className="flex flex-col w-[470px] h-[150px] bg-secondary shadow-2xl relative rounded-lg pr-8 py-4">
           <p className='text-[#737882] italic lg:text-[18px] text-right'>{date}</p>
           <h3 className='text-white lg:text-[25px] font-[700] font-poppins leading-[38px] text-right'>{description}</h3>
           <p className="text-white lg:text-[25px] font-poppins text-right">{title}</p>
@@ -22,6 +22,10 @@ const ExperienceCard = ({ id, title, description, date, img, index }) => {
           <p>{description}</p>
       </div> */}
       </div>
+      <div className="absolute z-40 left-[-50px] top-[0]">
+      <img src={img} alt={title} className="object-cover h-[100px] rounded-full" />
+      </div>
+      
     </div>
   );
 };

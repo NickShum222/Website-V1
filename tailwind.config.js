@@ -13,7 +13,7 @@ module.exports = {
         '3xl': '0 35px 60px -15px rgba(0, 0, 0, 0.9)',
       },
       colors: {
-        primary: '#0A1128',
+        primary: '#060C1D',
         secondary: '#001F54',
         tertiary: '#034078',
         semiWhite: '#F5F5F5',
