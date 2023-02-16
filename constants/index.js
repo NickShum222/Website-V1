@@ -22,7 +22,8 @@ export const projectCards = [
     tools: ["ReactJS", "Next13", "TailwindCSS", "Figma"],
     git: "https://github.com/NickShum222/Personal-Website",
     url: "https://github.com/NickShum222/Personal-Website",
-  }
+  },
+  
 
 ];
 
