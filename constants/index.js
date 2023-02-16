@@ -1,3 +1,7 @@
+import { BsGithub, BsLinkedin, BsInstagram, BsSpotify } from "react-icons/bs";
+
+
+
 export const projectCards = [
   {
     id: "space",
@@ -58,16 +62,16 @@ export const navLinks = [
     title: "Home",
   },
   {
+    id: "about",
+    title: "About",
+  },
+  {
     id: "projects",
     title: "Projects",
   },
   {
     id: "experiences",
     title: "Experiences",
-  },
-  {
-    id: "about",
-    title: "About",
   },
   {
     id: "contact",
@@ -79,17 +83,17 @@ export const socialLinks = [
   {
     id: "github",
     title: "Github",
-    url: "",
+    url: "https://github.com/NickShum222",
   },
   {
     id: "linkedin",
     title: "LinkedIn",
-    url: "",
+    url: "https://www.linkedin.com/in/nick-shum/",
   },
   {
     id: "instagram",
     title: "Instagram",
-    url: "",
+    url: "https://www.instagram.com/nick.shum_/",
   },
   {
     id: "spotify",
@@ -98,3 +102,4 @@ export const socialLinks = [
   },
 
 ];
+

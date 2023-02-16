@@ -6,9 +6,9 @@ export default function Home() {
     <div className='bg-primary w-full overflow-hidden'>
       <Navbar/>
       <Hero/>
+      <About/>
       <Projects/>
       <Experience/>
-      <About/>
       <Contact/>
       <Footer/>
     </div>
