@@ -23,8 +23,8 @@ const ProjectCard = ({
         onClick={() => {
           setActive(id);
         }}
-        className={`${active === id ? "flex-[4]" : "flex-[2]"}  relative 
-        lg:w-[50%]  w-[100%] flex flex-col px-8 justify-center items-center bg-[#1E1E1E] rounded-lg cursor-pointer min-w-[400px] `}
+        className={`relative 
+         w-full flex flex-col px-10 justify-center items-center bg-[#1E1E1E] rounded-lg cursor-pointer `}
       >
         <div
           className={`w-[100%] flex flex-row justify-between items-center ${
@@ -45,15 +45,15 @@ const ProjectCard = ({
         </div>
 
         <div
-          className={`overflow-hidden  transition-all duration-300  flex flex-col justify-between ${
-            active === id ? "h-[250px]" : "h-0"
+          className={`overflow-hidden  transition-all duration-300 flex flex-col items-start justify-between ${
+            active === id ? "h-[250px] lg:h-[150px]" : "h-0"
           } `}
         >
-          <div className="flex flex-col justify-center items-center">
+
             <p className=" text-[#BFBFBF] w-[100%] font-normal font-mono text-[16px] leading-6 pt-2 ">
               {description}
             </p>
-          </div>
+
           <ul className=" flex flex-row justify-start items-center gap-7 pb-5 ">
             {tools.map((tool) => (
               <li className="text-[#B0B0B0] font-mono">{tool}</li>

@@ -9,7 +9,7 @@
   stroke-dashoffset: 7144;
   animation-name: sign;
   animation-duration: 3s;
-  animation-delay: 4s;
+  animation-delay: 3s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-out;
 
@@ -19,6 +19,7 @@
   stroke-dashoffset: 4596;
   animation: sign 4s ease forwards 2s;
 }
+
 
 
 @keyframes sign {

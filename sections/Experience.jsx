@@ -13,7 +13,7 @@ const Experience = () => {
   return (
 
 
-    <section className="sm:px-36 px-24 py-16" id="experiences">
+    <section className={styles.paddings} id="experiences">
       <motion.div
         variants={staggerContainer}
         initial="hidden"

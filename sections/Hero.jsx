@@ -20,7 +20,7 @@ const Hero = () => {
         variants={staggerContainer}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.25 }}
+        viewport={{ once: false, amount: 0.25 }}
       >
         <div className="flex flex-col justify-center items-center relative text-center">
           <motion.h3
