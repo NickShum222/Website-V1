@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { staggerContainer, slideRight } from "@/utils/motion";
+import { staggerContainer, slideRight, slideLeft } from "@/utils/motion";
 import { styles } from "@/styles";
 import { Nick } from "@/components";
 import RenderIfVisible from "react-render-if-visible";
@@ -12,37 +12,18 @@ const About = () => {
         variants={staggerContainer}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.25 }}
-        className="w-full flex lg:flex-row flex-col-reverse lg:justify-start justify-center items-center lg:gap-20 "
+        viewport={{ once: false, amount: 0.5 }}
+        className="w-full flex lg:flex-row flex-col lg:justify-between justify-center items-center  "
       >
-        <motion.div
-          variants={slideRight(0.25)}
-          className="relative lg:w-[100%] lg:max-w-[450px] w-[40%] lg:mt-0 mt-10 flex-none md:flex-1"
-        >
-          <img
-            src="/profile.jpg"
-            alt="profile"
-            className="rounded-[30px] object-contain "
-          />
-          <div className="absolute bottom-0 flex flex-1">
-            <RenderIfVisible
-              defaultHeight={ESTIMATED_ITEM_HEIGHT}
-              visibleOffset="100"
-              stayRendered="true"
-            >
-              <Nick className="w-[50%] z-20" />
-            </RenderIfVisible>
-          </div>
-        </motion.div>
         <div className="flex flex-col lg:justify-start lg:items-start justify-center items-center lg:max-w-[50%]">
           <motion.h1
-            variants={slideRight(0.5)}
+            variants={slideRight(0.25)}
             className={`${styles.heading_2} lg:mb-4 text-center lg:text-start`}
           >
             About
           </motion.h1>
           <motion.div
-            variants={slideRight(0.75)}
+            variants={slideRight(0.5)}
             className="flex flex-col justify-center lg:max-w-[100%] max-w-[70%]"
           >
             <p className={`${styles.paragraph}`}>
@@ -69,6 +50,25 @@ const About = () => {
             </div> */}
           </motion.div>
         </div>
+        <motion.div
+          variants={slideLeft(0.75)}
+          className="relative lg:w-[100%] lg:max-w-[450px] w-[40%] lg:mt-0 mt-10 flex-none md:flex-1"
+        >
+          <img
+            src="/profile.jpg"
+            alt="profile"
+            className="rounded-[30px] object-contain scale-x-[-1]"
+          />
+          <div className="absolute bottom-0 flex flex-1">
+            <RenderIfVisible
+              defaultHeight={ESTIMATED_ITEM_HEIGHT}
+              visibleOffset="100"
+              stayRendered="true"
+            >
+              <Nick className="w-[50%] z-20" />
+            </RenderIfVisible>
+          </div>
+        </motion.div>
 
         {/* <motion.h1 
         variants={slideRight()}

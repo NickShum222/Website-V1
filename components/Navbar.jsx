@@ -26,7 +26,7 @@ const Navbar = () => {
   const toggleNav = () => {setNav(!nav);};
 
   return (
-    <div className=" fixed z-[10] backdrop-blur-lg py-8 xl:px-40 lg:px-[120px] px-24 w-[100%] flex justify-between items-center  h-[90px]">
+    <nav className=" fixed z-[40] bg-primary shadow-2xl py-8  lg:px-[80px] px-24 w-[100%] flex justify-between items-center  h-[90px]">
       <img
         src="/initials.svg"
         alt="NS"
@@ -76,7 +76,7 @@ const Navbar = () => {
          exit={{ opacity: 0 }}
         className={`z-[10] ${
           nav ? "fixed left-0 top-0 w-full h-screen " : "hidden"
-        } md:hidden backdrop-blur-sm`}
+        } md:hidden backdrop-blur-sm z-[50]`}
         onClick={toggleNav}
       >
 
@@ -109,7 +109,7 @@ const Navbar = () => {
             </motion.div>
           )}
           </AnimatePresence>
-    </div>
+    </nav>
   );
 };
 

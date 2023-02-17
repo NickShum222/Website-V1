@@ -34,3 +34,16 @@ export const slideRight = (delay) => ({
   },
 });
 
+export const slideLeft = (delay) => ({
+  hidden: { x: 50, opacity: 0 },
+  visible: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      type: "spring",
+      duration: 1,
+      delay,
+    },
+  },
+});
+

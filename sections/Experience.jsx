@@ -1,44 +1,41 @@
 "use client";
 import { motion } from "framer-motion";
-import { staggerContainer } from "@/utils/motion";
+import { staggerContainer, slideRight } from "@/utils/motion";
 import { styles } from "@/styles";
-import { experienceCards } from "@/constants";
+import { experienceCards, projectCards } from "@/constants";
 import { ExperienceCard } from "@/components";
-import { useState, useRef, useEffect } from "react";
 import { Swipeable } from "react-swipeable";
 
-
 const Experience = () => {
-  const [position, setPosition] = useState(0);
   return (
-
-
     <section className={styles.paddings} id="experiences">
       <motion.div
         variants={staggerContainer}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: false, amount: 0.25 }}
-        className="flex flex-col sm:px-36"
+        viewport={{ once: false, amount: 0.5 }}
+        className="w-full flex lg:flex-row-reverse  flex-col-reverse lg:justify-between justify-center items-center"
       >
-        <div className="flex flex-col justify-center items-center">
-        <h1 className={`${styles.heading_2}`}>Experience</h1>
+        
+        <div className="flex flex-col justify-between items-center gap-7 ">
+          {experienceCards.map((experience,index) => (
+            <ExperienceCard key={experience.id} {...experience} 
+            index={index}
+            />
+          ))}
         </div>
-        <motion.div  className="w-[100vw] h-[100vh] overflow-hidden p-0 m-0 flex justify-center items-center">
+        <motion.h1 variants={slideRight(0)}
+         className={`${styles.heading_2} pb-0 md:pb-4`}>Experience</motion.h1>
+
+        {/* <motion.div  className="">
           <motion.div className="relative">
             {experienceCards.map((experience, index) => (
-              <motion.div key={experience.id} className="absolute w-[100%] h-[100%] overflow-hidden"
-              initial={{scale: 0, rotation: -180}}
-              animate={{rotate: 0, scale: 1,
-                left: `${(index - position)* 60 -30}vw`,
-                scale: index === position ? 1 : 0.8,
-              }}
-              transition={{type: "spring", stiffness: 260, damping: 20,}}>
-                <ExperienceCard {...experience} key={index} />
+              <motion.div  className="absolute w-[100%] h-[100%] overflow-hidden">
+                <ExperienceCard key={experience.id} {...experience}  />
               </motion.div>
             ))}
           </motion.div>
-        </motion.div>
+        </motion.div> */}
       </motion.div>
     </section>
   );
