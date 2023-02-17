@@ -3,7 +3,7 @@ import React from "react";
 export const Nick = ({ className }) => (
   <svg
     width="100%"
-    height="100%"
+    height="auto"
     viewBox="0 0 1716.4 1192.7"
     xmlns="http://www.w3.org/2000/svg"
     preserveAspectRatio="xMidYMid meet"
