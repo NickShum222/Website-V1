@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { staggerContainer } from "@/utils/motion";
+import { staggerContainer, slideLeft } from "@/utils/motion";
 import { useState } from "react";
 import { ProjectCard } from "@/components";
 import { projectCards } from "@/constants";
@@ -14,12 +14,14 @@ const Projects = () => {
         variants={staggerContainer}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.25 }}
-        className="flex lg:flex-row flex-col justify-between items-center "
+        viewport={{ once: false, amount: 0.5 }}
+        className="flex lg:flex-row-reverse flex-col justify-between items-center "
       >
-        <h1 className={`${styles.heading_2} pb-0 md:pb-4`}>Projects</h1>
+        <motion.h1 
+          variants={slideLeft(0)}
+        className={`${styles.heading_2} pb-0 md:pb-4`}>Projects</motion.h1>
 
-        <div className="flex flex-col gap-5 max-w-[60%] min-w-[500px]">
+        <motion.div className="flex flex-col gap-5 max-w-[60%] min-w-[500px]">
           {projectCards.map((project, index) => (
             <ProjectCard
               key={project.id}
@@ -29,7 +31,7 @@ const Projects = () => {
               setActive={setProjects}
             />
           ))}
-        </div>
+        </motion.div>
       </motion.div>
     </section>
   );

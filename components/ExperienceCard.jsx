@@ -1,14 +1,29 @@
 "use client";
 import { motion } from "framer-motion";
-import { staggerContainer } from "@/utils/motion";
+import { staggerContainer, slideLeft } from "@/utils/motion";
 
-const ExperienceCard = ({ id, title, description, date, img, index, className }) => {
+const ExperienceCard = ({
+  id,
+  title,
+  description,
+  date,
+  img,
+  index,
+}) => {
   return (
-    <div className={className}>
-      <div className="flex flex-col w-[470px] h-[150px] bg-secondary shadow-2xl relative rounded-lg pr-8 py-4">
-          <p className='text-[#737882] italic lg:text-[18px] text-right'>{date}</p>
-          <h3 className='text-white lg:text-[25px] font-[700] font-poppins leading-[38px] text-right'>{description}</h3>
-          <p className="text-white lg:text-[25px] font-poppins text-right">{title}</p>
+    <motion.div 
+    variants={slideLeft((index * 0.25)+0.25)}
+    className="relative w-full flex flex-1">
+      <div className="flex flex-col w-[425px]  shadow-2xl relative rounded-lg pr-8 py-4">
+        <p className="text-[#737882] italic lg:text-[18px] text-right">
+          {date}
+        </p>
+        <h3 className="text-white lg:text-[20px] font-[700] font-poppins leading-[38px] text-right">
+          {description}
+        </h3>
+        <p className="text-white lg:text-[20px] font-poppins text-right">
+          {title}
+        </p>
 
         {/* <div className='absolute rounded-full '>
         <img src={img} alt={title} className=" object-cover h-[40px] rounded-full" />
@@ -22,11 +37,14 @@ const ExperienceCard = ({ id, title, description, date, img, index, className })
           <p>{description}</p>
       </div> */}
       </div>
-      <div className="absolute z-40 left-[-50px] top-[0]">
-      <img src={img} alt={title} className="object-cover h-[100px] rounded-full" />
+      <div className="absolute z-20 left-[-50px] top-[12px]">
+        <img
+          src={img}
+          alt={title}
+          className="object-cover h-[100px] rounded-full"
+        />
       </div>
-      
-    </div>
+    </motion.div>
   );
 };
 

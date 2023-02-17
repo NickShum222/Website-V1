@@ -19,7 +19,7 @@ const ProjectCard = ({
   return (
     // <IconContext.Provider value={{ color: "#BFBFBF", size: "1.5em" }}>
       <motion.div
-        variants={slideRight(index * 0.25)}
+        variants={slideRight((index * 0.25)+0.25)}
         onClick={() => {
           setActive(id);
         }}
