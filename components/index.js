@@ -3,7 +3,8 @@ import ExperienceCard from "./ExperienceCard";
 import ProjectCard from "./ProjectCard";
 import Footer from "./Footer";
 import {Nick, Shum} from "./Signature";
-import Sidebar from "./Sidebar"
+import Sidebar from "./Sidebar";
+import Button from "./Button";
 
 
 export{
@@ -14,4 +15,5 @@ export{
   Nick,
   Shum,
   Sidebar,
+  Button,
 }

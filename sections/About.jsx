@@ -12,8 +12,8 @@ const About = () => {
         variants={staggerContainer}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: false, amount: 0.5 }}
-        className="w-full flex lg:flex-row flex-col lg:justify-between justify-center items-center  "
+        viewport={{ once: true, amount: 0.5 }}
+        className="w-full flex lg:flex-row flex-col lg:justify-between justify-center items-center min-h-[80vh] "
       >
         <div className="flex flex-col lg:justify-start lg:items-start justify-center items-center lg:max-w-[50%]">
           <motion.h1
@@ -24,7 +24,7 @@ const About = () => {
           </motion.h1>
           <motion.div
             variants={slideRight(0.5)}
-            className="flex flex-col justify-center lg:max-w-[100%] max-w-[70%]"
+            className="flex flex-col justify-center max-w-[100%] "
           >
             <p className={`${styles.paragraph}`}>
               Hi there! My name is Nick Shum and I’m a first year computer
@@ -52,7 +52,7 @@ const About = () => {
         </div>
         <motion.div
           variants={slideLeft(0.75)}
-          className="relative lg:w-[100%] lg:max-w-[450px] w-[40%] lg:mt-0 mt-10 flex-none md:flex-1"
+          className="relative  lg:max-w-[450px] w-[80%] lg:mt-0 mt-10 flex-none md:flex-1"
         >
           <img
             src="/profile.jpg"

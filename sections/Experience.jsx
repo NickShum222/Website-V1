@@ -13,8 +13,8 @@ const Experience = () => {
         variants={staggerContainer}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: false, amount: 0.5 }}
-        className="w-full flex lg:flex-row-reverse  flex-col-reverse lg:justify-between justify-center items-center"
+        viewport={{ once: true, amount: 0.5 }}
+        className="w-full flex lg:flex-row-reverse  flex-col-reverse lg:justify-between justify-center items-center md:min-h-[80vh]"
       >
         
         <div className="flex flex-col justify-between items-center gap-7 ">

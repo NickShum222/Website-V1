@@ -14,14 +14,14 @@ const ExperienceCard = ({
     <motion.div 
     variants={slideLeft((index * 0.25)+0.25)}
     className="relative w-full flex flex-1">
-      <div className="flex flex-col w-[425px]  shadow-2xl relative rounded-lg pr-8 py-4">
+      <div className="flex flex-col md:w-[425px] w-[300px] bg-secondary shadow-2xl relative rounded-lg pr-8 py-4">
         <p className="text-[#737882] italic lg:text-[18px] text-right">
           {date}
         </p>
-        <h3 className="text-white lg:text-[20px] font-[700] font-poppins leading-[38px] text-right">
+        <h3 className="text-white md:text-[20px] font-[700] font-poppins md:leading-[38px] text-right">
           {description}
         </h3>
-        <p className="text-white lg:text-[20px] font-poppins text-right">
+        <p className="text-white md:text-[20px] font-poppins text-right">
           {title}
         </p>
 
@@ -37,11 +37,11 @@ const ExperienceCard = ({
           <p>{description}</p>
       </div> */}
       </div>
-      <div className="absolute z-20 left-[-50px] top-[12px]">
+      <div className="absolute z-20 md:left-[-50px] left-[-35px] top-[16px]  md:top-[12px]">
         <img
           src={img}
           alt={title}
-          className="object-cover h-[100px] rounded-full"
+          className="object-cover md:h-[100px] h-[70px] rounded-full"
         />
       </div>
     </motion.div>
