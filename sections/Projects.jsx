@@ -14,14 +14,14 @@ const Projects = () => {
         variants={staggerContainer}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: false, amount: 0.5 }}
-        className="flex lg:flex-row-reverse flex-col justify-between items-center "
+        viewport={{ once: true, amount: 0.5 }}
+        className="flex lg:flex-row-reverse flex-col lg:justify-between justify center items-center md:min-h-[80vh]"
       >
         <motion.h1 
           variants={slideLeft(0)}
         className={`${styles.heading_2} pb-0 md:pb-4`}>Projects</motion.h1>
 
-        <motion.div className="flex flex-col gap-5 max-w-[60%] min-w-[500px]">
+        <motion.div className="flex flex-col gap-5 lg:max-w-[50%] w-full">
           {projectCards.map((project, index) => (
             <ProjectCard
               key={project.id}

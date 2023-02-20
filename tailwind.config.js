@@ -14,8 +14,8 @@ module.exports = {
       },
       colors: {
         primary: '#060C1D',
-        secondary: '#001F54',
-        tertiary: '#034078',
+        secondary: '#001d3d',
+        tertiary: '#003566',
         semiWhite: '#F5F5F5',
       },
       fontFamily: {

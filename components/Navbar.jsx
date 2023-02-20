@@ -26,7 +26,7 @@ const Navbar = () => {
   const toggleNav = () => {setNav(!nav);};
 
   return (
-    <nav className=" fixed z-[40] bg-primary shadow-2xl py-8  lg:px-[80px] px-24 w-[100%] flex justify-between items-center  h-[90px]">
+    <nav className=" fixed z-[40] bg-primary shadow-2xl py-8 lg:px-[40px] md:px-16 px-10 w-[100%] flex justify-between items-center  h-[70px]">
       <img
         src="/initials.svg"
         alt="NS"
@@ -43,7 +43,7 @@ const Navbar = () => {
           >
             <a className={`${styles.hoverGradient}
              ${
-              active === nav.title ? `${styles.textGradient}` : "text-semiWhite"}`} href={`#${nav.id}`}>{nav.title}</a>
+              active === nav.title ? `text-[#5e4ae3]` : "text-semiWhite"}`} href={`#${nav.id}`}>{nav.title}</a>
           </li>
         ))}
       </ul>
@@ -81,7 +81,7 @@ const Navbar = () => {
       >
 
             <motion.div
-              className={`fixed right-0  bg-secondary  shadow-3xl  w-[60%] h-[100%] flex flex-col z-[10]`}  
+              className={`fixed right-0  bg-[#0c183b]  shadow-3xl  w-[70%] h-[100%] flex flex-col z-[10]`}  
               variants={slideIn}
               initial="hidden"
               animate="visible"
@@ -89,13 +89,13 @@ const Navbar = () => {
               key={nav.toString()}
             >
               <ul
-                className={`${nav ? "flex flex-col justify-center items-center h-[70%]":"hidden"} `}
+                className={`${nav ? "flex flex-col justify-center items-center h-full":"hidden"} `}
               >
                 {navLinks.map((nav, index) => (
                   <li
                     key={nav.id}
                     className={`font-poppins font-normal cursor-pointer text-[16px] sm:text-[22px] ${
-                      active === nav.title ? "text-secondary" : "text-semiWhite"
+                      active === nav.title ? "text-tertiary" : "text-[semiWhite]"
                     }  ${index === 0 ? "mt-[40px]" : "mt-[50px]"} `}
                     onClick={
                       () => {setActive(nav.title); 

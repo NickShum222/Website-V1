@@ -11,6 +11,7 @@ export default function Home() {
       <Projects/>
       <Experience/>
       <Contact/>
+      
       <Footer/>
     </div>
   )
