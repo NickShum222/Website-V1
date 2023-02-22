@@ -6,6 +6,8 @@ import {Nick, Shum} from "./Signature";
 import Sidebar from "./Sidebar";
 import Button from "./Button";
 
+import Moon from "./moon";
+
 
 export{
   Navbar,
@@ -16,4 +18,5 @@ export{
   Shum,
   Sidebar,
   Button,
+  Moon,
 }

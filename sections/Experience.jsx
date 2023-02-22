@@ -8,13 +8,13 @@ import { Swipeable } from "react-swipeable";
 
 const Experience = () => {
   return (
-    <section className={styles.paddings} id="experiences">
+    <section className={`${styles.paddings} snap-start`} id="experiences">
       <motion.div
         variants={staggerContainer}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}
-        className="w-full flex lg:flex-row-reverse  flex-col-reverse lg:justify-between justify-center items-center md:min-h-[80vh]"
+        className="w-full flex lg:flex-row-reverse  flex-col-reverse lg:justify-between justify-center items-center "
       >
         
         <div className="flex flex-col justify-between items-center gap-7 ">

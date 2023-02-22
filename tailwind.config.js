@@ -9,6 +9,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'hero': "url('../public/background.svg')",
+      },
       boxShadow: {
         'border': '0 0px 75px -15px rgba(0, 0, 0, 0.9)',
       },
@@ -18,11 +21,9 @@ module.exports = {
         tertiary: '#003566',
         semiWhite: '#F5F5F5',
       },
-      fontFamily: {
-        poppins: ["Poppins", "sans-serif"],
-        lato: ['Lato', "sans-serif"],
-      },
     },
   },
-  plugins: [],
+  plugins: [
+
+  ],
 }

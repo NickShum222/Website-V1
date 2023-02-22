@@ -26,7 +26,7 @@ const Navbar = () => {
   const toggleNav = () => {setNav(!nav);};
 
   return (
-    <nav className=" fixed z-[40] bg-primary shadow-2xl py-8 lg:px-[40px] md:px-16 px-10 w-[100%] flex justify-between items-center  h-[70px]">
+    <nav className=" fixed z-[40] py-8 lg:px-[40px] md:px-16 px-10 w-[100%] flex justify-between items-center  h-[70px]">
       <img
         src="/initials.svg"
         alt="NS"
@@ -43,7 +43,7 @@ const Navbar = () => {
           >
             <a className={`${styles.hoverGradient}
              ${
-              active === nav.title ? `text-[#5e4ae3]` : "text-semiWhite"}`} href={`#${nav.id}`}>{nav.title}</a>
+              active === nav.title ? `text-[#08fdd8]` : "text-semiWhite"}`} href={`#${nav.id}`}>{nav.title}</a>
           </li>
         ))}
       </ul>
