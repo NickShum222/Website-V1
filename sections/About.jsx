@@ -12,7 +12,7 @@ const About = () => {
         variants={staggerContainer}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.5 }}
+        viewport={{ once: true, amount: 0.3 }}
         className="w-full flex lg:flex-row flex-col lg:justify-between justify-center items-center min-h-[80vh] "
       >
         <div className="flex flex-col lg:justify-start lg:items-start justify-center items-center lg:max-w-[50%]">
@@ -24,7 +24,7 @@ const About = () => {
           </motion.h1>
           <motion.div
             variants={slideRight(0.5)}
-            className="flex flex-col justify-center max-w-[100%] "
+            className="flex flex-col justify-center max-w-[100%] z-10 "
           >
             <p className={`${styles.paragraph}`}>
               Hi there! My name is Nick Shum and I’m a first year computer

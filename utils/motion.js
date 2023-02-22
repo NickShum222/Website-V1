@@ -8,6 +8,18 @@ export const staggerContainer = (staggerChildren, delayChildren) => ({
   },
 });
 
+export const opacity = (delay) => ({
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 0.5,
+    transition: {
+      duration: 1,
+      delay,
+    },
+  },
+
+});
+
 export const slideUp = (delay) => ({
   hidden: { y: 50, opacity: 0 },
   visible: {

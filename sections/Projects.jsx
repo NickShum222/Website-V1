@@ -9,13 +9,13 @@ import { styles } from "@/styles";
 const Projects = () => {
   const [projects, setProjects] = useState("space");
   return (
-    <section id="projects" className={styles.paddings}>
+    <section id="projects" className={`${styles.paddings} snap-start `}>
       <motion.div
         variants={staggerContainer}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}
-        className="flex lg:flex-row-reverse flex-col lg:justify-between justify center items-center md:min-h-[80vh]"
+        className="flex lg:flex-row-reverse flex-col lg:justify-between justify center items-center "
       >
         <motion.h1 
           variants={slideLeft(0)}

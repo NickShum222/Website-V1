@@ -46,10 +46,10 @@ const Contact = () => {
   // };
   return (
     <section
-      className={`${styles.paddings} min-h-[100vh] bg-secondary`}
+      className={`${styles.paddings} min-h-[100vh] bg-secondary z-[50] `}
       id="contact"
     >
-      <div className="flex lg:flex-row-reverse flex-col justify-between items-start ">
+      <div className="flex lg:flex-row-reverse flex-col  z-[10] justify-between items-start ">
         <h1 className={styles.heading_2}>Contact</h1>
         <div className="lg:w-[60%] w-full">
         <ContactForm/>

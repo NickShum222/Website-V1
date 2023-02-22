@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
-    "@next/font": "13.1.6",
+    "@next/font": "^13.1.6",
     "eslint": "8.33.0",
     "eslint-config-next": "13.1.6",
     "formik": "^2.2.9",
@@ -21,7 +21,9 @@
     "react-icons": "^4.7.1",
     "react-render-if-visible": "^2.1.1",
     "react-swipeable": "^7.0.0",
+    "react-use-scroll-snap": "^0.0.4",
     "react-visibility-sensor": "^5.1.1",
+    "tailwindcss-scroll-snap": "^1.1.0",
     "yup": "^1.0.0"
   },
   "devDependencies": {
