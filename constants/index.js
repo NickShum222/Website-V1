@@ -1,23 +1,29 @@
 import { BsGithub, BsLinkedin, BsInstagram, BsSpotify } from "react-icons/bs";
 
-
-
-export const projectCards = [
+export const projectPictures = [
+  {
+    id: "weather",
+    img: "/macweather.svg",
+  },
+  {
+    id: "website",
+    img: "/macwebsite.svg",
+  },
   {
     id: "space",
-    title: "Space Invaders Clone",
-    description: "A clone of the classic arcade game Space Invaders, built with Java, utilizing Object-Oriented Programming principles.",
-    tools: ["Java", "Inheritance", "Polymorphism"],
-    git: "https://github.com/NickShum222/SpaceInvaders",
-    url: "https://github.com/NickShum222/SpaceInvaders",
+    img: "/macspace.svg",
   },
+
+];
+
+export const projectCards = [
   {
     id: "weather",
     title: "Weather App",
     description: "A simple, user-friendly weather app to display current weather information from any city in the world. Utilized ReactJS hooks to obtain real-time weather information and location data by fetching it from the openweathermap.org API",
     tools: ["ReactJS", "HTML5", "CSS3", "JavaScript"],
     git: "https://github.com/NickShum222/WeatherApp-1",
-    url: "https://github.com/NickShum222/WeatherApp-1",
+    url: "https://63f7aea636e521094a462f52--weather-app-nick.netlify.app/",
   },
   {
     id: "website",
@@ -26,6 +32,15 @@ export const projectCards = [
     tools: ["ReactJS", "Next13", "TailwindCSS", "Figma"],
     git: "https://github.com/NickShum222/Personal-Website",
     url: "https://github.com/NickShum222/Personal-Website",
+  },
+
+  {
+    id: "space",
+    title: "Space Invaders Clone",
+    description: "A clone of the classic arcade game Space Invaders, built with Java, utilizing Object-Oriented Programming principles.",
+    tools: ["Java", "Inheritance", "Polymorphism"],
+    git: "https://github.com/NickShum222/SpaceInvaders",
+    url: "https://www.greenfoot.org/scenarios/30858",
   },
   
 

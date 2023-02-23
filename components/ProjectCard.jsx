@@ -24,8 +24,9 @@ const ProjectCard = ({
           setActive(id);
         }}
         className={`relative 
-         w-full flex flex-col sm:px-10 px-4 justify-center items-center bg-[#1E1E1E] rounded-lg cursor-pointer `}
+         w-full flex flex-col sm:px-10 px-4 justify-center items-center  rounded-lg cursor-pointer `}
       >
+        
         <div
           className={`w-[100%] flex flex-row justify-between items-center ${
             active === id ? "border-b-[1px] " : ""
