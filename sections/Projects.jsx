@@ -14,7 +14,7 @@ const Projects = () => {
         variants={staggerContainer}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.5 }}
+        viewport={{ once: true, amount: 0.6 }}
         className="flex lg:flex-row-reverse flex-col lg:justify-between justify center items-center "
       >
         <motion.h1 
