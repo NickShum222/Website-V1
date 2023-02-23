@@ -38,7 +38,7 @@ const ExperienceCard = ({
       </div> */}
       </div>
       <div className="absolute z-20 md:left-[-50px] left-[-35px] top-[16px]  md:top-[12px]">
-        <img
+        <Image
           src={img}
           alt={title}
           className="object-cover md:h-[100px] h-[70px] rounded-full"

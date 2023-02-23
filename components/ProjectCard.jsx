@@ -36,10 +36,10 @@ const ProjectCard = ({
             {title}
           </h3>
           <div className="flex flex-row justify-end items-center gap-3 py-4 md:py-6  ">
-            <a href={git} target="_blank" className="text-[#F5F5F5] duration-100 hover:text-blue-800 hover:-translate-y-1 ">
+            <a href={git} target="_blank" rel="noreferrer" className="text-[#F5F5F5] duration-100 hover:text-blue-800 hover:-translate-y-1 ">
               <FiGithub size={"1.5em"} />
             </a>
-            <a href={url} target="_blank" className="text-[#F5F5F5] duration-100 hover:text-blue-800 hover:-translate-y-1">
+            <a href={url} target="_blank" rel="noreferrer" className="text-[#F5F5F5] duration-100 hover:text-blue-800 hover:-translate-y-1">
               <BsGlobe size={"1.5em"} />
             </a>
           </div>
