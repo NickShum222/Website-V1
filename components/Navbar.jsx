@@ -26,7 +26,7 @@ const Navbar = () => {
   const toggleNav = () => {setNav(!nav);};
 
   return (
-    <nav className=" fixed z-[40] py-8 lg:px-[40px] md:px-16 px-10 w-[100%] flex justify-between items-center  h-[70px]">
+    <nav className={`fixed z-[40] py-8 ${nav ? "" : "backdrop-blur-sm"} lg:px-[40px] md:px-16 px-10 w-[100%] flex justify-between items-center  h-[70px]`}>
       <img
         src="/initials.svg"
         alt="NS"
