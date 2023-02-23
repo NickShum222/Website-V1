@@ -11,13 +11,13 @@ const Hero = () => {
       className={`xl:px-[200px] lg:px-[120px] md:px-36 px-6 mt-[-5%] pb-18 flex flex-col items-center justify-center z-[5] `}
     >
       <motion.div
-        className="w-full flex lg:flex-row flex-col-reverse lg:justify-between justify-center items-center min-h-[80vh] "
+        className="w-full flex lg:flex-row flex-col-reverse  lg:justify-between justify-around items-center min-h-[80vh] "
         variants={staggerContainer}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: false, amount: 0.5 }}
       >
-        <div className="flex flex-col mt-[-100px] justify-start items-start lg:max-w-[80%] relative z-[2]">
+        <div className="flex flex-col mt-[-100px] lg:justify-start lg:items-start md:justify-center md:items-center justify-start items-start lg:max-w-[80%] relative z-[2]">
         <motion.h3
             variants={slideUp(0.25)}
             className="text-[#BFBFBF] lg:text-[30px] md:text-[24px] text-[20px] font-normal font-mono md:ml-[6px] ml-[3px] md:pb-2 "
@@ -38,7 +38,7 @@ const Hero = () => {
           </motion.h2>
   
         </div>
-        <motion.div className="top-[0] w-[90%] mx-[-30%] mt-[-5%] lg:inline hidden">
+        <motion.div className="top-[0] sm:w-[90%] w-[120%] mx-[-30%] sm:mt-[-5%] inline">
           <Moon />
         </motion.div>
       </motion.div>

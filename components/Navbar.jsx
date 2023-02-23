@@ -41,7 +41,7 @@ const Navbar = () => {
             onClick={
               () => {setActive(nav.title);  }}
           >
-            <a className={`${styles.hoverGradient}
+            <a className={`${styles.hoverCyan}
              ${
               active === nav.title ? `text-[#08fdd8]` : "text-semiWhite"}`} href={`#${nav.id}`}>{nav.title}</a>
           </li>
@@ -95,7 +95,7 @@ const Navbar = () => {
                   <li
                     key={nav.id}
                     className={`font-poppins font-normal cursor-pointer text-[16px] sm:text-[22px] ${
-                      active === nav.title ? "text-tertiary" : "text-[semiWhite]"
+                      active === nav.title ? `text-[#08fdd8]` : "text-semiWhite"
                     }  ${index === 0 ? "mt-[40px]" : "mt-[50px]"} `}
                     onClick={
                       () => {setActive(nav.title); 
