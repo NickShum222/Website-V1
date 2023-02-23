@@ -9,7 +9,7 @@ import { styles } from "@/styles";
 const Projects = () => {
 
   
-  const [projects, setProjects] = useState("weather");
+  const [projects, setProjects] = useState(["weather"]);
   return (
     <section id="projects" className={`${styles.paddings}`}>
       <motion.div
@@ -34,9 +34,9 @@ const Projects = () => {
             />
           ))}
         </motion.div>
-        <div className="overflow-x-hidden flex flex-row lg:max-w-[50%] ">
+        <div className="overflow-x-hidden flex flex-row max-w-[50%] ">
           {projectPictures.map((project, index) => (
-            <Image className={`${projects === project.id ? "" : "hidden"}`} src={project.img} alt={project.id} key={project.id} />
+            <img className={`${projects === project.id ? "" : "hidden"}`} src={project.img} alt={project.id} key={project.id} />
           ))}
         </div>
         </div>

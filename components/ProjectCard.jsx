@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { slideRight } from "../utils/motion";
 import { FiGithub } from "react-icons/fi";
 import { BsGlobe } from "react-icons/bs";
-import { IconContext } from "react-icons";
+
 
 const ProjectCard = ({
   id,
