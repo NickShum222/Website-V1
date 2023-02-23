@@ -36,7 +36,7 @@ const Projects = () => {
         </motion.div>
         <div className="overflow-x-hidden flex flex-row lg:max-w-[50%] ">
           {projectPictures.map((project, index) => (
-            <img className={`${projects === project.id ? "" : "hidden"}`} src={project.img} alt={project.id} key={project.id} />
+            <Image className={`${projects === project.id ? "" : "hidden"}`} src={project.img} alt={project.id} key={project.id} />
           ))}
         </div>
         </div>
