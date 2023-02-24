@@ -47,7 +47,7 @@ export const slideRight = (delay) => ({
 });
 
 export const slideLeft = (delay) => ({
-  hidden: { x: 75, opacity: 0 },
+  hidden: { x: 50, opacity: 0 },
   visible: {
     x: 0,
     opacity: 1,

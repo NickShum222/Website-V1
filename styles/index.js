@@ -5,6 +5,6 @@ export const styles = {
   hoverCyan: 'transition-all duration-200 ease-out hover:text-[#08fdd8]',
   paragraph: 'text-[#BFBFBF] font-poppins lg:text-[18px] md:text-[18px] text-[16] pb-3',
   paddings: 'xl:px-[280px] lg:px-[120px] md:px-36 px-6 py-24 flex flex-col justify-center z-[5] ',
-  input_form: 'w-full p-[5px] outline-none rounded-lg  focus:bg-blue-200   transition-all duration-300',
+  input_form: 'w-full p-[5px] outline-none rounded-lg  focus:bg-blue-200 bg-primary border-2 border-white  transition-all duration-300',
   label_form: 'pt-5 text-white font-poppins font-normal text-[20px]',
 }

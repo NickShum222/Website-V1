@@ -23,8 +23,10 @@ const ProjectCard = ({
         setActive(id);
       }}
       className={`relative 
-         w-full flex flex-col sm:px-10 px-4 justify-center items-center  rounded-lg cursor-pointer `}
+      w-full flex flex-col sm:px-10 px-4 justify-center items-center  rounded-lg cursor-pointer 
+      border-2  hover:border-[#08fdd8] duration-100 `}
     >
+      
       <div
         className={`w-[100%] flex flex-row justify-between items-center ${
           active === id ? "border-b-[1px] " : ""
@@ -40,7 +42,7 @@ const ProjectCard = ({
             href={git}
             target="_blank"
             rel="noreferrer"
-            className="text-[#F5F5F5] duration-100 hover:text-blue-800 hover:-translate-y-1 "
+            className="text-[#F5F5F5] duration-100 hover:text-[#08fdd8] hover:-translate-y-1 "
           >
             <FiGithub size={"1.5em"} />
           </a>
@@ -48,7 +50,7 @@ const ProjectCard = ({
             href={url}
             target="_blank"
             rel="noreferrer"
-            className="text-[#F5F5F5] duration-100 hover:text-blue-800 hover:-translate-y-1"
+            className="text-[#F5F5F5] duration-100 hover:text-[#08fdd8] hover:-translate-y-1"
           >
             <BsGlobe size={"1.5em"} />
           </a>
@@ -68,7 +70,7 @@ const ProjectCard = ({
 
         <ul className="flex flex-row justify-start items-center sm:gap-x-7 gap-x-3 gap-y-2 pb-5 flex-wrap">
           {tools.map((tool, index) => (
-            <li key={index} className="text-[#B0B0B0] font-mono text-[14px]">
+            <li key={index} className="text-[#B0B0B0] font-mono lg:text-[18px] text-[14px]">
               {tool}
             </li>
           ))}
