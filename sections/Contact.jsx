@@ -46,7 +46,7 @@ const Contact = () => {
   // };
   return (
     <section
-      className={`${styles.paddings} min-h-[100vh] bg-secondary z-[50] `}
+      className={`${styles.paddings} min-h-[100vh] z-[50] `}
       id="contact"
     >
       <div className="flex lg:flex-row-reverse flex-col  z-[10] justify-between items-start ">
@@ -78,11 +78,11 @@ function ContactForm() {
     },
 
     validationSchema: Yup.object({
-      form_name: Yup.string().required("* Name field is required"),
+      form_name: Yup.string().required("*Name field is required"),
       user_email: Yup.string()
-        .email("Invalid email address")
-        .required("* Email field is required"),
-      message: Yup.string().required("* Message field is required"),
+        .email("*Invalid email address")
+        .required("*Email field is required"),
+      message: Yup.string().required("*Message field is required"),
     }),
     onSubmit: (values, { resetForm, setSubmitting } ) => {
       console.log("values", values);
@@ -117,7 +117,7 @@ function ContactForm() {
         onChange={formik.handleChange}
         value={formik.values.form_name}
       />
-      <div className={`mb-4 `}
+      <div className={`mb-4 mt-1`}
       >
         {formik.errors.form_name}
       </div>
@@ -127,12 +127,12 @@ function ContactForm() {
         id="user_email"
         type="email"
         name="user_email"
-        className={`h-[44px] ${styles.input_form}`}
+        className={`${styles.input_form}`}
         onChange={formik.handleChange}
         value={formik.values.user_email}
       />
       <div
-        className={`mb-4 `}
+        className={`mb-4 mt-1 `}
       >
         {formik.errors.user_email}
       </div>
@@ -154,11 +154,11 @@ function ContactForm() {
       <button
         disabled={formik.isSubmitting}
         type="submit"
-        className="cursor-pointer bg-primary rounded-md w-full py-3 mt-4"
+        className="cursor-pointer border-2 border-white bg-primary rounded-md w-full py-3 mt-4"
       >
         <span className="font-poppins text-white upper">Send Message</span>
       </button>
-      <div className={`text-green-500 text-sm ${submit ? "" : "hidden"}`}>Message sent! I will get back with you shortly.</div>
+      <div className={`text-green-500 text-[16px] pt-3 ${submit ? "" : "hidden"}`}>Message sent! I will get back with you shortly.</div>
     </form>
   );
 }
