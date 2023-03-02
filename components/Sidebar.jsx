@@ -17,7 +17,14 @@ const Sidebar = () => {
         variants={slideUp(2.5)}
         href="https://github.com/NickShum222"
         target="_blank"
-        className="text-[#8b8b8b] transition-transform duration-300 hover:text-highlight hover:-translate-y-1"
+        whileHover={{
+          scale: 1.1,
+          color: "#78C0E0",
+          transition: { duration: 0.2 },
+          
+        }}
+        whileTap={{ scale: 0.9 }}
+        className="text-[#8b8b8b]"
       >
         <FiGithub size={"1.4em"} />
       </motion.a>
@@ -25,7 +32,13 @@ const Sidebar = () => {
         variants={slideUp(2.7)}
         href="https://www.linkedin.com/in/nick-shum/"
         target="_blank"
-        className="text-[#8b8b8b] transition-transform duration-300 hover:text-highlight hover:-translate-y-1"
+        whileHover={{
+          scale: 1.1,
+          color: "#78C0E0",
+          transition: { duration: 0.2 },
+        }}
+        whileTap={{ scale: 0.9 }}
+        className="text-[#8b8b8b] "
       >
         <AiOutlineLinkedin size={"1.4em"} />
       </motion.a>
@@ -33,7 +46,13 @@ const Sidebar = () => {
         variants={slideUp(2.9)}
         href="https://www.instagram.com/nick.shum_/"
         target="_blank"
-        className="text-[#8b8b8b] transition-transform duration-300 hover:text-highlight hover:-translate-y-1"
+        whileHover={{
+          scale: 1.1,
+          color: "#78C0E0",
+          transition: { duration: 0.2 },
+        }}
+        whileTap={{ scale: 0.9 }}
+        className="text-[#8b8b8b] "
       >
         <AiOutlineInstagram size={"1.4em"} />
       </motion.a>
@@ -41,12 +60,18 @@ const Sidebar = () => {
         variants={slideUp(3.1)}
         href="https://open.spotify.com/user/1ofn228owlljh59onkm7f8k9q"
         target="_blank"
-        className="text-[#8b8b8b] transition-transform duration-300 hover:text-highlight hover:-translate-y-1"
+        whileHover={{
+          scale: 1.1,
+          color: "#78C0E0",
+          transition: { duration: 0.2 },
+        }}
+        whileTap={{ scale: 0.9 }}
+        className="text-[#8b8b8b] "
       >
         <SlSocialSpotify size={"1.4em"} />
       </motion.a>
 
-      <motion.div variants={slideUp(2.5)} className="h-[100px] bg-[#8b8b8b] w-[2px]">
+      <motion.div variants={slideUp(3.5)} className="h-[100px] bg-[#8b8b8b] w-[2px]">
 
       </motion.div>
     </motion.div>

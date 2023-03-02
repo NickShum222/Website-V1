@@ -26,7 +26,7 @@ const Hero = () => {
           </motion.h3>
           <motion.h1
             variants={slideUp(1.5 )}
-            className="text-[#F5F5F5] font-poppins lg:leading-[90px] md:leading-[70.4px] leading-[68px] font-light lg:text-[100px] md:text-[80px] text-[66px] "
+            className="text-[#F5F5F5] font-normal font-poppins lg:leading-[90px] md:leading-[70.4px] leading-[68px]  lg:text-[100px] md:text-[80px] text-[66px] "
           >
             Nick Shum
           </motion.h1>

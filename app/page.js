@@ -9,7 +9,7 @@ export default function Home() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 6000);
+    }, 5000);
   }, []);
   return (
     <div className=" bg-primary w-full overflow-hidden">

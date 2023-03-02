@@ -110,11 +110,11 @@
 #vector{
   stroke-dasharray: 849;
   stroke-dashoffset: 849;
-  animation: sign 4s ease-in-out forwards 1s;
+  animation: sign 3s ease-in forwards ;
 }
 
 #loading{
-  animation: fill 0.2s ease-in forwards 5s;
+  animation: fill 0.3s ease-out forwards 3.2s;
 }
 
 @keyframes fill{
