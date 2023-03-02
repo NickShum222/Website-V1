@@ -135,7 +135,7 @@ const Navbar = () => {
               </ul>
               <div className="flex flex-col w-full justify-start items-center gap-4">
                 <div className="transition-all duration-150 sm:text-[24px] text-[18px]">
-                Let's Connect!
+                Lets Connect!
                 </div>
     
                 <div className="flex flex-row w-full justify-center gap-6 items-center">

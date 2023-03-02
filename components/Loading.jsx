@@ -9,7 +9,7 @@ const Loading = () => {
       <svg
         id="loading"
         width="8%"
-        height="100%"
+        height="8%"
         viewBox="0 0 218 245"
         preserveAspectRatio="xMidYMid meet"
         fill="none"
