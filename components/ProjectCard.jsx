@@ -24,7 +24,7 @@ const ProjectCard = ({
       }}
       className={`relative 
       w-full flex flex-col sm:px-10 px-4 justify-center items-center  rounded-lg cursor-pointer 
-      border-2`}
+      border-2 border-[#BFBFBF]`}
     >
       
       <div
@@ -44,7 +44,7 @@ const ProjectCard = ({
             rel="noreferrer"
             whileHover={{
               scale: 1.1,
-              color: "#78C0E0",
+              color: "#4ECDC4",
               transition: { duration: 0.2 },
             }}
             whileTap={{ scale: 0.9 }}
@@ -58,7 +58,7 @@ const ProjectCard = ({
             rel="noreferrer"
             whileHover={{
               scale: 1.1,
-              color: "#78C0E0",
+              color: "#4ECDC4",
               transition: { duration: 0.2 },
             }}
             whileTap={{ scale: 0.9 }}

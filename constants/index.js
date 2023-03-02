@@ -20,10 +20,10 @@ export const projectCards = [
   {
     id: "website",
     title: "Personal Website",
-    description: "A personal website portfolio to showcase my projects and experiences. Built with ReactJS and Next13, utilizing TailWindCSS for styling.",
+    description: "A personal website portfolio to showcase my projects and experiences. Built using the Next13 framework, and used TailwindCSS for styling.",
     tools: ["ReactJS", "Next13", "TailwindCSS", "Figma"],
     git: "https://github.com/NickShum222/Website-Portfolio",
-    url: "https://nickshum.netlify.app/",
+    url: "www.nickshum.ca",
   },
   {
     id: "weather",
@@ -38,7 +38,7 @@ export const projectCards = [
   {
     id: "space",
     title: "Space Invaders Clone",
-    description: "A clone of the classic arcade game Space Invaders, built with Java, utilizing Object-Oriented Programming principles.",
+    description: "A clone of the classic arcade game Space Invaders. Built with Java, utilizing Object-Oriented Programming principles.",
     tools: ["Java", "Inheritance", "Polymorphism"],
     git: "https://github.com/NickShum222/SpaceInvaders",
     url: "https://www.greenfoot.org/scenarios/30858",
@@ -60,7 +60,7 @@ export const experienceCards = [
     title: "Hattendo",
     description: "Kitchen Staff",
     date: "Oct 2021 - May 2022",
-    img: "/ellisdon.svg",
+    img: "/hattendo.svg",
 
   },
   {

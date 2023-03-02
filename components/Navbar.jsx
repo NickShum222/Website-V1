@@ -1,16 +1,10 @@
 "use client";
-import {
-  motion,
-
-  easeInOut,
-  AnimatePresence, useScroll} from "framer-motion";
+import { motion, easeInOut, AnimatePresence, useScroll } from "framer-motion";
 import { staggerContainer, dropDown } from "@/utils/motion";
 import { useState } from "react";
 import { navLinks } from "../constants";
 import { styles } from "@/styles";
-import { useEffect } from "react";
-import { BsLinkedin, BsSpotify, BsGithub, BsInstagram} from "react-icons/bs";
-
+import { BsLinkedin, BsSpotify, BsGithub, BsInstagram } from "react-icons/bs";
 
 const slideIn = {
   hidden: {
@@ -28,7 +22,6 @@ const slideIn = {
 };
 const Navbar = () => {
   const [active, setActive] = useState("Home");
-
   const [nav, setNav] = useState(false);
   const toggleNav = () => {
     setNav(!nav);
@@ -43,18 +36,20 @@ const Navbar = () => {
         nav ? "" : "backdrop-blur-sm"
       } lg:px-[40px] md:px-16 px-10 w-[100%] flex justify-between items-center  h-[70px]`}
     >
-      <a href="#home">      <motion.img
-        variants={dropDown(0)}
-        src="/initials.svg"
-        alt="NS"
-        className="h-[40px] object-cover z-[99] cursor-pointer"
-      /></a>
+      <a href="www.nickshum.ca">
+        <motion.img
+          variants={dropDown(0)}
+          src="/initials.svg"
+          alt="NS"
+          className="h-[40px] object-cover z-[99] cursor-pointer"
+        />
+      </a>
       <ul
         className={`h-full flex-1 z-10 md:flex hidden justify-end items-center`}
       >
         {navLinks.map((nav, index) => (
           <motion.li
-          variants={dropDown((index*0.2)+0.1)}
+            variants={dropDown(index * 0.1 + 0.1)}
             key={nav.id}
             className={`h-full flex justify-center items-center font-poppins font-normal cursor-pointer text-[18px]  
             } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
@@ -62,9 +57,10 @@ const Navbar = () => {
               setActive(nav.title);
             }}
           >
+            {/* ${active === nav.title ? `text-highlight` : "text-semiWhite"} */}
             <a
-              className={`${styles.hoverCyan}
-             ${active === nav.title ? `text-highlight` : "text-semiWhite"}`}
+              className={`${styles.hoverCyan} text-semiWhite
+              `}
               href={`#${nav.id}`}
             >
               {nav.title}
@@ -72,7 +68,7 @@ const Navbar = () => {
           </motion.li>
         ))}
       </ul>
-
+      {/* Hamburger Menu */}
       <motion.div
         variants={dropDown(0.4)}
         className="md:hidden flex flex-col cursor-pointer z-[99]"
@@ -94,6 +90,7 @@ const Navbar = () => {
           }`}
         ></div>
       </motion.div>
+      {/* Mobile Menu */}
       <AnimatePresence>
         {nav && (
           <motion.div
@@ -121,9 +118,7 @@ const Navbar = () => {
                 {navLinks.map((nav, index) => (
                   <li
                     key={nav.id}
-                    className={`font-poppins font-normal cursor-pointer transition-all duration-150 text-[16px] sm:text-[22px] ${
-                      active === nav.title ? `text-highlight` : "text-semiWhite"
-                    }  ${index === 0 ? "mt-[40px]" : "mt-[50px]"} `}
+                    className={`font-poppins font-normal cursor-pointer transition-all duration-150 text-[16px] sm:text-[22px] text-semiWhite ${styles.hoverCyan}  ${index === 0 ? "mt-[40px]" : "mt-[50px]"} `}
                     onClick={() => {
                       setActive(nav.title);
                       toggleNav();
@@ -135,9 +130,9 @@ const Navbar = () => {
               </ul>
               <div className="flex flex-col w-full justify-start items-center gap-4">
                 <div className="transition-all duration-150 text-[16px] sm:text-[22px]">
-                Let&apos;s Connect!
+                  Let&apos;s Connect!
                 </div>
-    
+
                 <div className="flex flex-row w-full justify-center gap-6 items-center">
                   <motion.a
                     v
@@ -148,7 +143,6 @@ const Navbar = () => {
                     <BsGithub size={"1.3em"} />
                   </motion.a>
                   <motion.a
-                    
                     href="https://www.linkedin.com/in/nick-shum/"
                     target="_blank"
                     className="text-[#8b8b8b] duration-300 hover:text-highlight hover:-translate-y-1"
@@ -164,7 +158,6 @@ const Navbar = () => {
                     <BsInstagram size={"1.3em"} />
                   </motion.a>
                   <motion.a
-                
                     href="https://open.spotify.com/user/1ofn228owlljh59onkm7f8k9q"
                     target="_blank"
                     className="text-[#8b8b8b] duration-300 hover:text-highlight hover:-translate-y-1"

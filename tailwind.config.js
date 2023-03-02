@@ -14,12 +14,13 @@ module.exports = {
       },
       boxShadow: {
         'border': '0 0px 75px -15px rgba(0, 0, 0, 0.9)',
+        
       },
       colors: {
         primary: '#060C1D',
         secondary: '#001d3d',
         tertiary: '#003566',
-        highlight: '#78C0E0',
+        highlight: '#4ECDC4',
         semiWhite: '#F5F5F5',
       },
     },

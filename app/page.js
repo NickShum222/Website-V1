@@ -17,13 +17,15 @@ export default function Home() {
         <Loading />
       ) : (
         <div className=" bg-primary w-full overflow-hidden">
-          
           <Navbar />
           <Sidebar />
           <Hero />
           <About />
-          <Projects />
-          <Experience />
+
+            
+            <Projects />
+            
+            <Experience />
           <Contact />
           <Footer />
         </div>
