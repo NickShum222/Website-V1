@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { staggerContainer, slideLeft } from "@/utils/motion";
+import { staggerContainer, slideLeft, roll } from "@/utils/motion";
 
 const ExperienceCard = ({
   id,
@@ -12,13 +12,13 @@ const ExperienceCard = ({
 }) => {
   return (
     <motion.div 
-    variants={slideLeft((index * 0.25)+0.25)}
+    variants={slideLeft(index*0.2)}
     className="relative w-full flex flex-1">
-      <div className="flex flex-col md:w-[425px] w-[300px] bg-primary shadow-2xl relative rounded-lg pr-8 py-4">
-        <p className="text-[#737882] font-semibold italic lg:text-[18px] text-right">
+      <div  className="flex flex-col md:w-[425px] w-[300px] bg-primary shadow-border relative rounded-lg pr-8 py-4">
+        <p className="text-[#BFBFBF]  italic lg:text-[18px] text-right">
           {date}
         </p>
-        <h3 className="text-white md:text-[20px] font-[700] font-poppins md:leading-[38px] text-right">
+        <h3 className="text-white md:text-[20px] font-semibold font-poppins md:leading-[38px] text-right">
           {description}
         </h3>
         <p className="text-white md:text-[20px] font-poppins text-right">

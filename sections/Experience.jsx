@@ -13,10 +13,10 @@ const Experience = () => {
         variants={staggerContainer}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.5 }}
-        className="w-full flex lg:flex-row-reverse  flex-col-reverse lg:justify-between justify-center items-center "
+        viewport={{ once: true, amount: 0.3 }}
+        className="w-full flex lg:flex-row-reverse relative flex-col-reverse lg:justify-between justify-center items-center "
       >
-        
+  
         <div className="flex flex-col justify-between items-center gap-7 ">
           {experienceCards.map((experience,index) => (
             <ExperienceCard key={experience.id} {...experience} 

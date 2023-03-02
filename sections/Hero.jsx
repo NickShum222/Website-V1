@@ -8,14 +8,14 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className={`xl:px-[200px] lg:px-[120px] md:px-36 px-6 mt-[-5%] pb-18 flex flex-col items-center justify-center z-[5] `}
+      className={`xl:pl-[280px] lg:pl-[120px] md:pl-36 pl-6 xl:pr-[200px] lg:pr-[120px] md:pr-36 pr-6 mt-[-5%] pb-18 flex flex-col items-center justify-center z-[5] `}
     >
       <motion.div
         className="w-full flex lg:flex-row flex-col-reverse  lg:justify-between justify-around items-center min-h-[80vh] "
         variants={staggerContainer}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.5 }}
+        viewport={{ once: true, amount: 0.3 }}
       >
         <div className="flex flex-col mt-[-100px] lg:justify-start lg:items-start md:justify-center md:items-center justify-start items-start lg:max-w-[80%] relative z-[2]">
         <motion.h3

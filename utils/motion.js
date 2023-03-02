@@ -75,6 +75,21 @@ export const scale = (delay) => ({
   },
 });
 
+export const roll = (delay) => ({
+  initial: {
+    x: -200, opacity: 0,
+  },
+  visible: {
+    x: 0, opacity: 1, rotate: [0, -360],
+    transition: {
+      type: "tween",
+      duration  : 1,
+      delay,
+    },
+  },
+
+});
+
 
 export const slideLeft = (delay) => ({
   hidden: { x: 50, opacity: 0 },

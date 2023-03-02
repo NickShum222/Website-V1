@@ -47,22 +47,22 @@ const Contact = () => {
   // };
   return (
     <section
-      className={`${styles.paddings} min-h-[100vh] z-[50] `}
+      className={`${styles.paddings}  z-[50] `}
       id="contact"
     >
       <motion.div
         variants={staggerContainer}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
+        viewport={{ once: true, amount: 0.3 }}
         className="flex lg:flex-row-reverse flex-col-reverse  z-[10] justify-between items-start "
       >
-        <motion.div variants={slideLeft(0.25)}  className="lg:w-[60%] w-full mt-6 border-[1px] pb-10 pt-5 px-6  rounded-xl">
+        <motion.div variants={slideLeft(0.25)}  className="lg:w-[60%] w-full max-lg:mt-6 max-lg:border-[1px] max-lg:pb-10 pt-5 px-6  rounded-xl">
           <ContactForm />
         </motion.div>
         <motion.div variants={slideRight(0)} className="flex flex-col lg:justify-start justify-center lg:items-start items-center max-lg:w-full">
           <h1 className={styles.heading_2}>Contact</h1>
-          <h3>
+          <h3 className="lg:text-[16px] text-[14px]">
             Have a question or want to say hello? Feel free to send me a
             message!
           </h3>
@@ -122,34 +122,35 @@ function ContactForm() {
 
   return (
     <form onSubmit={formik.handleSubmit}>
+      <label className={`${styles.label_form}`}>Name</label>
       <input
-        className={` ${styles.new_input}`}
+        className={` ${styles.input_form}`}
         id="form_name"
         name="form_name"
         type="text"
-        placeholder="Name"
+
         onChange={formik.handleChange}
         autoComplete="off"
         value={formik.values.form_name}
       />
       <div className={`mb-4 mt-1`}>{formik.errors.form_name}</div>
-
+      <label className={`${styles.label_form}`}>Email</label>
       <input
         id="user_email"
         type="email"
         name="user_email"
-        className={`${styles.new_input}`}
-        placeholder="Email"
+        className={`${styles.input_form}`}
+
         onChange={formik.handleChange}
         value={formik.values.user_email}
       />
       <div className={`mb-4 mt-1 `}>{formik.errors.user_email}</div>
-
+      <label className={`${styles.label_form}`}>Message</label>
       <textarea
-        className={` ${styles.new_input} h-[128px] `}
+        className={` ${styles.input_form} h-[128px] `}
         id="message"
         name="message"
-        placeholder="Message"
+
         onChange={formik.handleChange}
         value={formik.values.message}
       />
@@ -158,7 +159,7 @@ function ContactForm() {
       <button
         disabled={formik.isSubmitting}
         type="submit"
-        className="cursor-pointer border-2 border-white bg-primary rounded-md w-full py-3 mt-4"
+        className="cursor-pointer border-[1px] border-[#BFBFBF] bg-primary rounded-md w-full py-3 mt-4"
       >
         <span className="font-poppins text-white upper">Send Message</span>
       </button>
