@@ -24,7 +24,7 @@ const ProjectCard = ({
       }}
       className={`relative 
       w-full flex flex-col sm:px-10 px-4 justify-center items-center  rounded-lg cursor-pointer 
-      border-2  hover:border-[#08fdd8] duration-100 `}
+      border-2`}
     >
       
       <div
@@ -33,7 +33,7 @@ const ProjectCard = ({
         }`}
       >
         <h3
-          className={`md:text-[25px] text-[18px] py-4 md:py-6 text-white font-mono font-normal  `}
+          className={`md:text-[25px] transition-all duration-150 text-[18px] py-4 md:py-6 text-white font-mono font-normal  `}
         >
           {title}
         </h3>
@@ -42,7 +42,7 @@ const ProjectCard = ({
             href={git}
             target="_blank"
             rel="noreferrer"
-            className="text-[#F5F5F5] duration-100 hover:text-[#08fdd8] hover:-translate-y-1 "
+            className="text-[#F5F5F5] duration-100 hover:text-highlight hover:-translate-y-1 "
           >
             <FiGithub size={"1.5em"} />
           </a>
@@ -50,7 +50,7 @@ const ProjectCard = ({
             href={url}
             target="_blank"
             rel="noreferrer"
-            className="text-[#F5F5F5] duration-100 hover:text-[#08fdd8] hover:-translate-y-1"
+            className="text-[#F5F5F5] duration-100 hover:text-highlight hover:-translate-y-1"
           >
             <BsGlobe size={"1.5em"} />
           </a>
@@ -64,13 +64,13 @@ const ProjectCard = ({
             : "h-0"
         } `}
       >
-        <p className="text-[#BFBFBF]  font-normal font-mono md:text-[16px] text-[14px] md:leading-6 leading-5  py-2 ">
+        <p className="text-[#BFBFBF]  font-normal  transition-all duration-150 font-mono md:text-[16px] text-[14px] md:leading-6 leading-5  py-2 ">
           {description}
         </p>
 
         <ul className="flex flex-row justify-start items-center sm:gap-x-7 gap-x-3 gap-y-2 pb-5 flex-wrap">
           {tools.map((tool, index) => (
-            <li key={index} className="text-[#B0B0B0] font-mono lg:text-[18px] text-[14px]">
+            <li key={index} className="text-[#B0B0B0] transition-all duration-150 font-mono md:text-[16px] text-[14px]">
               {tool}
             </li>
           ))}

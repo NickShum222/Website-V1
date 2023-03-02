@@ -15,23 +15,23 @@ const Hero = () => {
         variants={staggerContainer}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: false, amount: 0.5 }}
+        viewport={{ once: true, amount: 0.5 }}
       >
         <div className="flex flex-col mt-[-100px] lg:justify-start lg:items-start md:justify-center md:items-center justify-start items-start lg:max-w-[80%] relative z-[2]">
         <motion.h3
-            variants={slideUp(0.25)}
+            variants={slideUp(1.25)}
             className="text-[#BFBFBF] lg:text-[30px] md:text-[24px] text-[20px] font-normal font-mono md:ml-[6px] ml-[3px] md:pb-2 "
           >
             Hi, my name is
           </motion.h3>
           <motion.h1
-            variants={slideUp(0.5)}
+            variants={slideUp(1.5 )}
             className="text-[#F5F5F5] font-poppins lg:leading-[90px] md:leading-[70.4px] leading-[68px] font-light lg:text-[100px] md:text-[80px] text-[66px] "
           >
             Nick Shum
           </motion.h1>
           <motion.h2
-            variants={slideUp(0.75)}
+            variants={slideUp(1.75)}
             className="text-[#BFBFBF] md:ml-[5px] ml-[3px] font-poppins lg:leading-[50px] leading-[37px] lg:pt-4 pt-2 lg:text-[50px] md:text-[34px] text-[30px] pb-2 "
           >
             I'm a Software Developer

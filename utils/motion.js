@@ -45,6 +45,36 @@ export const slideRight = (delay) => ({
     },
   },
 });
+export const dropDown = (delay) => ({
+  hidden: { y: -75, opacity: 0 },
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      type: "spring",
+      duration: 0.75,
+      delay,
+    },
+
+  },
+
+});
+export const scale = (delay) => ({
+  initial: {
+    scale: 0.8,
+  },
+  visible: {
+    scale: [1, 1.2, 0],
+    opacity: [1, 1, 0.75, 0],
+    
+    transition: {
+      type: "spring",
+      duration: 0.75,
+      delay,
+    },
+  },
+});
+
 
 export const slideLeft = (delay) => ({
   hidden: { x: 50, opacity: 0 },

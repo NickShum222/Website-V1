@@ -2,12 +2,12 @@ import { BsGithub, BsLinkedin, BsInstagram, BsSpotify } from "react-icons/bs";
 
 export const projectPictures = [
   {
-    id: "weather",
-    img: "/macweather.svg",
-  },
-  {
     id: "website",
     img: "/macwebsite.svg",
+  },
+  {
+    id: "weather",
+    img: "/macweather.svg",
   },
   {
     id: "space",
@@ -18,14 +18,6 @@ export const projectPictures = [
 
 export const projectCards = [
   {
-    id: "weather",
-    title: "Weather App",
-    description: "A simple, user-friendly weather app to display current weather information from any city in the world. Obtained real-time weather information by fetching it from the openweathermap.org API",
-    tools: ["ReactJS", "HTML5", "CSS3", "JavaScript"],
-    git: "https://github.com/NickShum222/WeatherApp-1",
-    url: "https://63f7aea636e521094a462f52--weather-app-nick.netlify.app/",
-  },
-  {
     id: "website",
     title: "Personal Website",
     description: "A personal website portfolio to showcase my projects and experiences. Built with ReactJS and Next13, utilizing TailWindCSS for styling.",
@@ -33,6 +25,15 @@ export const projectCards = [
     git: "https://github.com/NickShum222/Website-Portfolio",
     url: "https://nickshum.netlify.app/",
   },
+  {
+    id: "weather",
+    title: "Weather App",
+    description: "A simple, user-friendly weather app to display current weather information from any city in the world. Obtained real-time weather information by fetching it from the openweathermap.org API",
+    tools: ["ReactJS", "HTML5", "CSS3", "JavaScript"],
+    git: "https://github.com/NickShum222/WeatherApp-1",
+    url: "https://63f7aea636e521094a462f52--weather-app-nick.netlify.app/",
+  },
+
 
   {
     id: "space",

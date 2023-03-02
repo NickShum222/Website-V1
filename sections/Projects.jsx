@@ -9,7 +9,7 @@ import { styles } from "@/styles";
 const Projects = () => {
 
   
-  const [projects, setProjects] = useState("weather");
+  const [projects, setProjects] = useState("website");
   return (
     <section id="projects" className={`${styles.paddings}`}>
       <motion.div
@@ -17,7 +17,7 @@ const Projects = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.6 }}
-        className="flex flex-col justify-start items-start "
+        className="flex flex-col lg:justify-start lg:items-start justify-center items-center "
       >
         <motion.h1 
           variants={slideRight(0)}
@@ -33,7 +33,7 @@ const Projects = () => {
             />
           ))}
         </motion.div>
-        <motion.div className="overflow-x-hidden flex flex-row lg:max-w-[50%] md:max-w-[70%] max-w-full">
+        <motion.div className="overflow-x-hidden flex flex-row lg:max-w-[500px] w-[80%] lg:mt-0 mt-10 max-w-full">
           {projectPictures.map((project) => (
             <motion.img variants={slideLeft(0.5)} className={`${projects === project.id ? "" : "hidden"}`} src={project.img} alt={project.id} key={project.id} />
           ))}
