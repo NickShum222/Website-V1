@@ -38,22 +38,34 @@ const ProjectCard = ({
           {title}
         </h3>
         <div className="flex flex-row justify-end items-center gap-3 py-4 md:py-6  ">
-          <a
+          <motion.a
             href={git}
             target="_blank"
             rel="noreferrer"
-            className="text-[#F5F5F5] duration-100 hover:text-highlight hover:-translate-y-1 "
+            whileHover={{
+              scale: 1.1,
+              color: "#78C0E0",
+              transition: { duration: 0.2 },
+            }}
+            whileTap={{ scale: 0.9 }}
+            className="text-[#F5F5F5]  "
           >
             <FiGithub size={"1.5em"} />
-          </a>
-          <a
+          </motion.a>
+          <motion.a
             href={url}
             target="_blank"
             rel="noreferrer"
-            className="text-[#F5F5F5] duration-100 hover:text-highlight hover:-translate-y-1"
+            whileHover={{
+              scale: 1.1,
+              color: "#78C0E0",
+              transition: { duration: 0.2 },
+            }}
+            whileTap={{ scale: 0.9 }}
+            className="text-[#F5F5F5] "
           >
             <BsGlobe size={"1.5em"} />
-          </a>
+          </motion.a>
         </div>
       </div>
 

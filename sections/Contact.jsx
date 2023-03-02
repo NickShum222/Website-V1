@@ -57,7 +57,7 @@ const Contact = () => {
         viewport={{ once: true, amount: 0.2 }}
         className="flex lg:flex-row-reverse flex-col-reverse  z-[10] justify-between items-start "
       >
-        <motion.div variants={slideLeft(0.25)}  className="lg:w-[60%] w-full mt-6 border-[1px] py-10 px-6  rounded-xl">
+        <motion.div variants={slideLeft(0.25)}  className="lg:w-[60%] w-full mt-6 border-[1px] pb-10 pt-5 px-6  rounded-xl">
           <ContactForm />
         </motion.div>
         <motion.div variants={slideRight(0)} className="flex flex-col lg:justify-start justify-center lg:items-start items-center max-lg:w-full">

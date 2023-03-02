@@ -64,12 +64,12 @@ export const scale = (delay) => ({
     scale: 0.8,
   },
   visible: {
-    scale: [1, 1.2, 0],
+    scale: [1, 1.1, 0],
     opacity: [1, 1, 0.75, 0],
     
     transition: {
       type: "spring",
-      duration: 0.75,
+      duration: 0.55,
       delay,
     },
   },

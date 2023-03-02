@@ -4,12 +4,12 @@ import { motion } from "framer-motion";
 import { scale } from "@/utils/motion";
 const Loading = () => {
   return (
-    <motion.div variants={scale(5.4)}         initial="hidden"
+    <motion.div variants={scale(4)}         initial="hidden"
     animate="visible" className="w-[100vw] h-[100vh] flex justify-center items-center flex-1 bg-primary">
       <svg
         id="loading"
-        width="15%"
-        height="15%"
+        width="25%"
+        height="25%"
         viewBox="0 0 218 245"
         preserveAspectRatio="xMidYMid meet"
         fill="none"

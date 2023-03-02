@@ -43,12 +43,12 @@ const Navbar = () => {
         nav ? "" : "backdrop-blur-sm"
       } lg:px-[40px] md:px-16 px-10 w-[100%] flex justify-between items-center  h-[70px]`}
     >
-      <motion.img
+      <a href="#home">      <motion.img
         variants={dropDown(0)}
         src="/initials.svg"
         alt="NS"
         className="h-[40px] object-cover z-[99] cursor-pointer"
-      />
+      /></a>
       <ul
         className={`h-full flex-1 z-10 md:flex hidden justify-end items-center`}
       >
@@ -134,8 +134,8 @@ const Navbar = () => {
                 ))}
               </ul>
               <div className="flex flex-col w-full justify-start items-center gap-4">
-                <div className="transition-all duration-150 sm:text-[24px] text-[18px]">
-                Lets Connect!
+                <div className="transition-all duration-150 text-[16px] sm:text-[22px]">
+                Let&apos;s Connect!
                 </div>
     
                 <div className="flex flex-row w-full justify-center gap-6 items-center">
@@ -145,7 +145,7 @@ const Navbar = () => {
                     target="_blank"
                     className="text-[#8b8b8b] duration-300 hover:text-highlight hover:-translate-y-1"
                   >
-                    <BsGithub size={"1.7em"} />
+                    <BsGithub size={"1.3em"} />
                   </motion.a>
                   <motion.a
                     
@@ -153,7 +153,7 @@ const Navbar = () => {
                     target="_blank"
                     className="text-[#8b8b8b] duration-300 hover:text-highlight hover:-translate-y-1"
                   >
-                    <BsLinkedin size={"1.7em"} />
+                    <BsLinkedin size={"1.3em"} />
                   </motion.a>
                   <motion.a
                     v
@@ -161,7 +161,7 @@ const Navbar = () => {
                     target="_blank"
                     className="text-[#8b8b8b] duration-300 hover:text-highlight hover:-translate-y-1"
                   >
-                    <BsInstagram size={"1.7em"} />
+                    <BsInstagram size={"1.3em"} />
                   </motion.a>
                   <motion.a
                 
@@ -169,7 +169,7 @@ const Navbar = () => {
                     target="_blank"
                     className="text-[#8b8b8b] duration-300 hover:text-highlight hover:-translate-y-1"
                   >
-                    <BsSpotify size={"1.7em"} />
+                    <BsSpotify size={"1.3em"} />
                   </motion.a>
                 </div>
               </div>
