@@ -7,5 +7,5 @@ export const styles = {
   paddings: 'xl:px-[280px] lg:px-[120px] md:px-36 px-6 py-24 flex flex-col justify-center z-[5] ',
   input_form: 'w-full p-[5px] outline-none rounded-lg  bg-primary border-[1px] border-[#BFBFBF]  transition-all duration-300',
   new_input: "bg-transparent border-b py-2 outline-none w-full placeholder:text-{#BFBFBF} transition-all duration-150",
-  label_form: 'pt-5 text-semiwhite font-poppins font-normal text-[18px]',
+  label_form: 'pt-5 text-semiwhite font-poppins font-normal lg:text-[18px] text-[14px]',
 }

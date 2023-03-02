@@ -20,7 +20,7 @@ const Hero = () => {
         <div className="flex flex-col mt-[-100px] lg:justify-start lg:items-start md:justify-center md:items-center justify-start items-start lg:max-w-[80%] relative z-[2]">
         <motion.h3
             variants={slideUp(1.25)}
-            className="text-[#BFBFBF] lg:text-[30px] md:text-[24px] text-[20px] font-normal font-mono md:ml-[6px] ml-[3px] md:pb-2 "
+            className="text-[#BFBFBF] lg:text-[26px] md:text-[22px] text-[18px] font-normal font-mono md:ml-[6px] ml-[3px] md:pb-2 "
           >
             Hi, my name is
           </motion.h3>

@@ -36,7 +36,7 @@ const Navbar = () => {
         nav ? "" : "backdrop-blur-sm"
       } lg:px-[40px] md:px-16 px-10 w-[100%] flex justify-between items-center  h-[70px]`}
     >
-      <a href="www.nickshum.ca">
+      <a href="https://www.nickshum.ca/">
         <motion.img
           variants={dropDown(0)}
           src="/initials.svg"

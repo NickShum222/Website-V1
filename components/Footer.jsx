@@ -14,7 +14,7 @@ const Footer = () => {
       <div className='flex flex-row justify-around items-center'>
       
       </div> */}
-      <a href="https://github.com/NickShum222/Website-Portfolio" target="_blank" className='font-mono hover:text-highlight transition-all duration-150 text-[12px] sm:text-[14px]'>Designed & Built by Nick Shum</a>
+      <a href="https://github.com/NickShum222/Website-Portfolio" target="_blank" rel="noreferrer" className='font-mono hover:text-highlight transition-all duration-150 text-[12px] sm:text-[14px]'>Designed & Built by Nick Shum</a>
       <p className='font-mono text-[12px] sm:text-[14px] transition-all'>
       © Copyright 2023.
       </p>
