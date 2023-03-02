@@ -5,7 +5,7 @@ import Footer from "./Footer";
 import {Nick, Shum} from "./Signature";
 import Sidebar from "./Sidebar";
 import Button from "./Button";
-
+import Loading from "./Loading";
 import Moon from "./moon";
 
 
@@ -19,4 +19,5 @@ export{
   Sidebar,
   Button,
   Moon,
+  Loading,
 }

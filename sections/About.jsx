@@ -13,7 +13,7 @@ const About = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.4 }}
-        className="w-full flex lg:flex-row flex-col lg:justify-between justify-center items-center min-h-[80vh] "
+        className="w-full flex lg:flex-row flex-col lg:justify-between justify-center items-center  "
       >
         <div className="flex flex-col lg:justify-start lg:items-start justify-center items-center lg:max-w-[50%]">
           <motion.h1

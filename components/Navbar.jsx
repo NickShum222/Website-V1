@@ -1,8 +1,16 @@
 "use client";
-import { motion, LazyMotion, easeInOut, domAnimation, AnimatePresence } from "framer-motion";
+import {
+  motion,
+
+  easeInOut,
+  AnimatePresence, useScroll} from "framer-motion";
+import { staggerContainer, dropDown } from "@/utils/motion";
 import { useState } from "react";
 import { navLinks } from "../constants";
 import { styles } from "@/styles";
+import { useEffect } from "react";
+import { BsLinkedin, BsSpotify, BsGithub, BsInstagram} from "react-icons/bs";
+
 
 const slideIn = {
   hidden: {
@@ -15,7 +23,6 @@ const slideIn = {
     transition: {
       duration: 0.3,
       ease: easeInOut,
-      
     },
   },
 };
@@ -23,32 +30,51 @@ const Navbar = () => {
   const [active, setActive] = useState("Home");
 
   const [nav, setNav] = useState(false);
-  const toggleNav = () => {setNav(!nav);};
+  const toggleNav = () => {
+    setNav(!nav);
+  };
 
   return (
-    <nav className={`fixed z-[40] py-8 ${nav ? "" : "backdrop-blur-sm"} lg:px-[40px] md:px-16 px-10 w-[100%] flex justify-between items-center  h-[70px]`}>
-      <img
+    <motion.nav
+      variants={staggerContainer}
+      initial="hidden"
+      animate="visible"
+      className={`fixed z-[40] py-8 ${
+        nav ? "" : "backdrop-blur-sm"
+      } lg:px-[40px] md:px-16 px-10 w-[100%] flex justify-between items-center  h-[70px]`}
+    >
+      <motion.img
+        variants={dropDown(0)}
         src="/initials.svg"
         alt="NS"
         className="h-[40px] object-cover z-[99] cursor-pointer"
       />
-      <ul className={`h-full flex-1 z-10 md:flex hidden justify-end items-center`}>
+      <ul
+        className={`h-full flex-1 z-10 md:flex hidden justify-end items-center`}
+      >
         {navLinks.map((nav, index) => (
-          <li
+          <motion.li
+          variants={dropDown((index*0.2)+0.1)}
             key={nav.id}
             className={`h-full flex justify-center items-center font-poppins font-normal cursor-pointer text-[18px]  
             } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
-            onClick={
-              () => {setActive(nav.title);  }}
+            onClick={() => {
+              setActive(nav.title);
+            }}
           >
-            <a className={`${styles.hoverCyan}
-             ${
-              active === nav.title ? `text-[#08fdd8]` : "text-semiWhite"}`} href={`#${nav.id}`}>{nav.title}</a>
-          </li>
+            <a
+              className={`${styles.hoverCyan}
+             ${active === nav.title ? `text-highlight` : "text-semiWhite"}`}
+              href={`#${nav.id}`}
+            >
+              {nav.title}
+            </a>
+          </motion.li>
         ))}
       </ul>
 
-      <div
+      <motion.div
+        variants={dropDown(0.4)}
         className="md:hidden flex flex-col cursor-pointer z-[99]"
         onClick={toggleNav}
       >
@@ -67,21 +93,20 @@ const Navbar = () => {
             nav ? "translate-y-[-7px] origin -rotate-45 transition" : ""
           }`}
         ></div>
-      </div>
+      </motion.div>
       <AnimatePresence>
-        {nav &&(
-         <motion.div
-         initial={{ opacity: 0 }}
-         animate={{ opacity: 1 }}
-         exit={{ opacity: 0 }}
-        className={`z-[10] ${
-          nav ? "fixed left-0 top-0 w-full h-screen " : "hidden"
-        } md:hidden backdrop-blur-sm z-[50]`}
-        onClick={toggleNav}
-      >
-
+        {nav && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className={`z-[10] ${
+              nav ? "fixed left-0 top-0 w-full h-screen " : "hidden"
+            } md:hidden backdrop-blur-sm z-[50]`}
+            onClick={toggleNav}
+          >
             <motion.div
-              className={`fixed right-0  bg-[#0c183b]  shadow-3xl  w-[70%] h-[100%] flex flex-col z-[10]`}  
+              className={`fixed right-0 bg-[#0c183b]  shadow-3xl  w-[70%] h-[100%] flex flex-col justify-evenly items-center z-[10]`}
               variants={slideIn}
               initial="hidden"
               animate="visible"
@@ -89,27 +114,70 @@ const Navbar = () => {
               key={nav.toString()}
             >
               <ul
-                className={`${nav ? "flex flex-col justify-center items-center h-full":"hidden"} `}
+                className={`${
+                  nav ? "flex flex-col justify-center items-center " : "hidden"
+                } `}
               >
                 {navLinks.map((nav, index) => (
                   <li
                     key={nav.id}
-                    className={`font-poppins font-normal cursor-pointer text-[16px] sm:text-[22px] ${
-                      active === nav.title ? `text-[#08fdd8]` : "text-semiWhite"
+                    className={`font-poppins font-normal cursor-pointer transition-all duration-150 text-[16px] sm:text-[22px] ${
+                      active === nav.title ? `text-highlight` : "text-semiWhite"
                     }  ${index === 0 ? "mt-[40px]" : "mt-[50px]"} `}
-                    onClick={
-                      () => {setActive(nav.title); 
-                            toggleNav();}}
-                        >
+                    onClick={() => {
+                      setActive(nav.title);
+                      toggleNav();
+                    }}
+                  >
                     <a href={`#${nav.id}`}>{nav.title}</a>
                   </li>
                 ))}
               </ul>
+              <div className="flex flex-col w-full justify-start items-center gap-4">
+                <div className="transition-all duration-150 sm:text-[24px] text-[18px]">
+                Let's Connect!
+                </div>
+    
+                <div className="flex flex-row w-full justify-center gap-6 items-center">
+                  <motion.a
+                    v
+                    href="https://github.com/NickShum222"
+                    target="_blank"
+                    className="text-[#8b8b8b] duration-300 hover:text-highlight hover:-translate-y-1"
+                  >
+                    <BsGithub size={"1.7em"} />
+                  </motion.a>
+                  <motion.a
+                    
+                    href="https://www.linkedin.com/in/nick-shum/"
+                    target="_blank"
+                    className="text-[#8b8b8b] duration-300 hover:text-highlight hover:-translate-y-1"
+                  >
+                    <BsLinkedin size={"1.7em"} />
+                  </motion.a>
+                  <motion.a
+                    v
+                    href="https://www.instagram.com/nick.shum_/"
+                    target="_blank"
+                    className="text-[#8b8b8b] duration-300 hover:text-highlight hover:-translate-y-1"
+                  >
+                    <BsInstagram size={"1.7em"} />
+                  </motion.a>
+                  <motion.a
+                
+                    href="https://open.spotify.com/user/1ofn228owlljh59onkm7f8k9q"
+                    target="_blank"
+                    className="text-[#8b8b8b] duration-300 hover:text-highlight hover:-translate-y-1"
+                  >
+                    <BsSpotify size={"1.7em"} />
+                  </motion.a>
+                </div>
+              </div>
             </motion.div>
-            </motion.div>
-          )}
-          </AnimatePresence>
-    </nav>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </motion.nav>
   );
 };
 
