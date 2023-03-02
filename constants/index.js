@@ -23,7 +23,7 @@ export const projectCards = [
     description: "A personal website portfolio to showcase my projects and experiences. Built using the Next13 framework, and used TailwindCSS for styling.",
     tools: ["ReactJS", "Next13", "TailwindCSS", "Figma"],
     git: "https://github.com/NickShum222/Website-Portfolio",
-    url: "www.nickshum.ca",
+    url: "https://www.nickshum.ca/",
   },
   {
     id: "weather",
