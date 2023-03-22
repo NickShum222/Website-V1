@@ -34,9 +34,12 @@ const Projects = () => {
           ))}
         </motion.div>
         <motion.div className="overflow-x-hidden flex flex-row lg:max-w-[500px] w-[80%] lg:mt-0 mt-10 max-w-full">
-          {projectPictures.map((project) => (
+          <div>
+            
+          </div>
+          {/* {projectPictures.map((project) => (
             <motion.img variants={slideLeft(0.5)} className={`${projects === project.id ? "" : "hidden"}`} src={project.img} alt={project.id} key={project.id} />
-          ))}
+          ))} */}
         </motion.div>
         </div>
       </motion.div>

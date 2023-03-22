@@ -44,7 +44,7 @@ const ProjectCard = ({
             rel="noreferrer"
             whileHover={{
               scale: 1.1,
-              color: "#4ECDC4",
+              color: "#6a86ff",
               transition: { duration: 0.2 },
             }}
             whileTap={{ scale: 0.9 }}
@@ -58,7 +58,7 @@ const ProjectCard = ({
             rel="noreferrer"
             whileHover={{
               scale: 1.1,
-              color: "#4ECDC4",
+              color: "#6a86ff",
               transition: { duration: 0.2 },
             }}
             whileTap={{ scale: 0.9 }}

@@ -5,7 +5,10 @@ import emailjs from "@emailjs/browser";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import { motion } from "framer-motion";
+
 import { slideLeft, slideRight, staggerContainer } from "@/utils/motion";
+import {Button } from "@material-tailwind/react";
+
 const Contact = () => {
   // const [name, setName] = useState("");
   // const [email, setEmail] = useState("");
@@ -60,9 +63,9 @@ const Contact = () => {
         <motion.div variants={slideLeft(0.25)}  className="lg:w-[60%] w-full max-lg:mt-6 max-lg:border-[1px] max-lg:pb-10 pt-5 px-6  rounded-xl">
           <ContactForm />
         </motion.div>
-        <motion.div variants={slideRight(0)} className="flex flex-col lg:justify-start justify-center lg:items-start items-center max-lg:w-full">
+        <motion.div variants={slideRight(0)} className="flex flex-col lg:justify-start justify-center  px-6 lg:items-start items-center lg:max-w-[50%] w-full">
           <h1 className={styles.heading_2}>Contact</h1>
-          <h3 className="lg:text-[16px] text-[14px]">
+          <h3 className="lg:text-[18px] text-[16px]">
             Have a question or want to say hello? Feel free to send me a
             message!
           </h3>
@@ -83,6 +86,8 @@ const Contact = () => {
 };
 
 function ContactForm() {
+
+
   const [submit, setSubmit] = useState(false);
   const formik = useFormik({
     initialValues: {
@@ -92,11 +97,11 @@ function ContactForm() {
     },
 
     validationSchema: Yup.object({
-      form_name: Yup.string().required("*Name field is required"),
+      form_name: Yup.string().required("Name is required"),
       user_email: Yup.string()
-        .email("*Invalid email address")
-        .required("*Email field is required"),
-      message: Yup.string().required("*Message field is required"),
+        .email("Invalid email address")
+        .required("Email is required"),
+      message: Yup.string().required("Message is required"),
     }),
     onSubmit: (values, { resetForm, setSubmitting }) => {
       console.log("values", values);
@@ -122,9 +127,9 @@ function ContactForm() {
 
   return (
     <form onSubmit={formik.handleSubmit}>
-      <label className={`${styles.label_form}`}>Name</label>
+<label className={`${styles.label_form} inputfield__label`}>Name</label>
       <input
-        className={` ${styles.input_form}`}
+        className={`${styles.input_form}}`}
         id="form_name"
         name="form_name"
         type="text"
@@ -133,18 +138,18 @@ function ContactForm() {
         autoComplete="off"
         value={formik.values.form_name}
       />
-      <div className={`mb-4 mt-1`}>{formik.errors.form_name}</div>
-      <label className={`${styles.label_form}`}>Email</label>
+      <div className={`mb-4 mt-1 lg:text-[16px] text-[14px]`}>{formik.errors.form_name}</div>
+      <label className={`${styles.label_form} inputfield__label`}>Email</label>
       <input
         id="user_email"
         type="email"
         name="user_email"
         className={`${styles.input_form}`}
-
+        
         onChange={formik.handleChange}
         value={formik.values.user_email}
       />
-      <div className={`mb-4 mt-1 `}>{formik.errors.user_email}</div>
+      <div className={`mb-4 mt-1  lg:text-[16px] text-[14px]`}>{formik.errors.user_email}</div>
       <label className={`${styles.label_form}`}>Message</label>
       <textarea
         className={` ${styles.input_form} h-[128px] `}
@@ -154,15 +159,16 @@ function ContactForm() {
         onChange={formik.handleChange}
         value={formik.values.message}
       />
-      <div>{formik.errors.message}</div>
+      <div className="lg:text-[16px] text-[14px]">{formik.errors.message}</div>
 
-      <button
+      <Button
         disabled={formik.isSubmitting}
         type="submit"
-        className="cursor-pointer border-[1px] border-[#BFBFBF] bg-primary rounded-md w-full py-3 mt-4"
+        className="w-full mt-3 rounded-lg py-3 px-6  text-highlight transition-all hover:bg-highlight/10 active:bg-highlight/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+        data-ripple-dark="true"
       >
-        <span className="font-poppins text-white upper">Send Message</span>
-      </button>
+        <span className="font-poppins text-[14px] text-highlight font-semibold ">Send Message</span>
+      </Button>
       <div
         className={`text-green-500 text-[16px] pt-3 mb-0 pb-0 ${
           submit ? "" : "hidden"
