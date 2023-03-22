@@ -5,6 +5,7 @@ import { useState } from "react";
 import { navLinks } from "../constants";
 import { styles } from "@/styles";
 import { BsLinkedin, BsSpotify, BsGithub, BsInstagram } from "react-icons/bs";
+import {CgDarkMode} from "react-icons/cg"
 
 const slideIn = {
   hidden: {
@@ -34,9 +35,9 @@ const Navbar = () => {
       animate="visible"
       className={`fixed z-[40] py-8 ${
         nav ? "" : "backdrop-blur-sm"
-      } lg:px-[40px] md:px-16 px-10 w-[100%] flex justify-between items-center  h-[70px]`}
+      } lg:px-[40px] md:px-16 px-6 w-[100%] flex justify-between items-center  h-[70px]`}
     >
-      <a href="https://www.nickshum.ca/">
+      <a href="#home">
         <motion.img
           variants={dropDown(0)}
           src="/initials.svg"
@@ -44,6 +45,7 @@ const Navbar = () => {
           className="h-[40px] object-cover z-[99] cursor-pointer"
         />
       </a>
+      <div className="flex flex-row items-center justify-center">
       <ul
         className={`h-full flex-1 z-10 md:flex hidden justify-end items-center`}
       >
@@ -53,13 +55,13 @@ const Navbar = () => {
             key={nav.id}
             className={`h-full flex justify-center items-center font-poppins font-normal cursor-pointer text-[18px]  
             } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
-            onClick={() => {
-              setActive(nav.title);
-            }}
+            // onClick={() => {
+            //   setActive(nav.title);
+            // }}
           >
-            {/* ${active === nav.title ? `text-highlight` : "text-semiWhite"} */}
+            {/* ${active === nav.title ? `text-highlight` : "text-semiwhite"} */}
             <a
-              className={`${styles.hoverCyan} text-semiWhite
+              className={`${styles.hoverCyan} text-semiwhite
               `}
               href={`#${nav.id}`}
             >
@@ -68,6 +70,9 @@ const Navbar = () => {
           </motion.li>
         ))}
       </ul>
+      {/* <motion.button variants={dropDown(0.6)} className="ml-5">
+          <CgDarkMode size={"1.6em"} />
+        </motion.button> */}
       {/* Hamburger Menu */}
       <motion.div
         variants={dropDown(0.4)}
@@ -90,6 +95,7 @@ const Navbar = () => {
           }`}
         ></div>
       </motion.div>
+      </div>
       {/* Mobile Menu */}
       <AnimatePresence>
         {nav && (
@@ -118,9 +124,9 @@ const Navbar = () => {
                 {navLinks.map((nav, index) => (
                   <li
                     key={nav.id}
-                    className={`font-poppins font-normal cursor-pointer transition-all duration-150 text-[16px] sm:text-[22px] text-semiWhite ${styles.hoverCyan}  ${index === 0 ? "mt-[40px]" : "mt-[50px]"} `}
+                    className={`font-poppins font-normal cursor-pointer transition-all duration-150 text-[16px] sm:text-[22px] text-semiwhite ${styles.hoverCyan}  ${index === 0 ? "mt-[40px]" : "mt-[50px]"} `}
                     onClick={() => {
-                      setActive(nav.title);
+                      //setActive(nav.title);
                       toggleNav();
                     }}
                   >

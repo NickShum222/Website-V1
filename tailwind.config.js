@@ -1,5 +1,9 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+const withMT = require("@material-tailwind/html/utils/withMT");
+
+
+module.exports = withMT ({
+  darkMode: "class",
   content: [
     "./app/**/*.{js,ts,jsx,tsx}",
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -18,14 +22,15 @@ module.exports = {
       },
       colors: {
         primary: '#060C1D',
+        
         secondary: '#001d3d',
         tertiary: '#003566',
-        highlight: '#4ECDC4',
-        semiWhite: '#F5F5F5',
+        highlight: '#00C6BE',
+        semiwhite: '#BFBFBF',
       },
     },
   },
   plugins: [
     require("daisyui"),
   ],
-}
+});

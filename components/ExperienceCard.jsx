@@ -14,7 +14,7 @@ const ExperienceCard = ({
     <motion.div 
     variants={slideLeft(index*0.2)}
     className="relative w-full flex flex-1">
-      <div  className="flex flex-col md:w-[425px] w-[300px] bg-primary shadow-border relative rounded-lg pr-8 py-4">
+      <div  className="flex flex-col md:w-[425px] w-[300px] shadow-2xl bg-primary  relative rounded-lg pr-8 py-4">
         <p className="text-[#BFBFBF]  italic lg:text-[18px] text-right">
           {date}
         </p>

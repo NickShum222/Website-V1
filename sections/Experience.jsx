@@ -2,9 +2,9 @@
 import { motion } from "framer-motion";
 import { staggerContainer, slideRight } from "@/utils/motion";
 import { styles } from "@/styles";
-import { experienceCards, projectCards } from "@/constants";
+import { experienceCards} from "@/constants";
 import { ExperienceCard } from "@/components";
-import { Swipeable } from "react-swipeable";
+
 
 const Experience = () => {
   return (

@@ -4,32 +4,34 @@ import { About, Hero, Projects, Experience, Contact } from "../sections";
 import { useEffect, useState } from "react";
 
 export default function Home() {
+
   const [loading, setLoading] = useState(false);
   useEffect(() => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 3700);
+    }, 100);
   }, []);
   return (
-    <div className=" bg-primary w-full overflow-hidden">
-      {loading ? (
-        <Loading />
-      ) : (
-        <div className=" bg-primary w-full overflow-hidden">
-          <Navbar />
-          <Sidebar />
-          <Hero />
-          <About />
+    <div className={``}>
+      <div className=" bg-primary w-full overflow-hidden">
+        {loading ? (
+          <Loading />
+        ) : (
+          <div className=" bg-primary w-full overflow-hidden">
+            <Navbar />
+            <Sidebar />
+            <Hero />
+            <About />
 
-            
             <Projects />
-            
+
             <Experience />
-          <Contact />
-          <Footer />
-        </div>
-      )}
+            <Contact />
+            <Footer />
+          </div>
+        )}
+      </div>
     </div>
   );
 }
