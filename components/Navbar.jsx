@@ -65,7 +65,7 @@ const Navbar = () => {
               `}
               href={`#${nav.id}`}
             >
-              <span className="text-highlight group-hover:text-semiwhite">#</span><span className="group-hover:text-highlight">{nav.id}</span>
+              <span className="text-highlight group-hover:text-semiwhite">#</span><span className="font-mono group-hover:text-highlight">{nav.id}</span>
             </a>
           </motion.li>
         ))}

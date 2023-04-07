@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className={`xl:pl-[280px] lg:pl-[120px] md:pl-36 lg:pt-20 pl-6 xl:pr-[200px] lg:pr-[120px] md:pr-36 pr-6 mt-[-5%] pb-18 flex flex-col items-center justify-center z-[5] `}
+      className={`xl:px-[170px] lg:px-[110px] md:pl-36 lg:pt-20 pl-6 xl:pr-[200px] lg:pr-[120px] md:pr-36 pr-6 mt-[-5%] pb-18 flex flex-col items-center justify-center z-[5] `}
     >
       <motion.div
         className="w-full flex lg:flex-row flex-col-reverse  lg:justify-between justify-around items-center min-h-[80vh] "
