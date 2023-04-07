@@ -21,6 +21,7 @@ module.exports = withMT ({
         
       },
       colors: {
+        grey: '#151515',
         primary: '#060C1D',
         
         secondary: '#001d3d',

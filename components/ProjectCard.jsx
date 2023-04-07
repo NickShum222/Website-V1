@@ -23,8 +23,8 @@ const ProjectCard = ({
         setActive(id);
       }}
       className={`relative 
-      w-full flex flex-col sm:px-10 px-4 justify-center items-center  rounded-lg cursor-pointer 
-      border-2 border-[#BFBFBF]`}
+      w-full flex flex-col sm:px-10 px-4 justify-center items-center   cursor-pointer 
+      border-[1px] border-[#BFBFBF]`}
     >
       
       <div
@@ -33,7 +33,7 @@ const ProjectCard = ({
         }`}
       >
         <h3
-          className={`md:text-[25px] transition-all duration-150 text-[18px] py-4 md:py-6 text-white font-mono font-normal  `}
+          className={`md:text-[25px] transition-all duration-150 text-[18px] py-4 md:py-6 text-[#BFBFBF] font-mono font-normal  `}
         >
           {title}
         </h3>
