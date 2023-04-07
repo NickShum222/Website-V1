@@ -5,14 +5,16 @@ import { motion } from "framer-motion";
 import { AiOutlineInstagram, AiOutlineLinkedin } from "react-icons/ai";
 import { FiGithub } from "react-icons/fi";
 import { SlSocialSpotify } from "react-icons/sl";
-import {staggerContainer, slideUp } from "@/utils/motion";
+import { staggerContainer, slideUp } from "@/utils/motion";
 
 const Sidebar = () => {
   return (
-    <motion.div variants={staggerContainer}
-          initial="hidden"
+    <motion.div
+      variants={staggerContainer}
+      initial="hidden"
       animate="visible"
-     className="hidden md:h-[100vh] lg:px-[40px] px-16  md:fixed md:flex md:flex-col md:justify-end md:items-center md:gap-5">
+      className="hidden md:h-[100vh] lg:px-[40px] px-16  md:fixed md:flex md:flex-col md:justify-end md:items-center md:gap-5"
+    >
       <motion.a
         variants={slideUp(3)}
         href="https://github.com/NickShum222"
@@ -21,7 +23,6 @@ const Sidebar = () => {
           scale: 1.1,
           color: "#00C6BE",
           transition: { duration: 0.2 },
-          
         }}
         whileTap={{ scale: 0.9 }}
         className="text-[#8b8b8b]"
@@ -71,9 +72,10 @@ const Sidebar = () => {
         <SlSocialSpotify size={"1.4em"} />
       </motion.a>
 
-      <motion.div variants={slideUp(3.8)} className="h-[100px] bg-[#8b8b8b] w-[2px]">
-
-      </motion.div>
+      <motion.div
+        variants={slideUp(3.8)}
+        className="h-[100px] bg-[#8b8b8b] w-[2px]"
+      ></motion.div>
     </motion.div>
   );
 };

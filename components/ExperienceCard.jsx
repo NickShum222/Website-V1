@@ -5,6 +5,7 @@ import { staggerContainer, slideLeft, roll } from "@/utils/motion";
 const ExperienceCard = ({
   id,
   title,
+  position,
   description,
   date,
   img,
@@ -13,8 +14,16 @@ const ExperienceCard = ({
   return (
     <motion.div 
     variants={slideLeft(index*0.2)}
-    className="relative w-full flex flex-1">
-      <div  className="flex flex-col md:w-[425px] w-[300px] shadow-2xl bg-primary  relative rounded-lg pr-8 py-4">
+    className="w-full border-b-[1px] border-[#d9d9d9] flex flex-col justify-center items-center xl:py-5 py-3">
+      <div className="w-full flex flex-row justify-between items-center md:pb-3 sm:pb-2 pb-1">
+        <div className="flex flex-col justify-start items-start">
+          <p className="transition-all duration-100 text-white lg:text-[30px] md:text-[26px] text-[24px] md:leading-[26px] leading-[24px] lg:leading-[30px]">{title}</p>
+          <p className="transition-all duration-100 text-white lg:text-[20px] md:text-[18px] text-[16px] ">{position}</p>
+        </div>
+        <div className="transition-all duration-100 text-[#BFBFBF] lg:text-[21px] md:text-[20px] text-[18px]">{date}</div>
+      </div>
+      <div className="transition-all duration-100 text-[#9c9c9c] lg:text-[17px] md:text-[15px] text-[13px]">{description}</div>
+      {/* <div  className="flex flex-col md:w-[425px] w-[300px] shadow-2xl bg-primary  relative rounded-lg pr-8 py-4">
         <p className="text-[#BFBFBF]  italic lg:text-[18px] text-right">
           {date}
         </p>
@@ -25,7 +34,7 @@ const ExperienceCard = ({
           {title}
         </p>
 
-        {/* <div className='absolute rounded-full '>
+        <div className='absolute rounded-full '>
         <img src={img} alt={title} className=" object-cover h-[40px] rounded-full" />
       </div>
       <div>
@@ -35,7 +44,7 @@ const ExperienceCard = ({
           <p className='text-[#BFBFBF] italic lg:text-[24px] pt-4'>{date}</p>
           <h3 className='text-white lg:text-[30px] font-mono'>{title}</h3>
           <p>{description}</p>
-      </div> */}
+      </div>
       </div>
       <div className="absolute z-20 md:left-[-50px] left-[-35px] top-[16px]  md:top-[12px]">
         <img
@@ -43,7 +52,7 @@ const ExperienceCard = ({
           alt={title}
           className="object-cover md:h-[100px] h-[70px] rounded-full"
         />
-      </div>
+      </div> */}
     </motion.div>
   );
 };

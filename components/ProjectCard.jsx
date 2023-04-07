@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { slideRight } from "../utils/motion";
+import { slideUp } from "../utils/motion";
 import { FiGithub } from "react-icons/fi";
 import { BsGlobe } from "react-icons/bs";
 import { useState } from "react";
@@ -11,7 +11,8 @@ const ProjectCard = ({ id, title, description, tools, git, url, index }) => {
     setActive(!active);
   };
   return (
-    <div
+    <motion.div
+    variants={slideUp(index * 0.15 + 0.15)}
       className="overflow-hidden flex flex-col items-between cursor-pointer justify-between border-[1px] border-white min-w-[40%] xl:min-w-[30%]  xl:h-[315px] h-[305px]"
       onClick={() => {
         handleActive();
@@ -80,7 +81,7 @@ const ProjectCard = ({ id, title, description, tools, git, url, index }) => {
           </ul>
         </div>
       </div>
-    </div>
+    </motion.div>
     // <IconContext.Provider value={{ color: "#BFBFBF", size: "1.5em" }}>
     // <motion.div
     //   variants={slideRight(index * 0.25 + 0.25)}

@@ -1,5 +1,5 @@
 export const styles = {
-  heading_2: ' text-white font-normal font-poppins xl:text-[64px] lg:text-[56px] md:text-[48px] z-10 max-md:mb-6 text-[40px]',
+  heading_2: ' text-white font-normal xl:text-[60px] lg:text-[52px] md:text-[44px] z-10 max-md:mb-6 text-[36px]',
   textGradient: 'text-transparent bg-clip-text bg-gradient-to-r from-[#E100FF] to-[#7F00FF]',
   hoverGradient: 'transition-all duration-200 ease-out hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-[#E100FF] hover:to-[#7F00FF]',
   hoverCyan: 'transition-all duration-200 ease-out hover:text-highlight',
