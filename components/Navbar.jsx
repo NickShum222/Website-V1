@@ -5,7 +5,7 @@ import { useState } from "react";
 import { navLinks } from "../constants";
 import { styles } from "@/styles";
 import { BsLinkedin, BsSpotify, BsGithub, BsInstagram } from "react-icons/bs";
-import {CgDarkMode} from "react-icons/cg"
+import { CgDarkMode } from "react-icons/cg";
 
 const slideIn = {
   hidden: {
@@ -46,55 +46,60 @@ const Navbar = () => {
         />
       </a>
       <div className="flex flex-row items-center justify-center">
-      <ul
-        className={`h-full flex-1 z-10 md:flex hidden justify-end items-center`}
-      >
-        {navLinks.map((nav, index) => (
-          <motion.li
-            variants={dropDown(index * 0.1 + 0.1)}
-            key={nav.id}
-            className={`h-full flex justify-center items-center font-poppins font-normal cursor-pointer text-[18px]  
+        <ul
+          className={`h-full flex-1 z-10 md:flex hidden justify-end items-center`}
+        >
+          {navLinks.map((nav, index) => (
+            <motion.li
+              variants={dropDown(index * 0.1 + 0.1)}
+              key={nav.id}
+              className={`h-full flex justify-center items-center font-poppins font-normal cursor-pointer text-[18px]  
             } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
-            // onClick={() => {
-            //   setActive(nav.title);
-            // }}
-          >
-            {/* ${active === nav.title ? `text-highlight` : "text-semiwhite"} */}
-            <a
-              className={`group transition-all duration-200 ease-out font-mono text-semiwhite
-              `}
-              href={`#${nav.id}`}
+              // onClick={() => {
+              //   setActive(nav.title);
+              // }}
             >
-              <span className="text-highlight group-hover:text-semiwhite">#</span><span className="font-mono group-hover:text-highlight">{nav.id}</span>
-            </a>
-          </motion.li>
-        ))}
-      </ul>
-      {/* <motion.button variants={dropDown(0.6)} className="ml-5">
+              {/* ${active === nav.title ? `text-highlight` : "text-semiwhite"} */}
+              <a
+                className={`group transition-all duration-200 ease-out font-mono text-semiwhite
+              `}
+                href={`#${nav.id}`}
+              >
+                <span className="text-highlight group-hover:text-semiwhite">
+                  #
+                </span>
+                <span className="font-mono group-hover:text-highlight">
+                  {nav.id}
+                </span>
+              </a>
+            </motion.li>
+          ))}
+        </ul>
+        {/* <motion.button variants={dropDown(0.6)} className="ml-5">
           <CgDarkMode size={"1.6em"} />
         </motion.button> */}
-      {/* Hamburger Menu */}
-      <motion.div
-        variants={dropDown(0.4)}
-        className="md:hidden flex flex-col cursor-pointer z-[99]"
-        onClick={toggleNav}
-      >
-        <div
-          className={`transform duration-300 w-[25px] h-[3px] bg-white rounded-full ease-in-out my-[2px] mx-1 ${
-            nav ? "translate-y-[7px] origin rotate-45 transition " : ""
-          }`}
-        ></div>
-        <div
-          className={`transform duration-300 w-[25px] h-[3px] bg-white rounded-full ease-in-out my-[2px] mx-1 ${
-            nav ? "translate-x-[100%] opacity-0" : ""
-          }`}
-        ></div>
-        <div
-          className={`transform duration-300 w-[25px] h-[3px] bg-white rounded-full ease-in-out my-[2px] mx-1 ${
-            nav ? "translate-y-[-7px] origin -rotate-45 transition" : ""
-          }`}
-        ></div>
-      </motion.div>
+        {/* Hamburger Menu */}
+        <motion.div
+          variants={dropDown(0.4)}
+          className="md:hidden flex flex-col cursor-pointer z-[99]"
+          onClick={toggleNav}
+        >
+          <div
+            className={`transform duration-300 w-[25px] h-[3px] bg-white rounded-none ease-in-out my-[2px] mx-1 ${
+              nav ? "translate-y-[7px] origin rotate-45 transition " : ""
+            }`}
+          ></div>
+          <div
+            className={`transform duration-300 w-[25px] h-[3px] bg-white rounded-none ease-in-out my-[2px] mx-1 ${
+              nav ? "translate-x-[100%] opacity-0" : ""
+            }`}
+          ></div>
+          <div
+            className={`transform duration-300 w-[25px] h-[3px] bg-white rounded-none ease-in-out my-[2px] mx-1 ${
+              nav ? "translate-y-[-7px] origin -rotate-45 transition" : ""
+            }`}
+          ></div>
+        </motion.div>
       </div>
       {/* Mobile Menu */}
       <AnimatePresence>
@@ -109,7 +114,7 @@ const Navbar = () => {
             onClick={toggleNav}
           >
             <motion.div
-              className={`fixed right-0 bg-[#0c183b]  shadow-3xl  w-[70%] h-[100%] flex flex-col justify-evenly items-center z-[10]`}
+              className={`fixed right-0 bg-[#141414]  shadow-3xl  w-[80%] h-[100%] flex flex-col justify-evenly items-center z-[10]`}
               variants={slideIn}
               initial="hidden"
               animate="visible"
@@ -124,18 +129,31 @@ const Navbar = () => {
                 {navLinks.map((nav, index) => (
                   <li
                     key={nav.id}
-                    className={`font-poppins font-normal cursor-pointer transition-all duration-150 text-[16px] sm:text-[22px] text-semiwhite ${styles.hoverCyan}  ${index === 0 ? "mt-[40px]" : "mt-[50px]"} `}
+                    className={` font-normal cursor-pointer transition-all duration-150 text-[16px] sm:text-[22px] text-semiwhite ${
+                      styles.hoverCyan
+                    }  ${index === 0 ? "mt-[25px]" : "mt-[35px]"} `}
                     onClick={() => {
                       //setActive(nav.title);
                       toggleNav();
                     }}
                   >
-                    <a href={`#${nav.id}`}>{nav.title}</a>
+                    <a
+                      className={`group text-[22px] transition-all duration-200 ease-out font-mono text-semiwhite
+              `}
+                      href={`#${nav.id}`}
+                    >
+                      <span className="text-highlight group-hover:text-semiwhite">
+                        #
+                      </span>
+                      <span className="font-mono group-hover:text-highlight">
+                        {nav.id}
+                      </span>
+                    </a>
                   </li>
                 ))}
               </ul>
               <div className="flex flex-col w-full justify-start items-center gap-4">
-                <div className="transition-all duration-150 text-[16px] sm:text-[22px]">
+                <div className="transition-all duration-150 sm:text-[22px] text-semiwhite text-[20px]">
                   Let&apos;s Connect!
                 </div>
 
@@ -146,14 +164,14 @@ const Navbar = () => {
                     target="_blank"
                     className="text-[#8b8b8b] duration-300 hover:text-highlight hover:-translate-y-1"
                   >
-                    <BsGithub size={"1.3em"} />
+                    <BsGithub size={"1.6em"} />
                   </motion.a>
                   <motion.a
                     href="https://www.linkedin.com/in/nick-shum/"
                     target="_blank"
                     className="text-[#8b8b8b] duration-300 hover:text-highlight hover:-translate-y-1"
                   >
-                    <BsLinkedin size={"1.3em"} />
+                    <BsLinkedin size={"1.6em"} />
                   </motion.a>
                   <motion.a
                     v
@@ -161,14 +179,14 @@ const Navbar = () => {
                     target="_blank"
                     className="text-[#8b8b8b] duration-300 hover:text-highlight hover:-translate-y-1"
                   >
-                    <BsInstagram size={"1.3em"} />
+                    <BsInstagram size={"1.6em"} />
                   </motion.a>
                   <motion.a
                     href="https://open.spotify.com/user/1ofn228owlljh59onkm7f8k9q"
                     target="_blank"
                     className="text-[#8b8b8b] duration-300 hover:text-highlight hover:-translate-y-1"
                   >
-                    <BsSpotify size={"1.3em"} />
+                    <BsSpotify size={"1.6em"} />
                   </motion.a>
                 </div>
               </div>

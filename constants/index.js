@@ -52,7 +52,7 @@ export const experienceCards = [
     id: "ellisdon",
     title: "EllisDon",
     position: "Quality Assurance Analyst",
-    description: "Utilized Jira for project management, improving team collaboration and project completion rates, and tested software tools for increased efficiency and productivity across the company.",
+    description: "Utilized Jira for project management, improving team collaboration and project completion rates, tested and promoted software tools for increased efficiency and productivity across the company.",
     date: "Jan 2023 - Present",
     img: "/ellisdon.svg",
   },
