@@ -18,17 +18,17 @@ export const projectPictures = [
 
 export const projectCards = [
   {
-    id: "website",
+    id: "/website.png",
     title: "Personal Website",
-    description: "A personal website portfolio to showcase my projects and experiences. Built using the Next13 framework, and used TailwindCSS for styling.",
+    description: "A personal website portfolio to showcase my projects and experiences. Built with NextJS, TailwindCSS, and Figma.",
     tools: ["ReactJS", "Next13", "TailwindCSS", "Figma"],
     git: "https://github.com/NickShum222/Website-Portfolio",
     url: "https://www.nickshum.ca/",
   },
   {
-    id: "weather",
+    id: "/website.png",
     title: "Weather App",
-    description: "A simple, user-friendly weather app to display current weather information from any city in the world. Obtained real-time weather information by fetching it from the openweathermap.org API",
+    description: "A simple weather app to display current weather information. Obtained real-time weather information by fetching it from the openweathermap.org API",
     tools: ["ReactJS", "HTML5", "CSS3", "JavaScript"],
     git: "https://github.com/NickShum222/WeatherApp-1",
     url: "https://63f7aea636e521094a462f52--weather-app-nick.netlify.app/",
@@ -36,7 +36,7 @@ export const projectCards = [
 
 
   {
-    id: "space",
+    id: "/website.png",
     title: "Space Invaders Clone",
     description: "A clone of the classic arcade game Space Invaders. Built with Java, utilizing Object-Oriented Programming principles.",
     tools: ["Java", "Inheritance", "Polymorphism"],

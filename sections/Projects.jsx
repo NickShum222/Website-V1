@@ -23,7 +23,7 @@ const Projects = () => {
           variants={slideRight(0)}
         className={`${styles.heading_2} pb-0 md:pb-4`}>Projects</motion.h1>
 
-        <motion.div className="flex flex-row justify-between items-center w-full">
+        <motion.div className="grid xl:grid-cols-3 lg:grid-cols-2 grid-cols-1 gap-5 w-full">
           {projectCards.map((project, index) => (
             <ProjectCard
               key={project.id} {...project}

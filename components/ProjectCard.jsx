@@ -12,17 +12,17 @@ const ProjectCard = ({ id, title, description, tools, git, url, index }) => {
   };
   return (
     <div
-      className="overflow-hidden flex flex-col items-between cursor-pointer justify-between border-[1px] border-white w-[30%] h-[300px]"
+      className="overflow-hidden flex flex-col items-between cursor-pointer justify-between border-[1px] border-white min-w-[40%] xl:min-w-[30%]  xl:h-[315px] h-[305px]"
       onClick={() => {
         handleActive();
       }}
     >
       <div
         className={`${
-          active ? `h-[0px] opacity-0` : "h-[235px]"
+          active ? `h-[0px] opacity-0` : "xl:h-[250px] h-[240px]"
         } transition-all duration-150`}
       >
-        im asdfajlksdjfklajslkdfjlasjdflkajsdlkfjalksdfjlaksdjfklajsdflkaj
+        <img className="min-w-[100%] h-[100%] object-cover" src={id} alt={title} />
       </div>
       <div
         className={`flex flex-row justify-between items-center ${
@@ -63,16 +63,16 @@ const ProjectCard = ({ id, title, description, tools, git, url, index }) => {
       </div>
       <div
         className={`${
-          active ? `h-[235px]` : "h-0"
+          active ? `xl:h-[250px] h-[240px]` : "h-0"
         } transition-all duration-150`}
       >
         <div className="flex flex-col h-full justify-between items-between">
-          <div className="px-4 pt-4">{description}</div>
-          <ul className="flex flex-row px-4 justify-start items-center sm:gap-x-7 gap-x-3 gap-y-2 pb-5 flex-wrap">
+          <div className="px-4 pt-4 xl:text-[15px] text-[16px]">{description}</div>
+          <ul className="flex flex-row px-4 justify-start items-center sm:gap-x-7 gap-x-3 pb-4 flex-wrap">
             {tools.map((tool, index) => (
               <li
                 key={index}
-                className="text-[#B0B0B0] transition-all"
+                className="xl:text-[15px] text-[16px] transition-all"
               >
                 {tool}
               </li>
