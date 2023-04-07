@@ -4,7 +4,7 @@ export default function Head() {
       <title>Nick Shum</title>
       <meta content="width=device-width, initial-scale=1" name="viewport" />
       <meta name="description" content="Nick Shum | Website Portfolio" />
-      <meta name="theme-color" content= "#060C1D" />
+      <meta name="theme-color" content= "#151515" />
       <link rel="icon" href="/favicon.ico"/>
     </>
   )

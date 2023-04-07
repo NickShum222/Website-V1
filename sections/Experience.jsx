@@ -28,7 +28,7 @@ const Experience = () => {
           <div className="h-[1px] w-full border-[1px] border-highlight mb-2 md:mb-4" />
         </motion.div>
         <div className="flex w-full flex-col justify-end items-end">
-        <div className="flex flex-col justify-start items-start xl:w-[50%] w-full ">
+          <div className="flex flex-col justify-start items-start xl:w-[50%] w-full ">
             {experienceCards.map((experience, index) => (
               <ExperienceCard
                 key={experience.id}
@@ -37,22 +37,12 @@ const Experience = () => {
               />
             ))}
             <motion.div variants={slideLeft(0.6)}>
-            <Button className="md:mt-5 mt-3 rounded-none normal-case py-3 px-8 text-[14px] md:text-[16px] lg:text-[18px]   text-highlight transition-all hover:bg-highlight/10 active:bg-highlight/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none border-highlight border-[1px]"  ><a href="">Resume</a></Button>
+              <Button className="md:mt-5 mt-3 rounded-none normal-case py-3 px-8 text-[14px] md:text-[16px] lg:text-[18px]   text-highlight transition-all hover:bg-highlight/10 active:bg-highlight/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none border-highlight border-[1px]">
+                <a href="">Resume</a>
+              </Button>
             </motion.div>
-
+          </div>
         </div>
-        </div>
-        
-
-        {/* <motion.div  className="">
-          <motion.div className="relative">
-            {experienceCards.map((experience, index) => (
-              <motion.div  className="absolute w-[100%] h-[100%] overflow-hidden">
-                <ExperienceCard key={experience.id} {...experience}  />
-              </motion.div>
-            ))}
-          </motion.div>
-        </motion.div> */}
       </motion.div>
     </section>
   );

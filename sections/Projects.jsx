@@ -17,7 +17,7 @@ const Projects = () => {
         viewport={{ once: true, amount: 0.3 }}
         className="flex flex-col items-start w-full justify-start "
       >
-        <motion.div variants={slideRight(0)} className="flex xl:w-[45%] lg:w-[60%] w-[90%] gap-5 flex-row justify-start items-center">
+        <motion.div variants={slideRight(0)} className="flex xl:w-[45%] lg:w-[60%] w-[100%] gap-5 flex-row justify-start items-center">
           <h1
             className={`${styles.heading_2} transition-all duration-75 mb-3 md:mb-4`}
           >

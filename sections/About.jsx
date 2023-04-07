@@ -15,31 +15,39 @@ const About = () => {
         viewport={{ once: true, amount: 0.3 }}
         className="w-full flex lg:flex-row flex-col lg:justify-between justify-center items-center  "
       >
-        <div className="flex flex-col lg:justify-start lg:items-start justify-center items-center lg:max-w-[50%]">
-          <motion.h1
-            variants={slideRight(0.25)}
-            className={`${styles.heading_2} lg:mb-4 text-center lg:text-start`}
-          >
-            About
-          </motion.h1>
+        <div className="flex flex-col justify-start items-start w-full">
           <motion.div
-            variants={slideRight(0.5)}
-            className="flex flex-col justify-center max-w-[100%] z-10 "
+            variants={slideRight(0)}
+            className="flex lg:w-[55%] w-full gap-5 flex-row justify-start items-center"
           >
-            <p className={`${styles.paragraph}`}>
-              Hi there! My name is Nick Shum and I’m a first year computer
-              engineering student at the University of Waterloo.
-            </p>
-            <p className={`${styles.paragraph}`}>
-              Currently, I’m a quality assurance analyst at EllisDon, testing
-              software to ensure it meets desired levels of quality and
-              functions as intended.
-            </p>
-            <p className={`${styles.paragraph}`}>
-              When I’m not programming, I enjoy curating spotify playlists,
-              hanging out with friends, or skateboarding when the weather is nice!
-            </p>
-            {/* <div className="flex flex-row justify-end mt-[-10px]">
+            <h1
+              className={`${styles.heading_2} transition-all duration-75 mb-2 md:mb-4`}
+            >
+              <span className="text-highlight">#</span>about
+            </h1>
+            <div className="h-[1px] w-full border-[1px] border-highlight mb-2 md:mb-4" />
+          </motion.div>
+
+          <div className="flex lg:flex-row flex-col justify-between lg:items-start items-center w-full">
+            <motion.div
+              variants={slideRight(0.5)}
+              className="flex flex-col justify-center lg:max-w-[50%] w-full z-10 "
+            >
+              <p className={`${styles.paragraph}`}>
+                Hello, my name is Nick Shum and I’m a first year computer
+                engineering student at the University of Waterloo.
+              </p>
+              <p className={`${styles.paragraph}`}>
+                Currently, I’m a quality assurance analyst at EllisDon, testing
+                software to ensure it meets desired levels of quality and
+                functions as intended.
+              </p>
+              <p className={`${styles.paragraph}`}>
+                When I’m not programming, I enjoy curating spotify playlists,
+                hanging out with friends, or skateboarding when the weather is
+                nice!
+              </p>
+              {/* <div className="flex flex-row justify-end mt-[-10px]">
             <RenderIfVisible
                 defaultHeight={ESTIMATED_ITEM_HEIGHT}
                 visibleOffset = "100"
@@ -48,27 +56,28 @@ const About = () => {
                 <Nick className="h-[80px]" />
               </RenderIfVisible>
             </div> */}
-          </motion.div>
-        </div>
-        <motion.div
-          variants={slideLeft(0.75)}
-          className="relative  lg:max-w-[450px] w-[80%] lg:mt-0 mt-10 flex-none md:flex-1"
-        >
-          <img
-            src="/profile.jpg"
-            alt="profile"
-            className="rounded-[30px] object-contain scale-x-[-1]"
-          />
-          <div className="absolute bottom-0 flex flex-1">
-            <RenderIfVisible
-              defaultHeight={ESTIMATED_ITEM_HEIGHT}
-              visibleOffset="100"
-              stayRendered="true"
+            </motion.div>
+            <motion.div
+              variants={slideLeft(0)}
+              className="relative lg:w-[30%] w-[80%] lg:mt-0 mt-5"
             >
-              <Nick className="w-[50%] z-20" />
-            </RenderIfVisible>
+              <img
+                src="/profile.jpg"
+                alt="profile"
+                className="object-contain scale-x-[-1]"
+              />
+              <div className="absolute bottom-0 flex flex-1">
+                <RenderIfVisible
+                  defaultHeight={ESTIMATED_ITEM_HEIGHT}
+                  visibleOffset="100"
+                  stayRendered="true"
+                >
+                  <Nick className="w-[50%] z-20" />
+                </RenderIfVisible>
+              </div>
+            </motion.div>
           </div>
-        </motion.div>
+        </div>
 
         {/* <motion.h1 
         variants={slideRight()}

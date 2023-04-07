@@ -30,7 +30,7 @@ const ProjectCard = ({ id, title, description, tools, git, url, index }) => {
           active ? "border-b-[1px]" : "border-t-[1px]"
         }`}
       >
-        <div className=" py-4 pl-4 text-[20px]">{title}</div>
+        <div className=" py-4 pl-4 text-[20px] text-white">{title}</div>
         <div className="flex flex-row gap-2 pr-4">
           <motion.a
             href={git}
@@ -68,12 +68,12 @@ const ProjectCard = ({ id, title, description, tools, git, url, index }) => {
         } transition-all duration-150`}
       >
         <div className="flex flex-col h-full justify-between items-between">
-          <div className="px-4 pt-4 xl:text-[15px] text-[16px]">{description}</div>
+          <div className="px-4 pt-4 xl:text-[15px] text-[16px] text-[#9c9c9c]">{description}</div>
           <ul className="flex flex-row px-4 justify-start items-center sm:gap-x-7 gap-x-3 pb-4 flex-wrap">
             {tools.map((tool, index) => (
               <li
                 key={index}
-                className="xl:text-[15px] text-[16px] transition-all"
+                className="xl:text-[15px] text-[16px] transition-all text-[#9c9c9c]"
               >
                 {tool}
               </li>
