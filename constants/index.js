@@ -20,7 +20,7 @@ export const projectCards = [
   {
     id: "/website.png",
     title: "Personal Website",
-    description: "A personal website portfolio to showcase my projects and experiences. Built with NextJS, TailwindCSS, and Figma.",
+    description: "A personal website portfolio to showcase my projects and experiences. Built with NextJS, TailwindCSS, and Figma. ",
     tools: ["ReactJS", "Next13", "TailwindCSS", "Figma"],
     git: "https://github.com/NickShum222/Website-Portfolio",
     url: "https://www.nickshum.ca/",
