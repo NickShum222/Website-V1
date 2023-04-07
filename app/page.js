@@ -14,19 +14,20 @@ export default function Home() {
   }, []);
   return (
     <div className={``}>
-      <div className=" bg-primary w-full overflow-hidden">
+      <div className=" bg-grey w-full overflow-hidden">
         {loading ? (
           <Loading />
         ) : (
-          <div className=" bg-primary w-full overflow-hidden">
+          <div className=" bg-grey w-full overflow-hidden">
             <Navbar />
             <Sidebar />
             <Hero />
-            <About />
+     
 
             <Projects />
 
             <Experience />
+            <About />
             <Contact />
             <Footer />
           </div>

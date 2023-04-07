@@ -5,7 +5,7 @@ import { scale } from "@/utils/motion";
 const Loading = () => {
   return (
     <motion.div variants={scale(3)}         initial="hidden"
-    animate="visible" className="w-[100vw] h-[100vh] flex justify-center items-center flex-1 bg-primary">
+    animate="visible" className="w-[100vw] h-[100vh] flex justify-center items-center flex-1 bg-grey">
       <svg
         id="loading"
         width="15%"

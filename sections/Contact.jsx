@@ -164,10 +164,10 @@ function ContactForm() {
       <Button
         disabled={formik.isSubmitting}
         type="submit"
-        className="w-full mt-3 rounded-lg py-3 px-6  text-highlight transition-all hover:bg-highlight/10 active:bg-highlight/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+        className="w-full mt-3 rounded-lg py-3 px-6  text-white transition-all hover:bg-primary/10 active:bg-primary/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
         data-ripple-dark="true"
       >
-        <span className="font-poppins text-[14px] text-highlight font-semibold ">Send Message</span>
+        <span className="font-poppins text-[14px] text-white font-semibold ">Send Message</span>
       </Button>
       <div
         className={`text-green-500 text-[16px] pt-3 mb-0 pb-0 ${

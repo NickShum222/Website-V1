@@ -13,7 +13,7 @@ export const opacity = (delay) => ({
   visible: {
     opacity: 0.3,
     transition: {
-      duration: 1,
+      duration: 0.5,
       delay,
     },
   },

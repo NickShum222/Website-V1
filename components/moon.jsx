@@ -17,38 +17,38 @@ const Moon = () => {
       >
         <g id="herobg" className="">
           <g id="background" >
-            <motion.circle variants={opacity(3.1)} id="Ellipse 3" cx="550" cy="550" r="550" fill="#1F2434" fillOpacity="0.3" />
-            <motion.circle variants={opacity(3.05)}
+            <motion.circle variants={opacity(2.85)} id="Ellipse 3" cx="550" cy="550" r="550" fill="#3c3c3c" fillOpacity="0.3" />
+            <motion.circle variants={opacity(2.8)}
               id="Ellipse 4"
               cx="549.5"
               cy="550.5"
               r="487.5"
-              fill="#383D4A" fillOpacity="0.3"
+              fill="#4f4f4f" fillOpacity="0.3"
             />
-            <motion.circle variants={opacity(3)}
+            <motion.circle variants={opacity(2.75)}
               id="Ellipse 5"
               cx="550"
               cy="550"
               r="425"
-              fill="#515561" fillOpacity="0.3"
+              fill="#636363" fillOpacity="0.3"
             />
-            <motion.circle variants={opacity(2.95)}
+            <motion.circle variants={opacity(2.7)}
               id="Ellipse 6"
               cx="549.5"
               cy="550.5"
               r="362.5"
-              fill="#6A6D77" fillOpacity="0.3"
+              fill="#777777" fillOpacity="0.3"
             />
-            <motion.circle variants={opacity(2.65)} id="Ellipse 7" cx="550" cy="550" r="300" fill="#83868E" fillOpacity="0.3" />
+            <motion.circle variants={opacity(2.65)} id="Ellipse 7" cx="550" cy="550" r="300" fill="#8a8a8a" fillOpacity="0.3" />
             <motion.circle variants={opacity(2.6)}
               id="Ellipse 8"
               cx="549.5"
               cy="550.5"
               r="237.5"
-              fill="#9B9EA5" fillOpacity="0.3"
+              fill="#9e9e9e" fillOpacity="0.3"
             />
           </g>
-          <motion.g variants={slideLeft(2.65)} className="z-[1]" id="cloud2">
+          <motion.g variants={slideLeft(2.45)} className="z-[1]" id="cloud2">
             <path
               id="Vector"
               d="M514.47 704.156C531.727 700.083 545.972 684.649 549.37 666.346C553.951 641.665 533.769 615.778 508.545 613.981L500.76 613.426L502.233 609.319C504.306 603.542 504.149 592.469 501.901 585.885C499.31 578.297 489.34 568.368 481.722 565.787C474.732 563.42 464.124 563.343 458.65 565.622C454.793 567.227 454.41 567.206 453.42 565.339C451.315 561.367 438.335 549.68 432.677 546.662C421.341 540.617 404.107 538.399 391.305 541.337C371.107 545.973 352.527 564.594 348 584.739L346.637 590.802L341.958 588.781C339.384 587.669 335.141 586.415 332.528 585.995C322.944 584.452 307.472 590.756 301.796 598.517L299.626 601.484L295.243 599.145C284.572 593.448 272.995 595.417 265.183 604.256C258.256 612.094 256.907 620.759 261.051 630.796C261.617 632.166 260.571 633.069 256.722 634.534C249.167 637.407 241.853 644.429 237.733 652.764C234.671 658.96 234.155 661.244 234.155 668.615C234.155 683.667 241.75 695.263 255.953 701.898L262.257 704.843L386.158 705.022C458.338 705.126 511.897 704.763 514.47 704.156Z"

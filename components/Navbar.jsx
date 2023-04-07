@@ -61,11 +61,11 @@ const Navbar = () => {
           >
             {/* ${active === nav.title ? `text-highlight` : "text-semiwhite"} */}
             <a
-              className={`${styles.hoverCyan} text-semiwhite
+              className={`group transition-all duration-200 ease-out font-mono text-semiwhite
               `}
               href={`#${nav.id}`}
             >
-              {nav.title}
+              <span className="text-highlight group-hover:text-semiwhite">#</span><span className="font-mono group-hover:text-highlight">{nav.id}</span>
             </a>
           </motion.li>
         ))}
