@@ -11,7 +11,33 @@
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+::-webkit-scrollbar {
+  width: 8px;
+}
 
+::-webkit-scrollbar-track {
+
+  background-color: #151515;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #9c9c9c;
+  border-radius: 5px;
+}
+
+/* Firefox */
+::-moz-scrollbar {
+  width: 8px;
+}
+
+::-moz-scrollbar-track {
+  background-color: #151515;
+}
+
+::-moz-scrollbar-thumb {
+  background-color: #9c9c9c;
+  border-radius: 5px;
+}
 
 
 #nick{
@@ -109,11 +135,11 @@
 #vector{
   stroke-dasharray: 849;
   stroke-dashoffset: 849;
-  animation: sign 2s ease-in forwards ;
+  animation: sign 1.5s ease-in forwards ;
 }
 
 #loading{
-  animation: fill 0.5s ease-out forwards 2.2s;
+  animation: fill 0.3s ease-out forwards 1.7s;
 }
 
 @keyframes fill{

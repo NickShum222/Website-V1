@@ -99,6 +99,9 @@ const Contact = () => {
 };
 
 function ContactForm() {
+  const serviceID = process.env.SERVICE_ID;
+  const publicKEY = process.env.PUBLIC_KEY;
+  const templateID = process.env.TEMPLATE_ID;
   const [submit, setSubmit] = useState(false);
   const formik = useFormik({
     initialValues: {
@@ -180,7 +183,7 @@ function ContactForm() {
       <Button
         disabled={formik.isSubmitting}
         type="submit"
-        className="rounded-none normal-case p-3 text-[14px] md:text-[16px] lg:text-[18px]   text-highlight transition-all hover:bg-highlight/10 active:bg-highlight/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none border-highlight border-[1px]"
+        className="rounded-none normal-case px-3 py-2 text-[14px] md:text-[16px] lg:text-[18px] text-highlight transition-all hover:bg-highlight/10 active:bg-highlight/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none border-highlight border-[1px]"
         data-ripple-dark="true"
       >
         <span className=" text-[14px] text-highlight">Send Message</span>
