@@ -30,7 +30,7 @@ const About = () => {
 
           <div className="flex lg:flex-row flex-col justify-between lg:items-start items-center w-full">
             <motion.div
-              variants={slideRight(0.5)}
+              variants={slideRight(0.25)}
               className="flex flex-col justify-center lg:max-w-[50%] w-full z-10 "
             >
               <p className={`${styles.paragraph}`}>
@@ -58,7 +58,7 @@ const About = () => {
             </div> */}
             </motion.div>
             <motion.div
-              variants={slideLeft(0)}
+              variants={slideLeft(0.5)}
               className="relative lg:w-[30%] w-[80%] lg:mt-0 mt-5"
             >
               <img

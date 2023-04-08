@@ -69,12 +69,13 @@ const Contact = () => {
             <div className="h-[1px] w-full border-[1px] border-highlight mb-2 md:mb-4" />
           </motion.div>
           <div className="flex lg:flex-row flex-col justify-between items-start w-full">
-          <h3 className="lg:text-[18px] text-[16px] text-[#9c9c9c] w-full lg:w-[40%]">
+          <motion.h3
+          variants={slideRight(0.25)} className="lg:text-[18px] text-[16px] text-[#9c9c9c] w-full lg:w-[40%]">
             Have a question or want to say hello? Feel free to send me a
             message!
-          </h3>
+          </motion.h3>
           <motion.div
-          variants={slideLeft(0.25)}
+          variants={slideLeft(0.55)}
           className="lg:w-[50%] w-full max-lg:mt-6  max-lg:pb-10 pt-5 "
         >
           <ContactForm />
