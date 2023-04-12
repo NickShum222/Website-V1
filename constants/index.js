@@ -70,7 +70,7 @@ export const experienceCards = [
     title: "iSci Peer Tutoring",
     position: "Volunteer Tutor",
     description: "Provided personalized one-on-one tutoring in math and science, utilizing various teaching strategies and tracking student progress to achieve academic improvement while fostering a positive and supportive learning environment.",
-    date: "Sept 2021 - June 2021",
+    date: "Sept 2021 - June 2022",
     img: "/isci.svg",
   },
 ];

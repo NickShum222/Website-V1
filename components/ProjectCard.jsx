@@ -17,6 +17,10 @@ const ProjectCard = ({ id, title, description, tools, git, url, index }) => {
       onClick={() => {
         handleActive();
       }}
+      whileHover={{
+        scale: 1.005,
+        transition: { duration: 0.2 },
+      }}
     >
       <div
         className={`${
