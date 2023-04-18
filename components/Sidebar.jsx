@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { AiOutlineInstagram, AiOutlineLinkedin } from "react-icons/ai";
 import { FiGithub } from "react-icons/fi";
 import { SlSocialSpotify } from "react-icons/sl";
+import { FiMail } from "react-icons/fi";
 import { staggerContainer, slideUp } from "@/utils/motion";
 
 const Sidebar = () => {
@@ -16,7 +17,7 @@ const Sidebar = () => {
       className="hidden md:h-[100vh] lg:px-[40px] px-16  md:fixed md:flex md:flex-col md:justify-end md:items-center md:gap-5"
     >
       <motion.a
-        variants={slideUp(2.8)}
+        variants={slideUp(1.8)}
         href="https://github.com/NickShum222"
         target="_blank"
         whileHover={{
@@ -30,7 +31,7 @@ const Sidebar = () => {
         <FiGithub size={"1.4em"} />
       </motion.a>
       <motion.a
-        variants={slideUp(3)}
+        variants={slideUp(1.9)}
         href="https://www.linkedin.com/in/nick-shum/"
         target="_blank"
         whileHover={{
@@ -44,7 +45,21 @@ const Sidebar = () => {
         <AiOutlineLinkedin size={"1.4em"} />
       </motion.a>
       <motion.a
-        variants={slideUp(3.2)}
+        variants={slideUp(2)}
+        href="mailto:n4shum@uwaterloo.ca"
+        target="_blank"
+        whileHover={{
+          scale: 1.1,
+          color: "#00C6BE",
+          transition: { duration: 0.2 },
+        }}
+        whileTap={{ scale: 0.9 }}
+        className="text-[#8b8b8b] "
+      >
+        <FiMail size={"1.4em"} />
+      </motion.a>
+      <motion.a
+        variants={slideUp(2.1)}
         href="https://www.instagram.com/nick.shum_/"
         target="_blank"
         whileHover={{
@@ -58,7 +73,7 @@ const Sidebar = () => {
         <AiOutlineInstagram size={"1.4em"} />
       </motion.a>
       <motion.a
-        variants={slideUp(3.4)}
+        variants={slideUp(2.2)}
         href="https://open.spotify.com/user/1ofn228owlljh59onkm7f8k9q"
         target="_blank"
         whileHover={{
@@ -73,7 +88,7 @@ const Sidebar = () => {
       </motion.a>
 
       <motion.div
-        variants={slideUp(3.6)}
+        variants={slideUp(2.3)}
         className="h-[100px] bg-[#8b8b8b] w-[2px]"
       ></motion.div>
     </motion.div>

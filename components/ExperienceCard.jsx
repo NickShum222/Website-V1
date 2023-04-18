@@ -14,7 +14,7 @@ const ExperienceCard = ({
   return (
     <motion.div 
     variants={slideLeft(index*0.2)}
-    className="w-full border-b-[1px] border-[#d9d9d9] flex flex-col justify-center items-center xl:py-5 py-3">
+    className={`w-full border-b-[1px] border-[#d9d9d9] flex flex-col justify-center items-center ${index === 0 ? "md:-mt-6 xl:pb-5 pb-3" : "xl:py-5 py-3"}  `}>
       <div className="w-full flex flex-row justify-between items-center md:pb-3 sm:pb-2 pb-1">
         <div className="flex flex-col justify-start items-start">
           <p className="transition-all duration-100 text-white lg:text-[30px] md:text-[26px] text-[24px] md:leading-[26px] leading-[24px] lg:leading-[30px]">{title}</p>

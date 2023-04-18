@@ -19,18 +19,18 @@ const Hero = () => {
       >
         <div className="flex flex-col mt-[-100px] lg:justify-start lg:items-start md:justify-center md:items-center justify-start items-start lg:max-w-[80%] relative z-[2]">
           <motion.h1
-            variants={slideUp(1)}
+            variants={slideUp(0.6)}
             className="text-white font-normal font-poppins lg:leading-[80px] md:leading-[60px] leading-[50px] lg:text-[95px] md:text-[78px] text-[60px] "
           >
             Nick Shum
           </motion.h1>
           <motion.h2
-            variants={slideUp(1.25)}
+            variants={slideUp(0.8)}
             className="text-[#A6A6A6]  lg:text-[45px] md:text-[40px] text-[30px] pb-2 "
           >
             Software Developer
           </motion.h2>
-          <motion.div variants={slideUp(1.5)} className="flex flex-row items-center justify-center gap-5 mt-3 ml-1 ">
+          <motion.div variants={slideUp(1)} className="flex flex-row items-center justify-center gap-5 mt-3 ml-1 ">
             <Button className="rounded-none normal-case py-3 px-8 text-[14px] md:text-[16px] lg:text-[18px]   text-highlight transition-all hover:bg-highlight/10 active:bg-highlight/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none border-highlight border-[1px]"  ><a href="">Resume</a></Button>
             <Button className="rounded-none normal-case py-3 px-8 font-normal font-mono text-[14px] md:text-[16px] lg:text-[18px]   text-highlight transition-all hover:bg-highlight/10 active:bg-highlight/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none  " data-ripple-light="true" ><a href="#contact">Contact</a></Button>
           </motion.div>

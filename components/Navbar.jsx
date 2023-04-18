@@ -5,6 +5,7 @@ import { useState } from "react";
 import { navLinks } from "../constants";
 import { styles } from "@/styles";
 import { BsLinkedin, BsSpotify, BsGithub, BsInstagram } from "react-icons/bs";
+import { HiMail } from "react-icons/hi";
 import { CgDarkMode } from "react-icons/cg";
 
 const slideIn = {
@@ -172,6 +173,13 @@ const Navbar = () => {
                     className="text-[#8b8b8b] duration-300 hover:text-highlight hover:-translate-y-1"
                   >
                     <BsLinkedin size={"1.6em"} />
+                  </motion.a>
+                  <motion.a
+                    href="mailto:n4shum@uwaterloo.ca"
+                    target="_blank"
+                    className="text-[#8b8b8b] duration-300 hover:text-highlight hover:-translate-y-1"
+                  >
+                    <HiMail size={"1.9em"} />
                   </motion.a>
                   <motion.a
                     v
