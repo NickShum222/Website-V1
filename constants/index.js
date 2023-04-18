@@ -18,7 +18,7 @@ export const projectPictures = [
 
 export const projectCards = [
   {
-    id: "/website.png",
+    id: "/hero_website.png",
     title: "Personal Website",
     description: "A personal website portfolio to showcase my projects and experiences. Built with NextJS, TailwindCSS, and Figma. ",
     tools: ["ReactJS", "Next13", "TailwindCSS", "Figma"],
@@ -26,7 +26,7 @@ export const projectCards = [
     url: "https://www.nickshum.ca/",
   },
   {
-    id: "/website.png",
+    id: "/weather_app.png",
     title: "Weather App",
     description: "A simple weather app to display current weather information. Obtained real-time weather information by fetching it from the openweathermap.org API",
     tools: ["ReactJS", "HTML5", "CSS3", "JavaScript"],
@@ -36,7 +36,7 @@ export const projectCards = [
 
 
   {
-    id: "/website.png",
+    id: "/spaceinvaders.png",
     title: "Space Invaders Clone",
     description: "A clone of the classic arcade game Space Invaders. Built with Java, utilizing Object-Oriented Programming principles.",
     tools: ["Java", "Inheritance", "Polymorphism"],

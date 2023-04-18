@@ -16,7 +16,7 @@ const Sidebar = () => {
       className="hidden md:h-[100vh] lg:px-[40px] px-16  md:fixed md:flex md:flex-col md:justify-end md:items-center md:gap-5"
     >
       <motion.a
-        variants={slideUp(3)}
+        variants={slideUp(2.8)}
         href="https://github.com/NickShum222"
         target="_blank"
         whileHover={{
@@ -30,7 +30,7 @@ const Sidebar = () => {
         <FiGithub size={"1.4em"} />
       </motion.a>
       <motion.a
-        variants={slideUp(3.2)}
+        variants={slideUp(3)}
         href="https://www.linkedin.com/in/nick-shum/"
         target="_blank"
         whileHover={{
@@ -44,7 +44,7 @@ const Sidebar = () => {
         <AiOutlineLinkedin size={"1.4em"} />
       </motion.a>
       <motion.a
-        variants={slideUp(3.4)}
+        variants={slideUp(3.2)}
         href="https://www.instagram.com/nick.shum_/"
         target="_blank"
         whileHover={{
@@ -58,7 +58,7 @@ const Sidebar = () => {
         <AiOutlineInstagram size={"1.4em"} />
       </motion.a>
       <motion.a
-        variants={slideUp(3.6)}
+        variants={slideUp(3.4)}
         href="https://open.spotify.com/user/1ofn228owlljh59onkm7f8k9q"
         target="_blank"
         whileHover={{
@@ -73,7 +73,7 @@ const Sidebar = () => {
       </motion.a>
 
       <motion.div
-        variants={slideUp(3.8)}
+        variants={slideUp(3.6)}
         className="h-[100px] bg-[#8b8b8b] w-[2px]"
       ></motion.div>
     </motion.div>
