@@ -31,7 +31,7 @@ const Hero = () => {
             Software Developer
           </motion.h2>
           <motion.div variants={slideUp(1)} className="flex flex-row items-center justify-center gap-5 mt-3 ml-1 ">
-            <Button className="rounded-none normal-case py-3 px-8 text-[14px] md:text-[16px] lg:text-[18px]   text-highlight transition-all hover:bg-highlight/10 active:bg-highlight/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none border-highlight border-[1px]"  ><a href="">Resume</a></Button>
+            <Button className="rounded-none normal-case py-3 px-8 text-[14px] md:text-[16px] lg:text-[18px]   text-highlight transition-all hover:bg-highlight/10 active:bg-highlight/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none border-highlight border-[1px]"  ><a href="/resume">Resume</a></Button>
             <Button className="rounded-none normal-case py-3 px-8 font-normal font-mono text-[14px] md:text-[16px] lg:text-[18px]   text-highlight transition-all hover:bg-highlight/10 active:bg-highlight/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none  " data-ripple-light="true" ><a href="#contact">Contact</a></Button>
           </motion.div>
         </div>

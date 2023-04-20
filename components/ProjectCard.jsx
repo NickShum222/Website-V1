@@ -5,7 +5,7 @@ import { FiGithub } from "react-icons/fi";
 import { BsGlobe } from "react-icons/bs";
 import { useState } from "react";
 
-const ProjectCard = ({ id, title, description, tools, git, url, index }) => {
+const ProjectCard = ({ id, title, description,  tools, git, url, index }) => {
   const [active, setActive] = useState(false);
   const handleActive = () => {
     setActive(!active);

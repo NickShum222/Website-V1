@@ -10,7 +10,7 @@ export default function Home() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 2800);
+    }, 2700);
   }, []);
   return (
     <div className={``}>

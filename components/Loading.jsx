@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { scale } from "@/utils/motion";
 const Loading = () => {
   return (
-    <motion.div variants={scale(2.3)}         initial="hidden"
+    <motion.div variants={scale(2.2)}         initial="hidden"
     animate="visible" className="w-[100vw] h-[100vh] flex justify-center items-center flex-1 bg-grey">
       <svg
         id="loading"
