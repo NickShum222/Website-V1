@@ -11,7 +11,7 @@ export const staggerContainer = (staggerChildren, delayChildren) => ({
 export const opacity = (delay) => ({
   hidden: { opacity: 0 },
   visible: {
-    opacity: 0.3,
+    opacity: 0.5,
     transition: {
       duration: 0.5,
       delay,
