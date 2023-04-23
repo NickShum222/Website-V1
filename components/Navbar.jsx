@@ -219,7 +219,7 @@ const Navbar = () => {
         </AnimatePresence>
       </motion.nav>
       <motion.div
-        className="fixed w-full origin-top-left h-[2px] top-[70px] z-50 left-0 right-0 bg-highlight"
+        className="fixed w-full hidden md:block origin-top-left h-[2px] top-[70px] z-50 left-0 right-0 bg-highlight"
         style={{ scaleX }}
       />
     </div>
