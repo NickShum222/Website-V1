@@ -14,6 +14,7 @@ export default function RootLayout({ children }) {
         <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/ripple.js"></script>
       </head>
       <body>
+        
         {children}
         
       </body>

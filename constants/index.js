@@ -20,9 +20,9 @@ export const projectCards = [
   {
     id: "/hero_website.png",
     title: "Personal Website",
-    description: "A personal website portfolio to showcase my projects and experiences. Built with NextJS, TailwindCSS, and Figma. ",
+    description: "A personal website portfolio to showcase my projects and experiences. Built with Next.js, TailwindCSS, and Figma. ",
 
-    tools: ["ReactJS", "Next13", "TailwindCSS", "Figma"],
+    tools: ["React", "Next.js", "TailwindCSS", "Figma"],
     git: "https://github.com/NickShum222/Website-Portfolio",
     url: "https://www.nickshum.ca/",
   },
@@ -31,7 +31,7 @@ export const projectCards = [
     title: "Weather App",
     description: "A simple weather app to display current weather information. Obtained real-time weather information by fetching it from the openweathermap.org API",
 
-    tools: ["ReactJS", "HTML5", "CSS3", "JavaScript"],
+    tools: ["React", "HTML5", "CSS3", "JavaScript"],
     git: "https://github.com/NickShum222/WeatherApp-1",
     url: "https://63f7aea636e521094a462f52--weather-app-nick.netlify.app/",
   },

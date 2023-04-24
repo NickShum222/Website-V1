@@ -2,7 +2,8 @@
 import { motion } from "framer-motion";
 import { slideUp } from "../utils/motion";
 import { FiGithub } from "react-icons/fi";
-import { BsGlobe } from "react-icons/bs";
+import {BiLinkExternal} from "react-icons/bi"
+
 import { useState } from "react";
 
 const ProjectCard = ({ id, title, description,  tools, git, url, index }) => {
@@ -35,7 +36,7 @@ const ProjectCard = ({ id, title, description,  tools, git, url, index }) => {
         }`}
       >
         <div className=" py-4 pl-4 text-[20px] text-white">{title}</div>
-        <div className="flex flex-row gap-2 pr-4">
+        <div className="flex flex-row gap-2 items-center pr-4">
           <motion.a
             href={git}
             target="_blank"
@@ -62,7 +63,7 @@ const ProjectCard = ({ id, title, description,  tools, git, url, index }) => {
             whileTap={{ scale: 0.9 }}
             className="text-[#BFBFBF] "
           >
-            <BsGlobe size={"1.4em"} />
+            <BiLinkExternal size={"1.5em"} />
           </motion.a>
         </div>
       </div>
@@ -73,13 +74,14 @@ const ProjectCard = ({ id, title, description,  tools, git, url, index }) => {
       >
         <div className="flex flex-col h-full justify-between items-between">
           <div className="px-4 pt-4 xl:text-[15px] text-[16px] text-[#9c9c9c]">{description}</div>
-          <ul className="flex flex-row px-4 justify-start items-center sm:gap-x-7 gap-x-3 pb-4 flex-wrap">
+          <ul className="flex flex-row px-4 list-disc  list-inside justify-start items-center sm:gap-x-4 gap-x-3 pb-4 flex-wrap">
             {tools.map((tool, index) => (
               <li
                 key={index}
-                className="xl:text-[15px] text-[16px] transition-all text-[#9c9c9c]"
+                className={`${index === 0 ? "list-none" : "list-item"} xl:text-[15px] italic font-light text-[16px] transition-all text-highlight`}
               >
-                {tool}
+                <span className="text-[#9c9c9c]">{tool}</span>
+                
               </li>
             ))}
           </ul>
