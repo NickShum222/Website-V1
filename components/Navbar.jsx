@@ -5,9 +5,10 @@ import {
   AnimatePresence,
   useScroll,
   useSpring,
+  useTransform,
 } from "framer-motion";
 import { staggerContainer, dropDown } from "@/utils/motion";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { navLinks } from "../constants";
 import { styles } from "@/styles";
 import { BsLinkedin, BsSpotify, BsGithub, BsInstagram } from "react-icons/bs";
@@ -31,6 +32,8 @@ const slideIn = {
 const Navbar = () => {
   const [active, setActive] = useState("Home");
   const [nav, setNav] = useState(false);
+  const [hidden, setHidden] = useState(false);
+
   const toggleNav = () => {
     setNav(!nav);
   };
@@ -41,15 +44,32 @@ const Navbar = () => {
     restDelta: 0.001,
   });
 
+  const update = () => {
+    if (scrollYProgress?.current < scrollYProgress?.prev) {
+      setHidden(false);
+      console.log("visible");
+    } else if (scrollYProgress?.current > 100 ) {
+      setHidden(true);
+      console.log("hidden");
+    }
+  }
+  const variants = {
+    visible: { opacity: 1, y: 0 },
+    hidden: { opacity: 0, y: -70 }
+  };
+  useEffect(() => {
+    return scrollYProgress.onChange(() => update());
+  });
+
   return (
-    <div className="relative">
+    <motion.div variants={variants}  animate={hidden ? "hidden" : "visible"} transition={{ ease: [0.1, 0.25, 0.3, 1], duration: 0.6 }} className="relative">
       <motion.nav
         variants={staggerContainer}
         initial="hidden"
         animate="visible"
-        className={`fixed z-[40] py-8 ${
+        className={`fixed z-[40] py-8  ${
           nav ? "" : "backdrop-blur-sm"
-        } lg:px-[40px] md:px-16 px-6 w-[100%] flex justify-between items-center z-[70] h-[70px]`}
+        } lg:px-[40px] md:px-16 px-6 w-full flex justify-between items-center z-[70] h-[70px]`}
       >
         <a href="#home">
           <motion.img
@@ -222,7 +242,7 @@ const Navbar = () => {
         className="fixed w-full hidden md:block origin-top-left h-[2px] top-[70px] z-50 left-0 right-0 bg-highlight"
         style={{ scaleX }}
       />
-    </div>
+    </motion.div>
   );
 };
 
