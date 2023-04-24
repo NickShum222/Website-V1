@@ -49,7 +49,7 @@ const Navbar = () => {
         animate="visible"
         className={`fixed z-[40] py-8 ${
           nav ? "" : "backdrop-blur-sm"
-        } lg:px-[40px] md:px-16 px-6 w-[100%] flex justify-between items-center  h-[70px]`}
+        } lg:px-[40px] md:px-16 px-6 w-[100%] flex justify-between items-center z-[70] h-[70px]`}
       >
         <a href="#home">
           <motion.img
