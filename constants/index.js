@@ -1,22 +1,15 @@
 import { BsGithub, BsLinkedin, BsInstagram, BsSpotify } from "react-icons/bs";
 
-export const projectPictures = [
-  {
-    id: "website",
-    img: "/macwebsite.svg",
-  },
-  {
-    id: "weather",
-    img: "/macweather.svg",
-  },
-  {
-    id: "space",
-    img: "/macspace.svg",
-  },
-
-];
 
 export const projectCards = [
+  {
+    id: "/spotitrack.png",
+    title: "SpotiTrack",
+    description: "A web application that allows users to track their Spotify listening history and statistics. Currently a work in progress.",
+    tools: ["Express", "Node.js", "Next.js", "TailwindCSS"],
+    git: "https://github.com/NickShum222/Spotify-Tracker",
+    url: "https://github.com/NickShum222/Spotify-Tracker",
+  },
   {
     id: "/hero_website.png",
     title: "Personal Website",
@@ -35,8 +28,6 @@ export const projectCards = [
     git: "https://github.com/NickShum222/WeatherApp-1",
     url: "https://63f7aea636e521094a462f52--weather-app-nick.netlify.app/",
   },
-
-
   {
     id: "/spaceinvaders.png",
     title: "Space Invaders",
