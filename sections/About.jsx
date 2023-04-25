@@ -38,15 +38,16 @@ const About = () => {
                 engineering student at the University of Waterloo.
               </p>
               <p className={`${styles.paragraph}`}>
-                Currently, I’m a quality assurance analyst at EllisDon, testing
-                software to ensure it meets desired levels of quality and
-                functions as intended.
-              </p>
-              <p className={`${styles.paragraph}`}>
                 When I’m not programming, I enjoy curating spotify playlists,
                 hanging out with friends, or skateboarding when the weather is
                 nice!
               </p>
+              <p className={`${styles.paragraph}`}>
+                I'm always curious to learn more, so please don't hesitate to contact me
+                if you have any interesting opportunities! Currently looking for Fall 2023
+                internships.
+              </p>
+
               {/* <div className="flex flex-row justify-end mt-[-10px]">
             <RenderIfVisible
                 defaultHeight={ESTIMATED_ITEM_HEIGHT}

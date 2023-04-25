@@ -19,15 +19,14 @@ export const projectCards = [
     git: "https://github.com/NickShum222/Website-Portfolio",
     url: "https://www.nickshum.ca/",
   },
-  {
-    id: "/weather_app.png",
-    title: "Weather App",
-    description: "A simple weather app to display current weather information. Obtained real-time weather information by fetching it from the openweathermap.org API",
-
-    tools: ["React", "HTML5", "CSS3", "JavaScript"],
-    git: "https://github.com/NickShum222/WeatherApp-1",
-    url: "https://63f7aea636e521094a462f52--weather-app-nick.netlify.app/",
-  },
+  // {
+  //   id: "/weather_app.png",
+  //   title: "Weather App",
+  //   description: "A simple weather app to display current weather information. Obtained real-time weather information by fetching it from the openweathermap.org API",
+  //   tools: ["React", "HTML5", "CSS3", "JavaScript"],
+  //   git: "https://github.com/NickShum222/WeatherApp-1",
+  //   url: "https://63f7aea636e521094a462f52--weather-app-nick.netlify.app/",
+  // },
   {
     id: "/spaceinvaders.png",
     title: "Space Invaders",
@@ -47,7 +46,7 @@ export const experienceCards = [
     title: "EllisDon",
     position: "Quality Assurance Analyst",
     description: "Utilized Jira for project management, improving team collaboration and project completion rates, tested and promoted software tools for increased efficiency and productivity across the company.",
-    date: "Jan 2023 - Present",
+    date: "Jan 2023 - Apr 2023",
     img: "/ellisdon.svg",
   },
   {

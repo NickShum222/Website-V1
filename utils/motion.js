@@ -33,6 +33,19 @@ export const slideUp = (delay) => ({
   },
 });
 
+export const slideDown = (delay) => ({
+  hidden: { y: -70, opacity: 1 },
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      type: "tween",
+      duration: 0.9,
+      delay,
+    },
+  },
+});
+
 export const slideRight = (delay) => ({
   hidden: { x: -75, opacity: 0 },
   visible: {

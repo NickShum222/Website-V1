@@ -7,7 +7,7 @@ import {
   useSpring,
   useTransform,
 } from "framer-motion";
-import { staggerContainer, dropDown } from "@/utils/motion";
+import { staggerContainer, dropDown, slideDown } from "@/utils/motion";
 import { useState, useEffect } from "react";
 import { navLinks } from "../constants";
 import { styles } from "@/styles";
@@ -29,6 +29,10 @@ const slideIn = {
     },
   },
 };
+
+
+
+
 const Navbar = () => {
   const [active, setActive] = useState("Home");
   const [nav, setNav] = useState(false);
@@ -44,25 +48,23 @@ const Navbar = () => {
     restDelta: 0.001,
   });
 
-  const update = () => {
-    if (scrollYProgress?.current < scrollYProgress?.prev) {
-      setHidden(false);
-      console.log("visible");
-    } else if (scrollYProgress?.current > 100 ) {
-      setHidden(true);
-      console.log("hidden");
-    }
-  }
-  const variants = {
-    visible: { opacity: 1, y: 0 },
-    hidden: { opacity: 0, y: -70 }
-  };
   useEffect(() => {
-    return scrollYProgress.onChange(() => update());
-  });
+    const update = () => {
+      if (scrollYProgress.current < scrollYProgress.prev) {
+        setHidden(false);
+        console.log("visible");
+      } else if (scrollYProgress.current > 0.1) {
+        setHidden(true);
+        console.log("hidden");
+      }
+    };
+    scrollYProgress.onChange(update);
+    return () => scrollYProgress.clearListeners();
+  }, [scrollYProgress]);
+
 
   return (
-    <motion.div variants={variants}  animate={hidden ? "hidden" : "visible"} transition={{ ease: [0.1, 0.25, 0.3, 1], duration: 0.6 }} className="relative">
+    <motion.div variants={slideDown(0)}  animate={hidden ? "hidden" : "visible"} className="w-full z-[70] fixed">
       <motion.nav
         variants={staggerContainer}
         initial="hidden"
