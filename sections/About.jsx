@@ -43,8 +43,8 @@ const About = () => {
                 nice!
               </p>
               <p className={`${styles.paragraph}`}>
-                I'm always curious to learn more, so please don't hesitate to contact me
-                if you have any interesting opportunities! Currently looking for Fall 2023
+                I'm always eager to learn more and hone my skills, so please don't hesitate to contact me
+                if you have any interesting opportunities! Currently seeking Fall 2023 software engineering
                 internships.
               </p>
 
