@@ -64,7 +64,7 @@ const Navbar = () => {
 
 
   return (
-    <motion.div variants={slideDown(0)}  animate={hidden ? "hidden" : "visible"} className="w-full z-[70] fixed">
+    <motion.div variants={slideDown(0)}  animate={hidden && !nav ? "hidden" : "visible"} className="w-full z-[70] fixed">
       <motion.nav
         variants={staggerContainer}
         initial="hidden"
