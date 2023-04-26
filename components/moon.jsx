@@ -16,36 +16,60 @@ const Moon = () => {
         xmlns="http://www.w3.org/2000/svg"
       >
         <g id="herobg" className="">
-          <g id="background" >
-            <motion.circle variants={opacity(1.65)} id="Ellipse 3" cx="550" cy="550" r="550" fill="#3c3c3c" fillOpacity="0.3" />
-            <motion.circle variants={opacity(1.6)}
+          <g id="background">
+            <motion.circle
+              variants={opacity(1.65)}
+              id="Ellipse 3"
+              cx="550"
+              cy="550"
+              r="550"
+              fill="#3c3c3c"
+              fillOpacity="0.3"
+            />
+            <motion.circle
+              variants={opacity(1.6)}
               id="Ellipse 4"
               cx="549.5"
               cy="550.5"
               r="487.5"
-              fill="#4f4f4f" fillOpacity="0.3"
+              fill="#4f4f4f"
+              fillOpacity="0.3"
             />
-            <motion.circle variants={opacity(1.55)}
+            <motion.circle
+              variants={opacity(1.55)}
               id="Ellipse 5"
               cx="550"
               cy="550"
               r="425"
-              fill="#636363" fillOpacity="0.3"
+              fill="#636363"
+              fillOpacity="0.3"
             />
-            <motion.circle variants={opacity(1.5)}
+            <motion.circle
+              variants={opacity(1.5)}
               id="Ellipse 6"
               cx="549.5"
               cy="550.5"
               r="362.5"
-              fill="#777777" fillOpacity="0.3"
+              fill="#777777"
+              fillOpacity="0.3"
             />
-            <motion.circle variants={opacity(1.45)} id="Ellipse 7" cx="550" cy="550" r="300" fill="#8a8a8a" fillOpacity="0.3" />
-            <motion.circle variants={opacity(1.4)}
+            <motion.circle
+              variants={opacity(1.45)}
+              id="Ellipse 7"
+              cx="550"
+              cy="550"
+              r="300"
+              fill="#8a8a8a"
+              fillOpacity="0.3"
+            />
+            <motion.circle
+              variants={opacity(1.4)}
               id="Ellipse 8"
               cx="549.5"
               cy="550.5"
               r="237.5"
-              fill="#9e9e9e" fillOpacity="0.3"
+              fill="#9e9e9e"
+              fillOpacity="0.3"
             />
           </g>
           <motion.g variants={slideLeft(1.2)} className="z-[1]" id="cloud2">
