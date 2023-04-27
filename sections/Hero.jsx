@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className={`xl:px-[170px] lg:px-[110px] md:pl-36 lg:pt-20 pl-6 xl:pr-[200px] lg:pr-[120px] md:pr-36 pr-6 mt-[-5%] pb-18 flex flex-col items-center justify-center z-[5] `}
+      className={`xl:px-[170px] lg:px-[110px] md:pl-36 xl:pt-0 lg:pt-20 pl-6 xl:pr-[200px] lg:pr-[120px] md:pr-36 pr-6 mt-[-5%] pb-18 flex flex-col items-center justify-center z-[5] `}
     >
       <motion.div
         className="w-full flex lg:flex-row flex-col-reverse  lg:justify-between justify-around items-center min-h-[80vh] "
@@ -26,12 +26,12 @@ const Hero = () => {
           </motion.h1>
           <motion.h2
             variants={slideUp(0.8)}
-            className="text-[#A6A6A6]  lg:text-[45px] md:text-[40px] text-[30px] pb-2 "
+            className="text-[#A6A6A6]  lg:text-[45px] md:text-[40px] text-[30px] pb-2 lg:leading-[55px] md:leading-[50px] leading-[40px]"
           >
             Software Developer
           </motion.h2>
-          <motion.div variants={slideUp(1)} className="flex flex-row items-center justify-center gap-5 mt-3 ml-1 ">
-            <Button className="rounded-none normal-case py-3 px-8 text-[14px] md:text-[16px] lg:text-[18px]   text-highlight transition-all hover:bg-highlight/10 active:bg-highlight/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none border-highlight border-[1px]"  ><a href="/resume">Resume</a></Button>
+          <motion.div variants={slideUp(1)} className="flex flex-row items-center justify-center gap-5 ml-1 ">
+            <Button className="rounded-none normal-case py-3 px-8 text-[14px] md:text-[16px] lg:text-[18px]  text-highlight transition-all hover:bg-highlight/10 active:bg-highlight/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none border-highlight border-[1px]"  ><a href="/resume">Resume</a></Button>
             <Button className="rounded-none normal-case py-3 px-8 font-normal font-mono text-[14px] md:text-[16px] lg:text-[18px]   text-highlight transition-all hover:bg-highlight/10 active:bg-highlight/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none  " data-ripple-light="true" ><a href="#contact">Contact</a></Button>
           </motion.div>
         </div>
