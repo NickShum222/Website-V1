@@ -4,7 +4,9 @@ import { staggerContainer, slideUp } from "@/utils/motion";
 import { Moon } from "@/components";
 import { styles } from "@/styles";
 import { ThemeProvider, Button } from "@material-tailwind/react";
+
 const Hero = () => {
+
   return (
     <section
       id="home"
@@ -30,9 +32,22 @@ const Hero = () => {
           >
             Software Developer
           </motion.h2>
-          <motion.div variants={slideUp(1)} className="flex flex-row items-center justify-center gap-5 ml-1 ">
-            <Button className="rounded-none normal-case py-3 px-8 text-[14px] md:text-[16px] lg:text-[18px]  text-highlight transition-all hover:bg-highlight/10 active:bg-highlight/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none border-highlight border-[1px]"  ><a href="/resume">Resume</a></Button>
-            <Button className="rounded-none normal-case py-3 px-8 font-normal font-mono text-[14px] md:text-[16px] lg:text-[18px]   text-highlight transition-all hover:bg-highlight/10 active:bg-highlight/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none  " data-ripple-light="true" ><a href="#contact">Contact</a></Button>
+       
+          <motion.div
+            variants={slideUp(1)}
+            className="flex flex-row items-center justify-center gap-5 ml-1 "
+          >
+               <a href="/resume">
+            <Button className="rounded-none normal-case py-3 px-8 text-[14px] md:text-[16px] lg:text-[18px]  text-highlight transition-all hover:bg-highlight/10 active:bg-highlight/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none border-highlight border-[1px]">
+              Resume
+            </Button>
+          </a>
+            <Button
+              className="rounded-none normal-case py-3 px-8 font-normal font-mono text-[14px] md:text-[16px] lg:text-[18px]   text-highlight transition-all hover:bg-highlight/10 active:bg-highlight/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none  "
+              data-ripple-light="true"
+            >
+              <a href="#contact">Contact</a>
+            </Button>
           </motion.div>
         </div>
         <motion.div className="top-[0] sm:w-[90%] w-[120%] mx-[-30%] sm:mt-[-5%] inline">
