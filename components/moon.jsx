@@ -19,7 +19,7 @@ const Moon = () => {
           <g id="background">
             <motion.circle
               variants={opacity(1.65)}
-              id="Ellipse 3"
+              id="eclipse"
               cx="550"
               cy="550"
               r="550"
@@ -28,7 +28,7 @@ const Moon = () => {
             />
             <motion.circle
               variants={opacity(1.6)}
-              id="Ellipse 4"
+              id="eclipse"
               cx="549.5"
               cy="550.5"
               r="487.5"
@@ -37,7 +37,7 @@ const Moon = () => {
             />
             <motion.circle
               variants={opacity(1.55)}
-              id="Ellipse 5"
+              id="eclipse"
               cx="550"
               cy="550"
               r="425"
@@ -46,7 +46,7 @@ const Moon = () => {
             />
             <motion.circle
               variants={opacity(1.5)}
-              id="Ellipse 6"
+              id="eclipse"
               cx="549.5"
               cy="550.5"
               r="362.5"
@@ -55,7 +55,7 @@ const Moon = () => {
             />
             <motion.circle
               variants={opacity(1.45)}
-              id="Ellipse 7"
+              id="eclipse"
               cx="550"
               cy="550"
               r="300"
@@ -64,7 +64,7 @@ const Moon = () => {
             />
             <motion.circle
               variants={opacity(1.4)}
-              id="Ellipse 8"
+              id="eclipse"
               cx="549.5"
               cy="550.5"
               r="237.5"

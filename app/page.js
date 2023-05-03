@@ -19,7 +19,7 @@ export default function Home() {
           <Loading />
         ) : (
           <div className=" bg-grey w-full overflow-hidden">
-            <Navbar />
+            <Navbar/>
             <Sidebar />
             <Hero />
             <Projects />

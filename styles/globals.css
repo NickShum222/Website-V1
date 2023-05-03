@@ -44,7 +44,9 @@
   /* background-color: #9c9c9c;
   border-radius: 5px; */
 }
-
+#eclipse{
+  position: fixed;
+}
 
 #nick{
 

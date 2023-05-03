@@ -5,10 +5,10 @@ export const projectCards = [
   {
     id: "/spotitrack.png",
     title: "SpotiTrack",
-    description: "A web application that allows users to track their Spotify listening history and statistics. Currently a work in progress.",
+    description: "A web application that allows users to track their Spotify listening history and statistics.",
     tools: ["Express", "Node.js", "Next.js", "TailwindCSS"],
     git: "https://github.com/NickShum222/Spotify-Tracker",
-    url: "https://github.com/NickShum222/Spotify-Tracker",
+    url: "/projects/SpotiTrack",
   },
   {
     id: "/hero_website.png",
