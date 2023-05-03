@@ -11,7 +11,7 @@ const page = () => {
           Back
         </Button>
       </a>
-      <video controls autoPlay loop className="w-[80%] ">
+      <video controls autoPlay muted loop className="w-[80%] ">
         <source src="/SpotiTrackDemo.mp4" />
       </video>
     </div>
