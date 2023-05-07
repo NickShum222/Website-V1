@@ -5,7 +5,7 @@ import { styles } from '@/styles';
 
 const Footer = () => {
   return (
-    <section className={`xl:px-[170px] lg:px-[110px] md:px-36 px-6`}>
+    <section className={`xl:px-[170px] lg:px-[110px] md:px-36 px-6 bg-grey`}>
       <div className='w-full border-t-[1px] py-4 border-[#BFBFBF] flex flex-col justify-center items-center'>
       {/* <div className='flex flex-col justify-start items-start'>
         <h1 className='text-[#BFBFBF] font-poppins font-normal text-[20px]'>Nick Shum</h1>
