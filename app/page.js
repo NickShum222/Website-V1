@@ -13,7 +13,7 @@ export default function Home() {
     }, 2700);
   }, []);
   return (
-    <div className={``}>
+ 
       <div className=" bg-grey w-full overflow-hidden">
         {loading ? (
           <Loading />
@@ -31,6 +31,6 @@ export default function Home() {
           </div>
         )}
       </div>
-    </div>
+
   );
 }
