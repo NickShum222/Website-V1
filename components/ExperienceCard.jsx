@@ -18,7 +18,7 @@ const ExperienceCard = ({
       <div className="w-full flex flex-row justify-between items-center md:pb-3 sm:pb-2 pb-1">
         <div className="flex flex-col justify-start items-start">
           <p className="transition-all duration-100 text-white lg:text-[30px] md:text-[26px] text-[24px] md:leading-[26px] leading-[24px] lg:leading-[30px]">{title}</p>
-          <p className="transition-all duration-100 text-white lg:text-[20px] md:text-[18px] text-[16px] ">{position}</p>
+          <p className="transition-all duration-100 text-semiwhite lg:text-[20px] md:text-[18px] text-[16px] italic">{position}</p>
         </div>
         <div className="transition-all duration-100 text-[#BFBFBF] lg:text-[21px] md:text-[20px] text-[18px]">{date}</div>
       </div>

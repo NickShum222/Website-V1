@@ -1,11 +1,12 @@
 "use client";
+
 import {
   motion,
   easeInOut,
   AnimatePresence,
   useScroll,
   useSpring,
-  useTransform,
+  
 } from "framer-motion";
 import { staggerContainer, dropDown, slideDown } from "@/utils/motion";
 import { useState, useEffect } from "react";
@@ -13,7 +14,7 @@ import { navLinks } from "../constants";
 import { styles } from "@/styles";
 import { BsLinkedin, BsSpotify, BsGithub, BsInstagram } from "react-icons/bs";
 import { HiMail } from "react-icons/hi";
-import { CgDarkMode } from "react-icons/cg";
+
 
 const slideIn = {
   hidden: {
