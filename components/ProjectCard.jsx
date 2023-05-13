@@ -73,7 +73,7 @@ const ProjectCard = ({ id, title, description,  tools, git, url, index }) => {
         } transition-all duration-150`}
       >
         <div className="flex flex-col h-full justify-between items-between">
-          <div className="px-4 pt-4 xl:text-[15px] text-[16px] lg:leading-[22px] leading-[20px] text-[#9c9c9c]">{description}</div>
+          <div className="px-4 pt-4 xl:text-[15px] text-[16px] text-[#9c9c9c]">{description}</div>
           <ul className="flex flex-row px-4 list-disc  list-inside justify-start items-center sm:gap-x-4 gap-x-3 pb-4 flex-wrap">
             {tools.map((tool, index) => (
               <li
