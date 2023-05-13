@@ -52,10 +52,10 @@ const Navbar = () => {
     const update = () => {
       if (scrollYProgress.current < scrollYProgress.prev) {
         setHidden(false);
-        console.log("visible");
+        
       } else if (scrollYProgress.current > 0.1) {
         setHidden(true);
-        console.log("hidden");
+       
       }
     };
     scrollYProgress.onChange(update);
