@@ -14,7 +14,7 @@ const Sidebar = () => {
       variants={staggerContainer}
       initial="hidden"
       animate="visible"
-      className="hidden md:h-[100vh] lg:px-[40px] px-16  md:fixed md:flex md:flex-col md:justify-end md:items-center md:gap-5"
+      className="hidden md:h-[100vh] lg:px-[40px] px-12  md:fixed md:flex md:flex-col md:justify-end md:items-center md:gap-5"
     >
       <motion.a
         variants={slideUp(1.8)}

@@ -31,9 +31,6 @@ const slideIn = {
   },
 };
 
-
-
-
 const Navbar = () => {
   const [active, setActive] = useState("Home");
   const [nav, setNav] = useState(false);
@@ -66,13 +63,13 @@ const Navbar = () => {
 
   return (
     <motion.div variants={slideDown(0)}  animate={hidden && !nav ? "hidden" : "visible"} className="w-full z-[70] fixed">
-      <motion.nav
+      <motion.div
         variants={staggerContainer}
         initial="hidden"
         animate="visible"
         className={`fixed z-[40] py-8  ${
           nav ? "" : "backdrop-blur-sm"
-        } lg:px-[40px] md:px-16 px-6 w-full flex justify-between items-center z-[70] h-[70px]`}
+        } lg:px-[40px] md:px-12 px-6 w-full flex flex-row justify-between items-center z-[70] h-[70px]`}
       >
         <a href="#home">
           <motion.img
@@ -84,13 +81,13 @@ const Navbar = () => {
         </a>
         <div className="flex flex-row items-center justify-center">
           <ul
-            className={`h-full flex-1 z-10 md:flex hidden justify-end items-center`}
+            className={`h-full w-full flex-1 z-10 md:flex hidden justify-end  items-center`}
           >
             {navLinks.map((nav, index) => (
               <motion.li
                 variants={dropDown(index * 0.1 + 0.1)}
                 key={nav.id}
-                className={`h-full flex justify-center items-center font-poppins font-normal cursor-pointer text-[18px]  
+                className={`h-full flex justify-center items-center font-poppins font-normal cursor-pointer lg:text-[18px] text-[16px] 
             } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
                 // onClick={() => {
                 //   setActive(nav.title);
@@ -191,14 +188,14 @@ const Navbar = () => {
                     </li>
                   ))}
                 </ul>
-                <div className="flex flex-col w-full justify-start items-center gap-4">
+                <motion.div className="flex flex-col w-full justify-start items-center gap-4">
                   <div className="transition-all duration-150 sm:text-[22px] text-semiwhite text-[20px]">
                     Let&apos;s Connect!
                   </div>
 
-                  <div className="flex flex-row w-full justify-center gap-6 items-center">
+                  <motion.div className="flex flex-row w-full justify-center gap-6 items-center">
                     <motion.a
-                      v
+                      
                       href="https://github.com/NickShum222"
                       target="_blank"
                       className="text-[#8b8b8b] duration-300 hover:text-highlight hover:-translate-y-1"
@@ -234,13 +231,13 @@ const Navbar = () => {
                     >
                       <BsSpotify size={"1.6em"} />
                     </motion.a>
-                  </div>
-                </div>
+                  </motion.div>
+                </motion.div>
               </motion.div>
             </motion.div>
           )}
         </AnimatePresence>
-      </motion.nav>
+      </motion.div>
       <motion.div
         className="fixed w-full hidden md:block origin-top-left h-[2px] top-[70px] z-50 left-0 right-0 bg-highlight"
         style={{ scaleX }}

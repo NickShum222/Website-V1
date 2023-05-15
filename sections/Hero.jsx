@@ -13,7 +13,7 @@ const Hero = () => {
       className={`xl:px-[170px] lg:px-[110px] md:pl-36 xl:pt-0 lg:pt-20 pl-6 xl:pr-[200px] lg:pr-[120px] md:pr-36 pr-6 mt-[-5%] pb-18 flex flex-col items-center justify-center z-[5] `}
     >
       <motion.div
-        className="w-full flex lg:flex-row flex-col-reverse  lg:justify-between justify-around items-center min-h-[80vh] "
+        className="w-full flex lg:flex-row flex-col-reverse  lg:justify-between justify-end items-center lg:min-h-[80vh] min-h-[60vh]  "
         variants={staggerContainer}
         initial="hidden"
         whileInView="visible"
@@ -22,7 +22,7 @@ const Hero = () => {
         <div className="flex flex-col mt-[-100px] lg:justify-start lg:items-start md:justify-center md:items-center justify-start items-start lg:max-w-[80%] relative z-[2]">
           <motion.h1
             variants={slideUp(0.6)}
-            className="text-white font-normal font-poppins lg:leading-[80px] md:leading-[60px] leading-[50px] lg:text-[95px] md:text-[78px] text-[60px] "
+            className="text-white font-normal font-poppins lg:leading-[80px] md:leading-[70px] leading-[50px] lg:text-[95px] md:text-[86px] text-[60px] "
           >
             Nick Shum
           </motion.h1>
@@ -50,7 +50,7 @@ const Hero = () => {
             </Button>
           </motion.div>
         </div>
-        <motion.div className="top-[0] sm:w-[90%] w-[120%] mx-[-30%] sm:mt-[-5%] inline">
+        <motion.div className="top-[0] lg:w-[90%] w-[120%] mx-[-30%] sm:mt-[-5%] inline">
           <Moon />
         </motion.div>
       </motion.div>

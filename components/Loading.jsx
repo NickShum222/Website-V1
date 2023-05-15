@@ -8,8 +8,8 @@ const Loading = () => {
     animate="visible" className="w-[100vw] h-[100vh] flex justify-center items-center flex-1 bg-grey">
       <svg
         id="loading"
-        width="15%"
-        height="15%"
+        width="20%"
+        height="20%"
         viewBox="0 0 218 245"
         preserveAspectRatio="xMidYMid meet"
         fill="none"

@@ -14,7 +14,7 @@ const ProjectCard = ({ id, title, description,  tools, git, url, index }) => {
   return (
     <motion.div
     variants={slideUp(index * 0.15 + 0.15)}
-      className="overflow-hidden flex flex-col items-between cursor-pointer justify-between border-[1px] border-white min-w-[40%] xl:min-w-[30%]  xl:h-[315px] h-[305px]"
+      className="overflow-hidden flex flex-col items-between cursor-pointer justify-between border-[1px] border-white   xl:h-[315px] h-[305px]"
       onClick={() => {
         handleActive();
       }}
@@ -35,7 +35,7 @@ const ProjectCard = ({ id, title, description,  tools, git, url, index }) => {
           active ? "border-b-[1px]" : "border-t-[1px]"
         }`}
       >
-        <div className=" py-4 pl-4 text-[20px] text-white">{title}</div>
+        <div className=" py-4 pl-4 text-[20px] text-white truncate">{title}</div>
         <div className="flex flex-row gap-2 items-center pr-4">
           <motion.a
             href={git}
