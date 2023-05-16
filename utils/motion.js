@@ -82,7 +82,7 @@ export const scale = (delay) => ({
     
     transition: {
       type: "spring",
-      duration: 0.55,
+      duration: 0.45,
       delay,
     },
   },

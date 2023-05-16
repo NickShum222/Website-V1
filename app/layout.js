@@ -1,9 +1,9 @@
 
 import "../styles/globals.css";
-
+import ReactGA from "react-ga4";
 
 export default function RootLayout({ children }) {
-
+  ReactGA.initialize("G-BE358TGQ7C");
   return (
     <html lang="en">
       <head>
@@ -15,6 +15,7 @@ export default function RootLayout({ children }) {
         />
  
         <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/ripple.js"></script>
+         
       </head>
       <body>
         {children}
