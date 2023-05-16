@@ -1,6 +1,6 @@
 
 import "../styles/globals.css";
-import { Footer } from "@/components";
+
 
 export default function RootLayout({ children }) {
 
@@ -13,13 +13,11 @@ export default function RootLayout({ children }) {
           href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap"
           rel="stylesheet"
         />
-        <script src="node_modules/@material-tailwind/html@latest/scripts/ripple.js"></script>
+ 
         <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/ripple.js"></script>
       </head>
       <body>
-        
         {children}
-        
       </body>
     </html>
   );

@@ -13,9 +13,7 @@ module.exports = withMT ({
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'hero': "url('../public/background.svg')",
-      },
+
       boxShadow: {
         'border': '0 0px 75px -15px rgba(0, 0, 0, 0.9)',
         
@@ -31,7 +29,5 @@ module.exports = withMT ({
       },
     },
   },
-  plugins: [
-    require("daisyui"),
-  ],
+
 });

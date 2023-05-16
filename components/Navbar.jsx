@@ -93,7 +93,7 @@ const Navbar = () => {
                 //   setActive(nav.title);
                 // }}
               >
-                {/* ${active === nav.title ? `text-highlight` : "text-semiwhite"} */}
+                
                 <a
                   className={`group transition-all duration-200 ease-out font-mono text-semiwhite
               `}
@@ -109,9 +109,7 @@ const Navbar = () => {
               </motion.li>
             ))}
           </ul>
-          {/* <motion.button variants={dropDown(0.6)} className="ml-5">
-          <CgDarkMode size={"1.6em"} />
-        </motion.button> */}
+       
           {/* Hamburger Menu */}
           <motion.div
             variants={dropDown(0.4)}
@@ -217,7 +215,7 @@ const Navbar = () => {
                       <HiMail size={"1.9em"} />
                     </motion.a>
                     <motion.a
-                      v
+                      
                       href="https://www.instagram.com/nick.shum_/"
                       target="_blank"
                       className="text-[#8b8b8b] duration-300 hover:text-highlight hover:-translate-y-1"

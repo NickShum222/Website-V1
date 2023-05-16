@@ -72,7 +72,7 @@ const Sidebar = () => {
       >
         <AiOutlineInstagram size={"1.4em"} />
       </motion.a>
-      <motion.a
+      {/* <motion.a
         variants={slideUp(2.2)}
         href="https://open.spotify.com/user/1ofn228owlljh59onkm7f8k9q"
         target="_blank"
@@ -85,7 +85,7 @@ const Sidebar = () => {
         className="text-[#8b8b8b] "
       >
         <SlSocialSpotify size={"1.4em"} />
-      </motion.a>
+      </motion.a> */}
 
       <motion.div
         variants={slideUp(2.3)}
