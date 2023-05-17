@@ -7,7 +7,7 @@ import * as Yup from "yup";
 import { motion } from "framer-motion";
 
 import { slideLeft, slideRight, staggerContainer } from "@/utils/motion";
-import { Button } from "@material-tailwind/react";
+import { Button, Input } from "@material-tailwind/react";
 
 const Contact = () => {
   // const [name, setName] = useState("");
@@ -142,10 +142,12 @@ function ContactForm() {
   return (
     <form onSubmit={formik.handleSubmit}>
       <input
-        className={`${styles.input_form}}`}
+        className={`${styles.input_form} `}
+        color = "blue"
         id="form_name"
         name="form_name"
         type="text"
+        label="Name"
         placeholder="Name"
         onChange={formik.handleChange}
         autoComplete="off"
@@ -157,10 +159,12 @@ function ContactForm() {
 
       <input
         id="user_email"
+        color = "blue"
         type="email"
         name="user_email"
-        className={`${styles.input_form}`}
         placeholder="Email"
+        className={`${styles.input_form}`}
+        label="Email"
         onChange={formik.handleChange}
         value={formik.values.user_email}
       />
