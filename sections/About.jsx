@@ -44,8 +44,7 @@ const About = () => {
               </p>
               <p className={`${styles.paragraph}`}>
                 I'm always eager to learn more and hone my skills, so don't hesitate to contact me
-                if you have any interesting opportunities! Currently seeking Fall 2023 software engineering
-                internships.
+                if you have any interesting opportunities! 
               </p>
 
               {/* <div className="flex flex-row justify-end mt-[-10px]">
