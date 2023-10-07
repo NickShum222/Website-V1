@@ -42,6 +42,14 @@ export const projectCards = [
 
 export const experienceCards = [
   {
+    id: "citechnologies",
+    title: "CI Technologies",
+    position: "Full Stack Developer",
+    description: "Designed and developed multiple web features for the company’s flagship product, improving user experience and increasing customer satisfaction. ",
+    date: "Sept 2023 - Dec 2023",
+    img: "/citechnologies.svg",
+  },
+  {
     id: "ellisdon",
     title: "EllisDon",
     position: "Quality Assurance Analyst",
@@ -49,23 +57,23 @@ export const experienceCards = [
     date: "Jan 2023 - Apr 2023",
     img: "/ellisdon.svg",
   },
-  {
-    id: "hattendo",
-    title: "Hattendo",
-    position: "Kitchen Staff",
-    description: "Prepared and baked high-quality cream buns and baked Japanese goods, while adhering to food safety and cleanliness standards.",
-    date: "Oct 2021 - May 2022",
-    img: "/hattendo.svg",
+  // {
+  //   id: "hattendo",
+  //   title: "Hattendo",
+  //   position: "Kitchen Staff",
+  //   description: "Prepared and baked high-quality cream buns and baked Japanese goods, while adhering to food safety and cleanliness standards.",
+  //   date: "Oct 2021 - May 2022",
+  //   img: "/hattendo.svg",
 
-  },
-  {
-    id: "isci",
-    title: "iSci Peer Tutoring",
-    position: "Volunteer Tutor",
-    description: "Provided personalized one-on-one tutoring in math and science, utilizing various teaching strategies and tracking student progress to achieve academic improvement while fostering a positive and supportive learning environment.",
-    date: "Sept 2021 - June 2022",
-    img: "/isci.svg",
-  },
+  // },
+  // {
+  //   id: "isci",
+  //   title: "iSci Peer Tutoring",
+  //   position: "Volunteer Tutor",
+  //   description: "Provided personalized one-on-one tutoring in math and science, utilizing various teaching strategies and tracking student progress to achieve academic improvement while fostering a positive and supportive learning environment.",
+  //   date: "Sept 2021 - June 2022",
+  //   img: "/isci.svg",
+  // },
 ];
 
 export const navLinks = [

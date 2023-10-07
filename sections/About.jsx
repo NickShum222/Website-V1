@@ -34,7 +34,7 @@ const About = () => {
               className="flex flex-col justify-center lg:max-w-[50%] w-full z-10 "
             >
               <p className={`${styles.paragraph}`}>
-                Hello, my name is Nick Shum and I’m a first year computer
+                Hello, my name is Nick Shum and I’m a second year computer
                 engineering student at the University of Waterloo.
               </p>
               <p className={`${styles.paragraph}`}>
@@ -43,8 +43,7 @@ const About = () => {
                 nice!
               </p>
               <p className={`${styles.paragraph}`}>
-                I'm always eager to learn more and hone my skills, so don't hesitate to contact me
-                if you have any interesting opportunities! 
+              Feel free to reach out if you find something interesting or simply want to have a friendly chat. I'm all about learning and getting better! Currently seeking Summer 2024 internships.
               </p>
 
               {/* <div className="flex flex-row justify-end mt-[-10px]">

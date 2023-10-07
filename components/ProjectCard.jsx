@@ -15,18 +15,20 @@ const ProjectCard = ({ id, title, description,  tools, git, url, index }) => {
     <motion.div
     variants={slideUp(index * 0.15 + 0.15)}
       className="overflow-hidden flex flex-col items-between cursor-pointer justify-between border-[1px] border-white   xl:h-[315px] h-[305px]"
-      onClick={() => {
-        handleActive();
-      }}
+      // onClick={() => {
+      //   handleActive();
+      // }}
       whileHover={{
         scale: 1.005,
         transition: { duration: 0.2 },
       }}
+      onMouseEnter={() => setActive(true)} // Set Active to true on hover
+      onMouseLeave={() => setActive(false)} 
     >
       <div
         className={`${
           active ? `h-[0px] opacity-0` : "xl:h-[250px] h-[240px]"
-        } transition-all duration-150`}
+        } transition-all duration-400`}
       >
         <img className="min-w-[100%] h-[100%] object-cover" src={id} alt={title} />
       </div>
@@ -70,7 +72,7 @@ const ProjectCard = ({ id, title, description,  tools, git, url, index }) => {
       <div
         className={`${
           active ? `xl:h-[250px] h-[240px]` : "h-0"
-        } transition-all duration-150`}
+        } transition-all duration-400`}
       >
         <div className="flex flex-col h-full justify-between items-between">
           <div className="px-4 pt-4 xl:text-[15px] text-[16px] text-[#9c9c9c]">{description}</div>
