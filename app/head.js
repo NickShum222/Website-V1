@@ -3,7 +3,7 @@ export default function Head() {
     <>
       <title>Nick Shum</title>
       <meta content="width=device-width, initial-scale=1" name="viewport" />
-      <meta name="description" content="Nick Shum | Website Portfolio" />
+      <meta name="description" content="Nick Shum | Personal Website" />
       <meta name="author" content="Nick Shum" />
       <meta name="theme-color" content= "#151515" />
       <meta name="robots" content="index, follow" />
