@@ -1,11 +1,11 @@
 import { BsGithub, BsLinkedin, BsInstagram, BsSpotify } from "react-icons/bs";
 
-
 export const projectCards = [
   {
     id: "/spotitrack.png",
     title: "SpotiTrack",
-    description: "A web application that allows users to track their Spotify listening history and statistics.",
+    description:
+      "A web application that allows users to track their Spotify listening history and statistics.",
     tools: ["Express", "Node.js", "Next.js", "TailwindCSS"],
     git: "https://github.com/NickShum222/Spotify-Tracker",
     url: "/projects/SpotiTrack",
@@ -13,31 +13,23 @@ export const projectCards = [
   {
     id: "/hero_website.png",
     title: "Personal Website",
-    description: "A website portfolio used to showcase my projects and experiences. Built with Next.js, TailwindCSS, designed in Figma. ",
+    description:
+      "A website portfolio used to showcase my projects and experiences. Built with Next.js, TailwindCSS, designed in Figma. ",
 
     tools: ["React", "Next.js", "TailwindCSS", "Figma"],
     git: "https://github.com/NickShum222/Website-Portfolio",
     url: "https://www.nickshum.ca/",
   },
-  // {
-  //   id: "/weather_app.png",
-  //   title: "Weather App",
-  //   description: "A simple weather app to display current weather information. Obtained real-time weather information by fetching it from the openweathermap.org API",
-  //   tools: ["React", "HTML5", "CSS3", "JavaScript"],
-  //   git: "https://github.com/NickShum222/WeatherApp-1",
-  //   url: "https://63f7aea636e521094a462f52--weather-app-nick.netlify.app/",
-  // },
   {
     id: "/spaceinvaders.png",
     title: "Space Invaders",
-    description: "A clone of the classic arcade game Space Invaders. Built with Java, utilizing Object-Oriented Programming principles.",
+    description:
+      "A clone of the classic arcade game Space Invaders. Built with Java, utilizing Object-Oriented Programming principles.",
     tools: ["Java", "Inheritance", "Polymorphism"],
 
     git: "https://github.com/NickShum222/SpaceInvaders",
     url: "https://www.greenfoot.org/scenarios/30858",
   },
-  
-
 ];
 
 export const experienceCards = [
@@ -45,7 +37,8 @@ export const experienceCards = [
     id: "citechnologies",
     title: "CI Technologies",
     position: "Full Stack Developer",
-    description: "Designed and developed multiple web features for the company’s flagship product, improving user experience and increasing customer satisfaction. ",
+    description:
+      "Designed and developed multiple web features for the company’s flagship product, improving user experience and increasing customer satisfaction. ",
     date: "Sept 2023 - Dec 2023",
     img: "/citechnologies.svg",
   },
@@ -53,7 +46,8 @@ export const experienceCards = [
     id: "ellisdon",
     title: "EllisDon",
     position: "Quality Assurance Analyst",
-    description: "Utilized Jira for project management, improving team collaboration and project completion rates, tested and promoted software tools for increased efficiency and productivity across the company.",
+    description:
+      "Utilized Jira for project management, improving team collaboration and project completion rates, tested and promoted software tools for increased efficiency and productivity across the company.",
     date: "Jan 2023 - Apr 2023",
     img: "/ellisdon.svg",
   },
@@ -120,6 +114,4 @@ export const socialLinks = [
     title: "Spotify",
     url: "",
   },
-
 ];
-

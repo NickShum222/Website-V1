@@ -43,7 +43,9 @@ const About = () => {
                 nice!
               </p>
               <p className={`${styles.paragraph}`}>
-              Feel free to reach out if you find something interesting or simply want to have a friendly chat. I'm all about learning and getting better! Currently seeking Summer 2024 internships.
+                Feel free to reach out if you find something interesting or
+                simply want to have a friendly chat. I'm all about learning and
+                getting better! Currently seeking Summer 2024 internships.
               </p>
 
               {/* <div className="flex flex-row justify-end mt-[-10px]">
