@@ -14,7 +14,7 @@ const Experience = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.3 }}
-        className="w-full flex flex-col items-start justify-start"
+        className="w-full flex flex-col items-start justify-start gap-2"
       >
         <motion.div
           variants={slideRight(0)}

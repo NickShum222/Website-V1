@@ -146,7 +146,7 @@ const Navbar = () => {
               onClick={toggleNav}
             >
               <motion.div
-                className={`fixed right-0 bg-[#141414]  shadow-3xl  w-[80%] h-[100%] flex flex-col justify-evenly items-center z-[10]`}
+                className={`fixed right-0 bg-[#141414]  shadow-3xl  w-[60%] h-[100%] flex flex-col justify-evenly items-center z-[10]`}
                 variants={slideIn}
                 initial="hidden"
                 animate="visible"
@@ -163,7 +163,7 @@ const Navbar = () => {
                   {navLinks.map((nav, index) => (
                     <li
                       key={nav.id}
-                      className={` font-normal cursor-pointer transition-all duration-150 text-[16px] sm:text-[22px] text-semiwhite ${
+                      className={` font-normal cursor-pointer transition-all duration-150 text-[16px] sm:text-[18px] text-semiwhite ${
                         styles.hoverCyan
                       }  ${index === 0 ? "mt-[25px]" : "mt-[35px]"} `}
                       onClick={() => {
@@ -214,21 +214,21 @@ const Navbar = () => {
                     >
                       <HiMail size={"1.9em"} />
                     </motion.a>
-                    <motion.a
+                    {/* <motion.a
                       
                       href="https://www.instagram.com/nick.shum_/"
                       target="_blank"
                       className="text-[#8b8b8b] duration-300 hover:text-highlight hover:-translate-y-1"
                     >
                       <BsInstagram size={"1.6em"} />
-                    </motion.a>
-                    <motion.a
+                    </motion.a> */}
+                    {/* <motion.a
                       href="https://open.spotify.com/user/1ofn228owlljh59onkm7f8k9q"
                       target="_blank"
                       className="text-[#8b8b8b] duration-300 hover:text-highlight hover:-translate-y-1"
                     >
                       <BsSpotify size={"1.6em"} />
-                    </motion.a>
+                    </motion.a> */}
                   </motion.div>
                 </motion.div>
               </motion.div>
