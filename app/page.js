@@ -1,11 +1,10 @@
 "use client";
-import { Footer, Navbar, Sidebar, Loading } from "../components";
+import { SEO, Footer, Navbar, Sidebar, Loading } from "../components";
 import { About, Hero, Projects, Experience, Contact } from "../sections";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 export default function Home() {
-
   const [loading, setLoading] = useState(false);
   useEffect(() => {
     setLoading(true);
@@ -13,16 +12,16 @@ export default function Home() {
       setLoading(false);
     }, 2500);
   }, []);
-  
+
   return (
-  
- 
+    <>
+      <SEO />
       <div className=" bg-grey w-full overflow-hidden">
         {loading ? (
           <Loading />
         ) : (
           <div className=" bg-grey w-full overflow-hidden">
-            <Navbar/>
+            <Navbar />
             <Sidebar />
             <Hero />
             <Projects />
@@ -34,6 +33,6 @@ export default function Home() {
           </div>
         )}
       </div>
-
+    </>
   );
 }

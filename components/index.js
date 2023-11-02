@@ -7,6 +7,7 @@ import Sidebar from "./Sidebar";
 import Button from "./Button";
 import Loading from "./Loading";
 import Moon from "./moon";
+import SEO from "./SEO";
 
 
 export{
@@ -20,4 +21,5 @@ export{
   Button,
   Moon,
   Loading,
+  SEO
 }

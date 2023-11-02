@@ -1,8 +1,10 @@
 "use client";
 import { Button } from "@material-tailwind/react";
+import { SEO } from "@/components";
 const page = () => {
   return (
     <>
+    <SEO/>
         <div className="bg-grey h-[100vh] w-full flex flex-col justify-center items-center lg:py-[50px] py-[20px]">
       <a href="/">
         <Button
